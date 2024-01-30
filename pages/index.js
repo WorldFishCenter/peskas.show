@@ -30,15 +30,13 @@ function Home() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7">
-                                    <h1 className="text-display-2">
-                                        We are
-                                        <span className="color-green-900">awesome team</span>
-                                        for your business dream
+                                    <h1 className="text-display-3">
+                                        Advanced
+                                        <span className="color-green-900"> intelligent platform </span>
+                                        for small scale fisheries.
                                     </h1>
                                     <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                        Integrated workflow designed for product
-                                        teams. We create world-class development and
-                                        branding
+                                        Peskas was built with the objectives of being low cost, open source, open access and near-real time.
                                     </p>
                                     <div className="mt-40">
                                         <Link href="/page-service-1" legacyBehavior><a className="btn btn-black icon-arrow-right-white">Get Start</a></Link>
