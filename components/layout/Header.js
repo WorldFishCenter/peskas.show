@@ -19,8 +19,8 @@ const Header = ({ handleOpen, headerStyle }) => {
                         <div className="header-left">
                             <div className="header-logo">
                                 <Link href="/" legacyBehavior>
-                                    <a className="d-flex">
-                                        {headerStyle ? <img alt="Agon" src="/assets/imgs/template/logo-white.svg" /> : <img alt="Agon" src="/assets/imgs/template/logo.svg" />}
+                                    <a className="d-flex display-6">
+                                       PESKAS
                                     </a>
                                 </Link>
                             </div>
