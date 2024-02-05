@@ -31,12 +31,11 @@ function Home() {
                             <div className="row">
                                 <div className="col-lg-7">
                                     <h1 className="text-display-3">
-                                        Advanced
-                                        <span className="color-green-900"> intelligent platform </span>
-                                        for small scale fisheries.
+                                        Advanced  intelligent platform for
+                                        <span className="color-green-900"> small scale fisheries</span>
                                     </h1>
                                     <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                        Peskas was built with the objectives of being low cost, open source, open access and near-real time.
+                                        From little things, big things grow...
                                     </p>
                                     <div className="mt-40">
                                         <Link href="/page-service-1" legacyBehavior><a className="btn btn-black icon-arrow-right-white">Get Start</a></Link>
@@ -48,9 +47,10 @@ function Home() {
                                         <div className="video-block shape-1">
                                             <a className="popup-youtube btn-play-video" onClick={openModal}></a>
                                             <span className="text-heading-4">Watch intro video</span>
-
                                         </div>
-                                        <img className="img-responsive shape-2" alt="Agon" src="assets/imgs/page/homepage1/banner.png" />
+                                        <video className="img-responsive shape-2" autoPlay loop muted playsInline>
+                                        <source src="assets/imgs/page/homepage1/mov_trackers.mp4" type="video/mp4"/>
+                                        </video>
                                     </div>
                                 </div>
                             </div>
