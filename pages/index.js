@@ -35,7 +35,8 @@ function Home() {
                                 <span className="color-green-900"> small scale fisheries</span>
                             </h1>
                             <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                From little things, big things grow...
+                            Peskas delivers real-time insights and sustainable solutions for small-scale fisheries, fostering growth and community resilience through data-driven decision-making.<br/><br/>
+                            Harnessing simplicity and science, Peskas paves the way for thriving small-scale fisheries and healthier marine ecosystems.
                             </p>
                             <div className="mt-40">
                                 <Link href="/page-service-1" legacyBehavior><a className="btn btn-black icon-arrow-right-white">Get Start</a></Link>
@@ -57,13 +58,13 @@ function Home() {
             <div className="container">
                 <div className="row justify-content-md-center">
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-1.svg" /></a></Link>
+                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/wcs-logo-vector.svg" /></a></Link>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-2.svg" /></a></Link>
+                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/zafiri-logo.png" /></a></Link>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-3.svg" /></a></Link>
+                        <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/kmfri-logo.jpeg" /></a></Link>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
                         <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-4.svg" /></a></Link>
