@@ -367,6 +367,13 @@ a {
   max-width: 100%;
 }
 
+.vid-responsive {
+  width: 130%;
+  position: relative; /* Adjust positioning */
+  top: 160px; /* Example: Move down */
+  left: -140px; /* Example: Move right */
+}
+
 .text-body-lead {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
