@@ -60,13 +60,13 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             <Link href="#" legacyBehavior><a>Countries</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/page-about-1" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 1</a></Link>
+                                                    <Link href="/page-about-1" legacyBehavior><a><i className="fi fi-rr-star" />Timor-Leste</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-2" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 2</a></Link>
+                                                    <Link href="/page-about-2" legacyBehavior><a><i className="fi fi-rr-star" />Kenya</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-3" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 3</a></Link>
+                                                    <Link href="/page-about-3" legacyBehavior><a><i className="fi fi-rr-star" />Tanzania</a></Link>
                                                 </li>
                                             </ul>
                                         </li>
