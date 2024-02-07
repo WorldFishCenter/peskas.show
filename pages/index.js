@@ -137,7 +137,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-12">
-                                    <div className="block-video icon-pattern">
+                                    <div className="card-image">
                                         <a href="https://timor.peskas.org/" target="_blank">
                                             <img src="assets/imgs/page/homepage1/timor-leste.png" alt="Timor-Leste" class="bd-placeholder-img card-img-top card-image" />
                                         </a>
