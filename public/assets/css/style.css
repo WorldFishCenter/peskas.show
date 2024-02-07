@@ -368,10 +368,10 @@ a {
 }
 
 .vid-responsive {
-  width: 130%;
-  position: relative;
-  top: 160px; 
-  left: -140px; 
+  width: 126%; 
+  height: 118.5%; 
+  object-fit: cover;
+  transform: translateY(-80px);
 }
 
 .card-image {
