@@ -102,27 +102,17 @@ function Home() {
                         </li>
                         <li onClick={() => handleOnClick(2)}>
                             <Link href="/#tab-2" legacyBehavior>
-                                <a className={activeIndex === 2 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Development</a>
+                                <a className={activeIndex === 2 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Kenya</a>
                             </Link>
                         </li>
                         <li onClick={() => handleOnClick(3)}>
                             <Link href="/#tab-3" legacyBehavior>
-                                <a className={activeIndex === 3 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Animation</a>
+                                <a className={activeIndex === 3 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Zanzibar</a>
                             </Link>
                         </li>
                         <li onClick={() => handleOnClick(4)}>
                             <Link href="/#tab-4" legacyBehavior>
-                                <a className={activeIndex === 4 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>User Experience</a>
-                            </Link>
-                        </li>
-                        <li onClick={() => handleOnClick(5)}>
-                            <Link href="/#tab-5" legacyBehavior>
-                                <a className={activeIndex === 5 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Social Network</a>
-                            </Link>
-                        </li>
-                        <li onClick={() => handleOnClick(6)}>
-                            <Link href="/#tab-6" legacyBehavior>
-                                <a className={activeIndex === 6 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Marketing</a>
+                                <a className={activeIndex === 4 ? "btn btn-default btn-bd-green-hover btn-select active" : "btn btn-default btn-bd-green-hover btn-select"}>Mozambique</a>
                             </Link>
                         </li>
                     </ul>
