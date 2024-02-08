@@ -20,7 +20,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                             <div className="header-logo">
                                 <Link href="/" legacyBehavior>
                                     <a className="d-flex display-6">
-                                       PESKAS
+                                       PESKAS™
                                     </a>
                                 </Link>
                             </div>
@@ -57,21 +57,21 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </ul>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="#" legacyBehavior><a>About</a></Link>
+                                            <Link href="#" legacyBehavior><a>Countries</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/page-about-1" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 1</a></Link>
+                                                    <Link href="/page-about-1" legacyBehavior><a><i className="fi fi-rr-star" />Timor-Leste</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-2" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 2</a></Link>
+                                                    <Link href="/page-about-2" legacyBehavior><a><i className="fi fi-rr-star" />Kenya</a></Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-3" legacyBehavior><a><i className="fi fi-rr-star" />About Us - 3</a></Link>
+                                                    <Link href="/page-about-3" legacyBehavior><a><i className="fi fi-rr-star" />Tanzania</a></Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="#" legacyBehavior><a>Company</a></Link>
+                                            <Link href="#" legacyBehavior><a>Blog</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
                                                     <Link href="/page-service-1" legacyBehavior><a className="closer"><i className="fi fi-rr-gem" />Services - 1</a></Link>
@@ -103,7 +103,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </ul>
                                         </li>
                                         <li className="has-children">
-                                            <Link href="#" legacyBehavior><a>Pages</a></Link>
+                                            <Link href="#" legacyBehavior><a>About</a></Link>
                                             <ul className="sub-menu">
                                                 <li>
                                                     <Link href="/page-contact" legacyBehavior><a><i className="fi fi-rr-paper-plane" />Contact</a></Link>
@@ -120,29 +120,6 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/404" legacyBehavior><a><i className="fi fi-rr-exclamation" />Error 404</a></Link>
                                                 </li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-children">
-                                            <Link href="#" legacyBehavior><a>Blog</a></Link>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <Link href="/blog-1" legacyBehavior><a className="closer"><i className="fi fi-rr-edit" />Blog Archive - 1</a></Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/blog-2" legacyBehavior><a className="closer"><i className="fi fi-rr-edit" />Blog Archive - 2</a></Link>
-                                                </li>
-                                                <li className="hr"><span /></li>
-                                                <li>
-                                                    <Link href="/blog-single" legacyBehavior><a><i className="fi fi-rr-document-signed" />Blog Single</a></Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-children">
-                                            <a href="#">Shop</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/page-shop-grid-1" legacyBehavior><a className="closer"><i className="fi fi-rr-edit"></i>Shop Grid - 1</a></Link></li>
-                                                <li><Link href="/page-shop-grid-2" legacyBehavior><a className="closer"><i className="fi fi-rr-edit"></i>Shop Grid - 2</a></Link></li>
-                                                <li><Link href="/shop/1" legacyBehavior><a className="closer"><i className="fi fi-rr-edit"></i>Product Details</a></Link></li>
                                             </ul>
                                         </li>
                                     </ul>
