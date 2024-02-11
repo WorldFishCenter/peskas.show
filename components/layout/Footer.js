@@ -11,9 +11,8 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
                                 <Link href="/" legacyBehavior>
-                                    <a>
-                                        {/* <img alt="Agon" src="/assets/imgs/template/logo.svg" /> */}
-                                        <Image src="/assets/imgs/template/logo.svg" alt="Agon" width={162} height={42}/>
+                                    <a className="d-flex display-6">
+                                       PESKAS™
                                     </a>
                                 </Link>
                             </div>

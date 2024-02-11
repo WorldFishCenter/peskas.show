@@ -142,7 +142,7 @@ function Home() {
                                     <a className="item-logo box-hover-shadow hover-up">
                                         <img
                                             alt="Agon"
-                                            src="assets/imgs/slider/logo/sample-logo-4.svg"
+                                            src="assets/imgs/slider/logo/pds-logo.png"
                                         />
                                     </a>
                                 </Link>
@@ -152,7 +152,7 @@ function Home() {
                                     <a className="item-logo box-hover-shadow hover-up">
                                         <img
                                             alt="Agon"
-                                            src="assets/imgs/slider/logo/sample-logo-5.svg"
+                                            src="assets/imgs/slider/logo/bv-logo.png"
                                         />
                                     </a>
                                 </Link>
@@ -176,13 +176,12 @@ function Home() {
                             <div className="col-lg-2 col-sm-1 col-12" />
                             <div className="col-lg-8 col-sm-10 col-12 text-center mt-70">
                                 <h2 className="text-heading-1 color-gray-900">
-                                    See why we are trusted
+                                    Evolving within the lively 
                                     <br className="d-lg-block d-none" />
-                                    the world over
+                                    landscapes of Asia and Africa
                                 </h2>
                                 <p className="text-body-lead-large color-gray-600 mt-20">
-                                    Peskas was built with the objectives of being low cost, open
-                                    source, open access and near-real time.
+                                Peskas extends its reach across Africa and Asia, weaving a global network of sustainable small-scale fisheries bolstered by shared knowledge and collaborative technology.
                                 </p>
                             </div>
                             <div className="col-lg-2 col-sm-1 col-12" />
@@ -693,41 +692,6 @@ function Home() {
                     </div>
                 </section>
                 <section className="section-box">
-                    <div className="container mt-120">
-                        <div className="bg-2 bdrd-58 pattern-white pb-60">
-                            <div className="row">
-                                <div className="col-lg-2 col-sm-1 col-12" />
-                                <div className="col-lg-8 col-sm-10 col-12 text-center mt-70">
-                                    <h2 className="text-heading-1 color-gray-900">What We Offer</h2>
-                                    <p className="text-body-lead-large color-gray-600 mt-20">
-                                        What makes us different from others? We give holistic
-                                        solutions with strategy, design and technology.
-                                    </p>
-                                </div>
-                                <div className="col-lg-2 col-sm-1 col-12" />
-                            </div>
-                            <div className="container mt-70">
-                                <OfferSlider />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section-box">
-                    <div className="container mt-110">
-                        <div className="row">
-                            <div className="col-lg-9 col-sm-8">
-                                <h3 className="text-heading-1 mb-10">Our Happy Customers</h3>
-                                <p className="text-body-lead-large color-gray-600">
-                                    Know about our clients, we are a woldwide corporate brand
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="container mt-80">
-                        <TestimonialSlider />
-                    </div>
-                </section>
-                <section className="section-box">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8">
@@ -804,64 +768,6 @@ function Home() {
                                                 />
                                             </a>
                                         </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section-box section-green mt-100">
-                    <div className="container mt-70">
-                        <h3 className="text-heading-1 color-white text-center mb-10">
-                            Choose The Best Plan
-                            <br className="d-lg-block d-none" />
-                            That’s For You
-                        </h3>
-                    </div>
-                    <PriceTable2 />
-                </section>
-                <section className="section-box overflow-visible mb-100">
-                    <div className="container mt-100">
-                        <div className="row">
-                            <div className="col-lg-10 mx-auto">
-                                <div className="bg-2 box-newsletter position-relative">
-                                    <div className="row">
-                                        <div className="col-lg-5 col-md-7">
-                                            <span className="text-body-capitalized color-gray-500 text-uppercase">
-                                                newsletter
-                                            </span>
-                                            <h4 className="text-heading-2 mb-10 mt-10">
-                                                Subscribe our newsletter
-                                            </h4>
-                                            <p className="text-body-text color-gray-500">
-                                                By clicking the button, you are agreeing with our
-                                            </p>
-                                            <Link href="/page-terms" legacyBehavior>
-                                                <a>Term and Conditions</a>
-                                            </Link>
-                                            <div className="box-form-newsletter mt-30">
-                                                <form className="form-newsletter">
-                                                    <input
-                                                        className="input-newsletter"
-                                                        placeholder="Enter you mail .."
-                                                    />
-                                                    <button className="btn btn-send" />
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-7 col-md-5 mt-30 mt-lg-0 mt-md-30 mt-sm-30 position-relative text-end">
-                                            <div className="block-chart shape-1">
-                                                <img
-                                                    src="/assets/imgs/template/chart.png"
-                                                    alt="Agon"
-                                                />
-                                            </div>
-                                            <img
-                                                className="img-responsive img-newsletter"
-                                                src="assets/imgs/template/img-newsletter.png"
-                                                alt="Agon"
-                                            />
-                                        </div>
                                     </div>
                                 </div>
                             </div>
