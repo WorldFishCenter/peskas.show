@@ -2062,7 +2062,6 @@ label {
   right: 0px;
   width: 90px;
   height: 90px;
-  background: url(../imgs/page/homepage1/bg-business.svg) no-repeat;
 }
 .card-grid-1.bg-local {
   position: relative;
@@ -2074,7 +2073,6 @@ label {
   right: 0px;
   width: 90px;
   height: 90px;
-  background: url(../imgs/page/homepage1/bg-local.svg) no-repeat;
 }
 .card-grid-1.bg-social {
   position: relative;
@@ -2086,7 +2084,6 @@ label {
   right: 0px;
   width: 90px;
   height: 90px;
-  background: url(../imgs/page/homepage1/bg-social.svg) no-repeat;
 }
 
 .card-grid-style-2 {

@@ -60,7 +60,6 @@ function Home() {
                                         </Link>
                                     </div>
                                 </div>
-
                                 <div
                                     className="col-lg-5 d-none d-lg-block"
                                     style={{ position: 'relative' }}
@@ -83,7 +82,6 @@ function Home() {
                                         />
                                     </video>
                                 </div>
-
                                 {/* <div className="col-lg-5 d-none d-lg-block">
                                     <div className="banner-imgs">
                                         <video
@@ -104,68 +102,26 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <div className="section-box overflow-visible mt-70">
+                <div className="section-box overflow-visible mt-30">
                     <div className="container">
                         <div className="row justify-content-md-center">
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/wcs-logo-vector.svg"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-1.svg" /></a></Link>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/zafiri-logo.png"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-2.svg" /></a></Link>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/kmfri-logo.jpeg"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-3.svg" /></a></Link>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/pds-logo.png"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-4.svg" /></a></Link>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/bv-logo.png"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-5.svg" /></a></Link>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <Link href="/#" legacyBehavior>
-                                    <a className="item-logo box-hover-shadow hover-up">
-                                        <img
-                                            alt="Agon"
-                                            src="assets/imgs/slider/logo/sample-logo-6.svg"
-                                        />
-                                    </a>
-                                </Link>
+                                <Link href="/#" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-6.svg" /></a></Link>
                             </div>
                         </div>
                     </div>
@@ -174,7 +130,7 @@ function Home() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-2 col-sm-1 col-12" />
-                            <div className="col-lg-8 col-sm-10 col-12 text-center mt-70">
+                            <div className="col-lg-8 col-sm-10 col-12 text-center mt-50">
                                 <h2 className="text-heading-1 color-gray-900">
                                     Evolving within the lively 
                                     <br className="d-lg-block d-none" />
@@ -188,7 +144,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="container">
-                        <div className="text-center mt-90">
+                        <div className="text-center mt-50">
                             <ul className="nav" role="tablist">
                                 <li onClick={() => handleOnClick(1)}>
                                     <Link href="/#tab-1" legacyBehavior>
@@ -547,33 +503,28 @@ function Home() {
                             <div className="col-lg-2 col-sm-1 col-12" />
                             <div className="col-lg-8 col-sm-10 col-12 text-center mt-100">
                                 <h2 className="text-heading-1 color-gray-900">
-                                    We facilitate the creation
-                                    <br className="d-lg-block d-none" />
-                                    of strategy and design
+                                    How Peskas™ works
                                 </h2>
                                 <p className="text-body-lead-large color-gray-600 mt-20">
-                                    Interactively transform magnetic growth strategies whereas
-                                    prospective outside the box thinking.
+                                    Interactively enhance fisheries management approaches through forward-thinking and innovative strategies.
                                 </p>
                             </div>
                             <div className="col-lg-2 col-sm-1 col-12" />
                         </div>
                     </div>
-                    <div className="container mt-70">
+                    <div className="container mt-40">
                         <div className="row">
-                            <div className="col-lg-4 col-sm-12">
+                            <div className="col-lg-3 col-sm-12">
                                 <div className="card-grid-1 bg-5 bg-business hover-up">
                                     <div className="grid-1-img">
                                         <img
-                                            src="/assets/imgs/page/homepage1/business-strategy.svg"
+                                            src="/assets/imgs/page/homepage1/discover.svg"
                                             alt="Agon"
                                         />
                                     </div>
-                                    <h3 className="text-heading-3 mt-20">Business Strategy</h3>
+                                    <h5 className="text-heading-5 mt-20">1. Discovering Fisheries</h5>
                                     <p className="text-body-excerpt mt-20">
-                                        You are always welcome to visit our little den. Professional
-                                        in teir craft! All products were super amazing with strong
-                                        attension to details, comps and overall vibe.
+                                        We collect and integrate essential data on fishing activities to build a comprehensive picture of local fisheries.
                                     </p>
                                     <div className="mt-30">
                                         <Link href="/page-about-1" legacyBehavior>
@@ -584,19 +535,17 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-sm-12">
+                            <div className="col-lg-3 col-sm-12">
                                 <div className="card-grid-1 bg-9 bg-local hover-up">
                                     <div className="grid-1-img">
                                         <img
-                                            src="/assets/imgs/page/homepage1/local.svg"
+                                            src="/assets/imgs/page/homepage1/simplify.svg"
                                             alt="Agon"
                                         />
                                     </div>
-                                    <h3 className="text-heading-3 mt-20">Local Marketing</h3>
+                                    <h3 className="text-heading-5 mt-20">2. Simplifying Data</h3>
                                     <p className="text-body-excerpt mt-20">
-                                        You are always welcome to visit our little den. Professional
-                                        in teir craft! All products were super amazing with strong
-                                        attension to details, comps and overall vibe.
+                                        Transforming complex fishing data into simple, clear insights for easy understanding and use.
                                     </p>
                                     <div className="mt-30">
                                         <Link href="/page-about-2" legacyBehavior>
@@ -607,22 +556,41 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-sm-12">
+                            <div className="col-lg-3 col-sm-12">
                                 <div className="card-grid-1 bg-2 bg-social hover-up">
                                     <div className="grid-1-img">
                                         <img
-                                            src="/assets/imgs/page/homepage1/social.svg"
+                                            src="/assets/imgs/page/homepage1/analytics.svg"
                                             alt="Agon"
                                         />
                                     </div>
-                                    <h3 className="text-heading-3 mt-20">Social media</h3>
+                                    <h3 className="text-heading-5 mt-20">3. Insights for Action</h3>
                                     <p className="text-body-excerpt mt-20">
-                                        You are always welcome to visit our little den. Professional
-                                        in teir craft! All products were super amazing with strong
-                                        attension to details, comps and overall vibe.
+                                        Analyzing data to uncover trends and patterns that inform sustainable fishing practices.
                                     </p>
                                     <div className="mt-30">
                                         <Link href="/page-about-3" legacyBehavior>
+                                            <a className="btn btn-default btn-white icon-arrow-right">
+                                                Learn more
+                                            </a>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                              <div className="col-lg-3 col-sm-12">
+                                <div className="card-grid-1 bg-9 bg-local hover-up">
+                                                                    <div className="grid-1-img">
+                                        <img
+                                            src="/assets/imgs/page/homepage1/sharing.svg"
+                                            alt="Agon"
+                                        />
+                                    </div>
+                                    <h3 className="text-heading-5 mt-20">4. Data Sharing</h3>
+                                    <p className="text-body-excerpt mt-20">
+                                        Making data accessible through an intuitive dashboard and comprehensive reports for informed decision-making.
+                                    </p>
+                                    <div className="mt-30">
+                                        <Link href="/page-about-2" legacyBehavior>
                                             <a className="btn btn-default btn-white icon-arrow-right">
                                                 Learn more
                                             </a>
@@ -639,7 +607,7 @@ function Home() {
                             <div className="col-lg-6 col-sm-12 block-img-we-do">
                                 <img
                                     className="bdrd-16 img-responsive"
-                                    src="assets/imgs/page/homepage1/img-2.png"
+                                    src="assets/imgs/page/homepage1/fishing.png"
                                     alt="Agon"
                                 />
                             </div>
@@ -774,7 +742,6 @@ function Home() {
                         </div>
                     </div>
                 </section>
-
                 {modal ? (
                     <section className="modal__bg" onClick={openModal}>
                         <div className="modal__align">
