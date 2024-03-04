@@ -514,7 +514,7 @@ function Home() {
                     </div>
                     <div className="container mt-40">
                         <div className="row">
-                            <div className="col-lg-3 col-sm-12">
+                            <div className="col-lg-4 col-sm-12">
                                 <div className="card-grid-1 bg-5 bg-business hover-up">
                                     <div className="grid-1-img">
                                         <img
@@ -527,15 +527,10 @@ function Home() {
                                         We collect and integrate essential data on fishing activities to build a comprehensive picture of local fisheries.
                                     </p>
                                     <div className="mt-30">
-                                        <Link href="/page-about-1" legacyBehavior>
-                                            <a className="btn btn-default btn-white icon-arrow-right">
-                                                Learn more
-                                            </a>
-                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-sm-12">
+                            <div className="col-lg-4 col-sm-12">
                                 <div className="card-grid-1 bg-9 bg-local hover-up">
                                     <div className="grid-1-img">
                                         <img
@@ -548,15 +543,10 @@ function Home() {
                                         Transforming complex fishing data into simple, clear insights for easy understanding and use.
                                     </p>
                                     <div className="mt-30">
-                                        <Link href="/page-about-2" legacyBehavior>
-                                            <a className="btn btn-default btn-white icon-arrow-right">
-                                                Learn more
-                                            </a>
-                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-sm-12">
+                            <div className="col-lg-4 col-sm-12">
                                 <div className="card-grid-1 bg-2 bg-social hover-up">
                                     <div className="grid-1-img">
                                         <img
@@ -569,15 +559,10 @@ function Home() {
                                         Analyzing data to uncover trends and patterns that inform sustainable fishing practices.
                                     </p>
                                     <div className="mt-30">
-                                        <Link href="/page-about-3" legacyBehavior>
-                                            <a className="btn btn-default btn-white icon-arrow-right">
-                                                Learn more
-                                            </a>
-                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                              <div className="col-lg-3 col-sm-12">
+                              <div className="col-lg-4 col-sm-12">
                                 <div className="card-grid-1 bg-9 bg-local hover-up">
                                                                     <div className="grid-1-img">
                                         <img
@@ -585,16 +570,43 @@ function Home() {
                                             alt="Agon"
                                         />
                                     </div>
-                                    <h3 className="text-heading-5 mt-20">4. Data Sharing</h3>
+                                           <h3 className="text-heading-5 mt-20">4. Validation</h3>
+                                    <p className="text-body-excerpt mt-20">
+                                        Analyzing data to uncover trends and patterns that inform sustainable fishing practices.
+                                    </p>
+                                    <div className="mt-30">
+                                    </div>
+                                </div>
+                            </div>
+                              <div className="col-lg-4 col-sm-12">
+                                <div className="card-grid-1 bg-9 bg-local hover-up">
+                                                                    <div className="grid-1-img">
+                                        <img
+                                            src="/assets/imgs/page/homepage1/sharing.svg"
+                                            alt="Agon"
+                                        />
+                                    </div>
+                                    <h3 className="text-heading-5 mt-20">5. Reporting</h3>
+                                    <p className="text-body-excerpt mt-20">
+                                        Analyzing data to uncover trends and patterns that inform sustainable fishing practices.
+                                    </p>
+                                    <div className="mt-30">
+                                    </div>
+                                </div>
+                            </div>
+                              <div className="col-lg-4 col-sm-12">
+                                <div className="card-grid-1 bg-9 bg-local hover-up">
+                                                                    <div className="grid-1-img">
+                                        <img
+                                            src="/assets/imgs/page/homepage1/sharing.svg"
+                                            alt="Agon"
+                                        />
+                                    </div>                             
+                                    <h3 className="text-heading-5 mt-20">5. Feedback</h3>
                                     <p className="text-body-excerpt mt-20">
                                         Making data accessible through an intuitive dashboard and comprehensive reports for informed decision-making.
                                     </p>
                                     <div className="mt-30">
-                                        <Link href="/page-about-2" legacyBehavior>
-                                            <a className="btn btn-default btn-white icon-arrow-right">
-                                                Learn more
-                                            </a>
-                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -612,7 +624,6 @@ function Home() {
                                 />
                             </div>
                             <div className="col-lg-6 col-sm-12 block-we-do">
-                                <span className="tag-1">What We Do, What You Get</span>
                                 <h3 className="text-heading-1 mt-30">
                                     We believe that our works can contribute to a better world.
                                 </h3>

@@ -27,9 +27,9 @@ const Header = ({ handleOpen, headerStyle }) => {
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">
-                                        <li className="has-children">
+                                        <li>
                                             <Link href="#" legacyBehavior><a className="active">Home</a></Link>
-                                            <ul className="sub-menu two-col">
+                                            {/* <ul className="sub-menu two-col">
                                                 <li>
                                                     <Link href="/" legacyBehavior><a><i className="fi fi-rr-home" />Homepage - 1</a></Link>
                                                 </li>
@@ -54,7 +54,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/index-8" legacyBehavior><a><i className="fi fi-rr-home" />Homepage - 8</a></Link>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior><a>Countries</a></Link>
