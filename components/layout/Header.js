@@ -41,7 +41,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/page-about-1" legacyBehavior>
                                                         <a>
-                                                            <i className="fi fi-rr-star" />
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Timor-Leste
                                                         </a>
                                                     </Link>
@@ -49,7 +49,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/page-about-2" legacyBehavior>
                                                         <a>
-                                                            <i className="fi fi-rr-star" />
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Kenya
                                                         </a>
                                                     </Link>
@@ -57,8 +57,16 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/page-about-3" legacyBehavior>
                                                         <a>
-                                                            <i className="fi fi-rr-star" />
-                                                            Tanzania
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            Zanzibar
+                                                        </a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/page-about-3" legacyBehavior>
+                                                        <a>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            Mozambique
                                                         </a>
                                                     </Link>
                                                 </li>
