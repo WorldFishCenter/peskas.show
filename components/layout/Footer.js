@@ -11,16 +11,9 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
                                 <Link href="/" legacyBehavior>
-                                    <a>
-                                        {/* <img alt="Agon" src="/assets/imgs/template/logo.svg" /> */}
-                                        <Image src="/assets/imgs/template/logo.svg" alt="Agon" width={162} height={42}/>
+                                    <a className="d-flex display-6">
+                                       PESKAS™
                                     </a>
-                                </Link>
-                            </div>
-                            <div className="col-md-8 col-sm-6 text-center text-md-end">
-                                <span className="color-gray-900 text-heading-6 mr-30 text-mb-sm-20">Ready to get started?</span>
-                                <Link href="/page-signup" legacyBehavior>
-                                    <a className="btn btn-square">Create an Account</a>
                                 </Link>
                             </div>
                         </div>
@@ -28,9 +21,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-3 width-20 mb-30">
                             <h4 className="text-heading-5">Contact</h4>
-                            <div className="mt-20 text-body-text color-gray-600 mb-20">4517 Washington Ave. Manchester, Kentucky 39495</div>
-                            <div className="mt-20 text-body-text color-gray-600">(239) 555-0108</div>
-                            <div className="text-body-text color-gray-600">contact@agon.com</div>
+                            <div className="text-body-text color-gray-600">peskas.platform@gmail.com</div>
                         </div>
                         <div className="col-lg-3 width-20 mb-30">
                             <h4 className="text-heading-5">About Us</h4>
@@ -46,23 +37,8 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/page-career" legacyBehavior>
-                                        <a>Careers</a>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/#" legacyBehavior>
                                         <a>Press and Media</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Advertising</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Testimonials</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -76,23 +52,8 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/page-pricing-1" legacyBehavior>
-                                        <a>Plans and Pricing</a>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/#" legacyBehavior>
                                         <a>Knowledge Base</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Cookie Policy</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Office Center</a>
                                     </Link>
                                 </li>
                                 <li>
@@ -106,33 +67,8 @@ const Footer = () => {
                             <h4 className="text-heading-5">Support</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/page-faqs-1" legacyBehavior>
-                                        <a>FAQs</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Editor Help</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Community</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Live Chatting</a>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/page-contact" legacyBehavior>
                                         <a>Contact Us</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Support Center</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -142,22 +78,7 @@ const Footer = () => {
                             <ul className="menu-footer mt-20">
                                 <li>
                                     <Link href="/#" legacyBehavior>
-                                        <a>Request an offer</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
                                         <a>How it works</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/page-pricing-2" legacyBehavior>
-                                        <a>Pricing</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#" legacyBehavior>
-                                        <a>Reviews</a>
                                     </Link>
                                 </li>
                                 <li>
@@ -171,12 +92,9 @@ const Footer = () => {
                     <div className="footer-bottom mt-20">
                         <div className="row">
                             <div className="col-md-6">
-                                <span className="color-gray-400 text-body-lead">© Agon Official 2022</span>
+                                <span className="color-gray-400 text-body-lead">PESKAS™ 2024</span>
                                 <Link href="/page-terms" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Privacy policy</a>
-                                </Link>
-                                <Link href="/page-terms" legacyBehavior>
-                                    <a className="text-body-text color-gray-400 ml-50">Cookies</a>
                                 </Link>
                                 <Link href="/page-terms" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Terms of service</a>
