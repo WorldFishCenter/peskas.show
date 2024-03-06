@@ -35,18 +35,17 @@ function Home() {
                                         Advanced intelligent platform for
                                         <span className="color-green-900">
                                             {' '}
-                                            small scale fisheries
+                                            aquatic food systems
                                         </span>
                                     </h1>
                                     <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                        Peskas delivers real-time insights and sustainable solutions
-                                        for small-scale fisheries, fostering growth and community
-                                        resilience through data-driven decision-making.
+                                        Peskas delivers real-time data and insights for small-scale fisheries
+                                        to enable evidence-based decision-making at different scales,
+                                        from fishers to national government.
                                         <br />
                                         <br />
-                                        Harnessing simplicity and science, Peskas paves the way for
-                                        thriving small-scale fisheries and healthier marine
-                                        ecosystems.
+                                        Harnessing user-centered design, agile and open science principles,
+                                        Peskas paves the way for thriving small-scale fisheries and healthier aquatic ecosystems.
                                     </p>
                                     <div className="mt-40">
                                         <Link href="/page-login" legacyBehavior>
@@ -106,17 +105,17 @@ function Home() {
                             <div className="col-lg-10">
                                 <div className="bd-bottom pb-20 mb-40 text-mb-center">
                                     <div className="row">
-                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={6} time={3}/></span>
+                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={7} time={3} /></span>
                                             <p className="text-body-text color-gray-500 pl-40t">Years of activity</p>
                                         </div>
-                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={14} time={3}/>k</span>
-                                            <p className="text-body-text color-gray-500 pl-40">Partners</p>
+                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={6} time={3} /></span>
+                                            <p className="text-body-text color-gray-500 pl-40">Countries</p>
                                         </div>
-                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={26} time={3}/></span>
-                                            <p className="text-body-text color-gray-500 pl-40">Countries / Offices</p>
+                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={15} time={3} />k</span>
+                                            <p className="text-body-text color-gray-500 pl-40">Hectares under improved management</p>
                                         </div>
-                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={24} time={3}/>k</span>
-                                            <p className="text-body-text color-gray-500 pl-40">People involved</p>
+                                        <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30"><span className="text-display-3 color-green-900">+<CounterUp count={26} time={3} />k</span>
+                                            <p className="text-body-text color-gray-500 pl-40">Trips recorded</p>
                                         </div>
                                     </div>
                                 </div>
@@ -587,7 +586,7 @@ function Home() {
                                     <p className="text-body-excerpt mt-20">
                                         Translating complex data into interactive dashboards and detailed reports,
                                         this module promotes understanding and data-driven decisions,
-                                         making sustainable fishing insights widely accessible.
+                                        making sustainable fishing insights widely accessible.
                                     </p>
                                 </div>
                             </div>
