@@ -522,7 +522,7 @@ function Home() {
                                         <p className="text-body-excerpt mt-20">
                                             Collect key fishing data using intuitive tools for a
                                             comprehensive view of fisheries. This ensures accurate
-                                            capture of efforts and aligns with stakeholders' objectives.
+                                            capture of efforts and aligns with stakeholders&apos; objectives.
                                         </p>
                                     </div>
                                 </Link>
@@ -601,7 +601,7 @@ function Home() {
                                     </div>
                                     <h3 className="text-heading-5 mt-20">6. Feedback</h3>
                                     <p className="text-body-excerpt mt-20">
-                                        Enabling active participation platforms, ensuring stakeholders'
+                                        Enabling active participation platforms, ensuring stakeholders&apos;
                                         insights continually shape and improve the process, promoting
                                         a shared journey towards sustainable fisheries.
                                     </p>
