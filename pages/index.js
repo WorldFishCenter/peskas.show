@@ -463,7 +463,7 @@ function Home() {
                                                     dolore eu fugiat nulla pariatur.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -507,7 +507,7 @@ function Home() {
                     <div className="container mt-40">
                         <div className="row">
                             <div className="col-lg-4 col-sm-12 card-homepage card-link">
-                                <Link href="/page-service-1" legacyBehavior>
+                                <Link href="under-costruction" legacyBehavior>
                                     <div className="card-grid-1 bg-1 bg-business hover-up">
                                         <div className="grid-1-img">
                                             <img

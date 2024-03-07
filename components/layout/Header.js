@@ -39,7 +39,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/page-about-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Timor-Leste
@@ -47,7 +47,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-2" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Kenya
@@ -55,7 +55,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-3" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Zanzibar
@@ -63,7 +63,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-about-3" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Mozambique
@@ -83,34 +83,18 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/page-contact" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <i className="fi fi-rr-paper-plane" />
-                                                            Contact
+                                                            <img src="/assets/imgs/page/homepage1/story.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            Our Story
                                                         </a>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/page-signup" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <i className="fi fi-rr-user-add" />
-                                                            Sign Up
-                                                        </a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/page-login" legacyBehavior>
-                                                        <a>
-                                                            <i className="fi fi-rr-fingerprint" />
-                                                            Log In
-                                                        </a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/page-reset" legacyBehavior>
-                                                        <a>
-                                                            <i className="fi fi-rr-settings" />
-                                                            Reset Password
+                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            How it works
                                                         </a>
                                                     </Link>
                                                 </li>
