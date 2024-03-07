@@ -48,7 +48,7 @@ function Home() {
                                         Peskas paves the way for thriving small-scale fisheries and healthier aquatic ecosystems.
                                     </p>
                                     <div className="mt-40">
-                                        <Link href="/page-login" legacyBehavior>
+                                        <Link href="under-costruction" legacyBehavior>
                                             <a className="btn btn-black icon-arrow-right-white">
                                                 Learn More
                                             </a>
@@ -226,7 +226,7 @@ function Home() {
                                                     fishing trends over time and space.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -273,7 +273,7 @@ function Home() {
                                                     dolore eu fugiat nulla pariatur.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -320,7 +320,7 @@ function Home() {
                                                     dolore eu fugiat nulla pariatur.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -367,7 +367,7 @@ function Home() {
                                                     dolore eu fugiat nulla pariatur.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -463,7 +463,7 @@ function Home() {
                                                     dolore eu fugiat nulla pariatur.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="under-costruction" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>

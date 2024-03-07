@@ -12,7 +12,7 @@ const Footer = () => {
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
                                 <Link href="/" legacyBehavior>
                                     <a className="d-flex display-6">
-                                       PESKAS™
+                                        PESKAS™
                                     </a>
                                 </Link>
                             </div>
@@ -27,17 +27,17 @@ const Footer = () => {
                             <h4 className="text-heading-5">About Us</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>Mission and Vision</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>Our Team</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>Press and Media</a>
                                     </Link>
                                 </li>
@@ -47,17 +47,19 @@ const Footer = () => {
                             <h4 className="text-heading-5">Discover</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/blog-2" legacyBehavior>
-                                        <a>Our Blog</a>
+                                    <Link href="https://blog.peskas.org/" legacyBehavior>
+                                        <a target="_blank" >
+                                            Our Blog
+                                        </a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="under-costruction" legacyBehavior>
                                         <a>Knowledge Base</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog-1" legacyBehavior>
+                                    <Link href="under-costruction" legacyBehavior>
                                         <a>News and Events</a>
                                     </Link>
                                 </li>
@@ -67,7 +69,7 @@ const Footer = () => {
                             <h4 className="text-heading-5">Support</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/page-contact" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>Contact Us</a>
                                     </Link>
                                 </li>
@@ -77,12 +79,12 @@ const Footer = () => {
                             <h4 className="text-heading-5">Useful links</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>How it works</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#" legacyBehavior>
+                                    <Link href="/under-costruction" legacyBehavior>
                                         <a>Stories</a>
                                     </Link>
                                 </li>
@@ -93,10 +95,10 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <span className="color-gray-400 text-body-lead">PESKAS™ 2024</span>
-                                <Link href="/page-terms" legacyBehavior>
+                                <Link href="/under-costruction" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Privacy policy</a>
                                 </Link>
-                                <Link href="/page-terms" legacyBehavior>
+                                <Link href="/under-costruction" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Terms of service</a>
                                 </Link>
                             </div>

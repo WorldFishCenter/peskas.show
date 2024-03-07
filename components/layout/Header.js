@@ -74,7 +74,9 @@ const Header = ({ handleOpen, headerStyle }) => {
                                         </li>
                                         <li>
                                             <Link href="https://blog.peskas.org/" legacyBehavior>
-                                                <a>Blog</a>
+                                                <a target="_blank" >
+                                                    Blog
+                                                </a>
                                             </Link>
                                         </li>
                                         <li className="has-children">
