@@ -114,14 +114,6 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                         </a>
                                                     </Link>
                                                 </li>
-                                                <li>
-                                                    <Link href="/404" legacyBehavior>
-                                                        <a>
-                                                            <i className="fi fi-rr-exclamation" />
-                                                            Error 404
-                                                        </a>
-                                                    </Link>
-                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
