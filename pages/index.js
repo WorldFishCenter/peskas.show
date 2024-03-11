@@ -263,7 +263,7 @@ function Home() {
                                                     Kenya
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Kenya is under development under the ABBS project.
+                                                    Peskas in Kenya is under development.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
