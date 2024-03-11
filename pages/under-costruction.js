@@ -11,7 +11,7 @@ function Error() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mt-10">
-                               <img className="img-responsive" src="/assets/imgs/page/homepage1/under-costruction.svg" style={{ width: '15%', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} alt="Agon" />
+                               <img className="img-responsive" src="/assets/imgs/page/homepage1/under-costruction.svg" style={{ width: '17%', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} alt="Agon" />
                                 <h2 className="text-heading-1 color-gray-900 mb-20 mt-50">
                                     Page Under Development
                                 </h2>
