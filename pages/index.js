@@ -130,14 +130,14 @@ function Home() {
                             <div className="col-lg-2 col-sm-1 col-12" />
                             <div className="col-lg-8 col-sm-10 col-12 text-center mt-50">
                                 <h2 className="text-heading-1 color-gray-900">
-                                    Evolving within the lively
+                                    Evolving, sharing and adapting
                                     <br className="d-lg-block d-none" />
-                                    landscapes of Asia and Africa
+                                    within the aquatic food systems of Asia and Africa
                                 </h2>
                                 <p className="text-body-lead-large color-gray-600 mt-20">
-                                    Peskas extends its reach across Africa and Asia, weaving a
-                                    global network of sustainable small-scale fisheries bolstered by
-                                    shared knowledge and collaborative technology.
+                                    Peskas extends its reach across Africa and Asia, weaving
+                                    a global network of sustainable small-scale fisheries bolstered
+                                    by shared knowledge and collaborative technology.
                                 </p>
                             </div>
                         </div>
@@ -167,15 +167,28 @@ function Home() {
                                                     : 'btn btn-default btn-bd-green-hover btn-select'
                                             }
                                         >
-                                            Kenya
+                                            Malaysia
                                         </a>
                                     </Link>
                                 </li>
                                 <li onClick={() => handleOnClick(3)}>
-                                    <Link href="/#tab-3" legacyBehavior>
+                                    <Link href="/#tab-2" legacyBehavior>
                                         <a
                                             className={
                                                 activeIndex === 3
+                                                    ? 'btn btn-default btn-bd-green-hover btn-select active'
+                                                    : 'btn btn-default btn-bd-green-hover btn-select'
+                                            }
+                                        >
+                                            Kenya
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li onClick={() => handleOnClick(4)}>
+                                    <Link href="/#tab-3" legacyBehavior>
+                                        <a
+                                            className={
+                                                activeIndex === 4
                                                     ? 'btn btn-default btn-bd-green-hover btn-select active'
                                                     : 'btn btn-default btn-bd-green-hover btn-select'
                                             }
@@ -184,16 +197,29 @@ function Home() {
                                         </a>
                                     </Link>
                                 </li>
-                                <li onClick={() => handleOnClick(4)}>
+                                <li onClick={() => handleOnClick(5)}>
                                     <Link href="/#tab-4" legacyBehavior>
                                         <a
                                             className={
-                                                activeIndex === 4
+                                                activeIndex === 5
                                                     ? 'btn btn-default btn-bd-green-hover btn-select active'
                                                     : 'btn btn-default btn-bd-green-hover btn-select'
                                             }
                                         >
                                             Mozambique
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li onClick={() => handleOnClick(6)}>
+                                    <Link href="/#tab-3" legacyBehavior>
+                                        <a
+                                            className={
+                                                activeIndex === 6
+                                                    ? 'btn btn-default btn-bd-green-hover btn-select active'
+                                                    : 'btn btn-default btn-bd-green-hover btn-select'
+                                            }
+                                        >
+                                            Malawi
                                         </a>
                                     </Link>
                                 </li>
@@ -260,10 +286,52 @@ function Home() {
                                         <div className="col-lg-6 col-sm-12">
                                             <div className="box-optimized">
                                                 <h3 className="text-heading-2">
+                                                    Malaysia
+                                                </h3>
+                                                <p className="text-body-excerpt mt-30">
+                                                    Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.
+                                                </p>
+                                                <div className="mt-40">
+                                                    <Link href="/under-costruction" legacyBehavior>
+                                                        <a className="btn btn-default btn-white icon-arrow-right">
+                                                            Learn more
+                                                        </a>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 col-sm-12">
+                                            <div className="card-image">
+                                                <a href="/#" target="_blank">
+                                                    <img
+                                                        src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                                        alt="Malaysia"
+                                                        className="bd-placeholder-img card-img-top card-image"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className={
+                                    activeIndex === 3
+                                        ? 'tab-pane fade  active show'
+                                        : 'tab-pane fade '
+                                }
+                            >
+                                <div className="bg-5 panel-box mt-50">
+                                    <div className="row">
+                                        <div className="col-lg-6 col-sm-12">
+                                            <div className="box-optimized">
+                                                <h3 className="text-heading-2">
                                                     Kenya
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Kenya is under development under the ABBS project.
+                                                    Peskas in Kenya is under development.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -290,7 +358,7 @@ function Home() {
                             </div>
                             <div
                                 className={
-                                    activeIndex === 3
+                                    activeIndex === 4
                                         ? 'tab-pane fade  active show'
                                         : 'tab-pane fade '
                                 }
@@ -303,14 +371,7 @@ function Home() {
                                                     Zanzibar
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit, sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum
-                                                    dolore eu fugiat nulla pariatur.
+                                                    Peskas in Zanzibar is under development.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -337,7 +398,7 @@ function Home() {
                             </div>
                             <div
                                 className={
-                                    activeIndex === 4
+                                    activeIndex === 5
                                         ? 'tab-pane fade  active show'
                                         : 'tab-pane fade '
                                 }
@@ -350,14 +411,7 @@ function Home() {
                                                     Mozambique
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit, sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum
-                                                    dolore eu fugiat nulla pariatur.
+                                                    Peskas in Mozambique is under development.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -384,7 +438,7 @@ function Home() {
                             </div>
                             <div
                                 className={
-                                    activeIndex === 5
+                                    activeIndex === 6
                                         ? 'tab-pane fade  active show'
                                         : 'tab-pane fade '
                                 }
@@ -394,20 +448,13 @@ function Home() {
                                         <div className="col-lg-6 col-sm-12">
                                             <div className="box-optimized">
                                                 <h3 className="text-heading-2">
-                                                    Subscribe our newsletter to get gift
+                                                    Malawi
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit, sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum
-                                                    dolore eu fugiat nulla pariatur.
+                                                    Peskas in Malawi is under development.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/page-service-1" legacyBehavior>
+                                                    <Link href="/under-costruction" legacyBehavior>
                                                         <a className="btn btn-default btn-white icon-arrow-right">
                                                             Learn more
                                                         </a>
@@ -416,16 +463,14 @@ function Home() {
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-sm-12">
-                                            <div className="block-video icon-pattern">
-                                                <a
-                                                    className="popup-youtube btn-play-video"
-                                                    onClick={openModal}
-                                                ></a>
-                                                <img
-                                                    className="img-responsive"
-                                                    src="assets/imgs/page/homepage1/img-1-5.jpg"
-                                                    alt="Agon"
-                                                />
+                                            <div className="card-image">
+                                                <a href="/#" target="_blank">
+                                                    <img
+                                                        src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"
+                                                        alt="Malawi"
+                                                        className="bd-placeholder-img card-img-top card-image"
+                                                    />
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -617,41 +662,41 @@ function Home() {
                                     We believe that our works can contribute to a better world.
                                 </h3>
                                 <p className="text-body-lead-large color-gray-600 mt-30">
-                                    Necessary to deliver white glove, fully managed campaigns that
-                                    surpass industry benchmarks.Take your career to next level.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                                 </p>
                                 <div className="line-bd-green mt-50" />
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-6 col-12 mt-50">
                                         <h4 className="text-heading-6 icon-leaf">
-                                            Boost your sale
+                                            Lorem ipsum dolor sit amet
                                         </h4>
                                         <p className="text-body-excerpt color-gray-600 mt-15">
-                                            The latest design trends meet hand-crafted templates.
+                                            Lorem ipsum dolor sit amet
                                         </p>
                                     </div>
                                     <div className="col-lg-6 col-sm-6 col-12 mt-50">
                                         <h4 className="text-heading-6 icon-leaf">
-                                            Smart Installation Tools
+                                            Lorem ipsum dolor sit amet
                                         </h4>
                                         <p className="text-body-excerpt color-gray-600 mt-15">
-                                            The latest design trends meet hand-crafted templates.
+                                            Lorem ipsum dolor sit amet
                                         </p>
                                     </div>
                                     <div className="col-lg-6 col-sm-6 col-12 mt-50">
                                         <h4 className="text-heading-6 icon-leaf">
-                                            Introducing New Features
+                                            Lorem ipsum dolor sit amet
                                         </h4>
                                         <p className="text-body-excerpt color-gray-600 mt-15">
-                                            The latest design trends meet hand-crafted templates.
+                                            Lorem ipsum dolor sit amet
                                         </p>
                                     </div>
                                     <div className="col-lg-6 col-sm-6 col-12 mt-50">
                                         <h4 className="text-heading-6 icon-leaf">
-                                            Dynamic Boosting
+                                            Lorem ipsum dolor sit amet
                                         </h4>
                                         <p className="text-body-excerpt color-gray-600 mt-15">
-                                            The latest design trends meet hand-crafted templates.
+                                            Lorem ipsum dolor sit amet
                                         </p>
                                     </div>
                                 </div>
