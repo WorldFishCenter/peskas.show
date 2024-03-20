@@ -36,11 +36,6 @@ const Footer = () => {
                                         <a>Our Team</a>
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>Press and Media</a>
-                                    </Link>
-                                </li>
                             </ul>
                         </div>
                         <div className="col-lg-3 width-20 mb-30">
@@ -61,6 +56,11 @@ const Footer = () => {
                                 <li>
                                     <Link href="under-costruction" legacyBehavior>
                                         <a>News and Events</a>
+                                    </Link>
+                                </li>
+                                                                <li>
+                                    <Link href="/under-costruction" legacyBehavior>
+                                        <a>Media</a>
                                     </Link>
                                 </li>
                             </ul>

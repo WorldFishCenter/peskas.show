@@ -52,6 +52,17 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            Malaysia
+                                                        </a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <li className="hr">
+                                                        <span />
+                                                    </li>
+                                                    <Link href="/under-costruction" legacyBehavior>
+                                                        <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Kenya
                                                         </a>
@@ -70,6 +81,14 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Mozambique
+                                                        </a>
+                                                    </Link>
+                                                </li>
+                                                 <li>
+                                                    <Link href="/under-costruction" legacyBehavior>
+                                                        <a>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg" alt="Malawi Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            Malawi
                                                         </a>
                                                     </Link>
                                                 </li>
