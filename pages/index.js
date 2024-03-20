@@ -476,55 +476,6 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                className={
-                                    activeIndex === 6
-                                        ? 'tab-pane fade  active show'
-                                        : 'tab-pane fade '
-                                }
-                            >
-                                <div className="bg-6 panel-box mt-50">
-                                    <div className="row">
-                                        <div className="col-lg-6 col-sm-12">
-                                            <div className="box-optimized">
-                                                <h3 className="text-heading-2">
-                                                    Ready to get started? Create and Account
-                                                </h3>
-                                                <p className="text-body-excerpt mt-30">
-                                                    Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit, sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum
-                                                    dolore eu fugiat nulla pariatur.
-                                                </p>
-                                                <div className="mt-40">
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a className="btn btn-default btn-white icon-arrow-right">
-                                                            Learn more
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-12">
-                                            <div className="block-video icon-pattern">
-                                                <a
-                                                    className="popup-youtube btn-play-video"
-                                                    onClick={openModal}
-                                                ></a>
-                                                <img
-                                                    className="img-responsive"
-                                                    src="assets/imgs/page/homepage1/img-1-6.jpg"
-                                                    alt="Agon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
