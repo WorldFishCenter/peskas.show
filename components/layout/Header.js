@@ -47,6 +47,9 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
+                                                    <li className="hr">
+                                                        <span />
+                                                    </li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
