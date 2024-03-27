@@ -47,9 +47,6 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <li className="hr">
-                                                        <span />
-                                                    </li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
@@ -58,9 +55,6 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <li className="hr">
-                                                        <span />
-                                                    </li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
@@ -109,7 +103,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/story.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img src="/assets/imgs/page/homepage1/story.svg" alt="Our Story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Our Story
                                                         </a>
                                                     </Link>
@@ -117,7 +111,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="How it works" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             How it works
                                                         </a>
                                                     </Link>

@@ -289,9 +289,11 @@ function Home() {
                                                     Malaysia
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit, sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.
+                                                    Malaysia is the host country of WorldFish headquarters
+                                                    and we work closely with the Department of Fisheries and
+                                                    Malaysian universities to develop research in fisheries 
+                                                    and aquaculture. Peskas pilots have so far been deployed
+                                                    in Pulau Pinang and Kedah states.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -331,7 +333,10 @@ function Home() {
                                                     Kenya
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Kenya is under development.
+                                                    With funding from the UK Government, Kenya is one of the scaling
+                                                    countries for Peskas as part of the AABS project. With partners WC
+                                                    and KMFRI, Peskas is being deployed and tested in Kenya to explore
+                                                    behaviour change in response to fisheries information.   
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -371,7 +376,9 @@ function Home() {
                                                     Zanzibar
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Zanzibar is under development.
+                                                    With partners WIOMSA and the Ministry of Blue Economy and Fisheries,
+                                                    WorldFish are developing a fisheries information system for Unguja and
+                                                    Pemba in Zanzibar, built on the Peskas system platform.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -451,7 +458,10 @@ function Home() {
                                                     Malawi
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Malawi is under development.
+                                                    Malawi is a landlocked country in southern Africa, but is still highly 
+                                                    reliant upon productive freshwater lake fisheries. WorldFish, with funding
+                                                    from SADC, are working to leverage Peskas approaches to provide evidence
+                                                    for management decision-making.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>

@@ -99,9 +99,6 @@ const Sidebar = ({ openClass }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <li className="hr">
-                                                        <span />
-                                                    </li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
