@@ -97,6 +97,30 @@ function Home() {
                             </div>
                         </div>
                     </div>
+                    <div className="section-box overflow-visible mt-20">
+                        <div className="container">
+                            <div className="row justify-content-md-center">
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://www.pelagicdata.com/" legacyBehavior><a className="item-logo box-hover-shadow hover-up "><img alt="Agon" src="assets/imgs/slider/logo/pds-logo.svg" /></a></Link>
+                                </div>
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://customs.gov.tl/other-gov-agencies/ministry-of-agriculture-fisheries/" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/maf-logo.svg" /></a></Link>
+                                </div>
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://blueventures.org/" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/blue-ventures-logo.svg" /></a></Link>
+                                </div>
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://www.wcs.org/" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/wcs-logo.svg" /></a></Link>
+                                </div>
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://trade.tanzania.go.tz/Contacts/84?l=en" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/zanzibar-be-logo.svg" /></a></Link>
+                                </div>
+                                <div className="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                    <Link href="https://www.wiomsa.org/" legacyBehavior><a className="item-logo box-hover-shadow hover-up"><img alt="Agon" src="assets/imgs/slider/logo/wiomsa-logo.svg" /></a></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <div className="section-box mt-100">
                     <div className="container">
@@ -291,7 +315,7 @@ function Home() {
                                                 <p className="text-body-excerpt mt-30">
                                                     Malaysia is the host country of WorldFish headquarters
                                                     and we work closely with the Department of Fisheries and
-                                                    Malaysian universities to develop research in fisheries 
+                                                    Malaysian universities to develop research in fisheries
                                                     and aquaculture. Peskas pilots have so far been deployed
                                                     in Pulau Pinang and Kedah states.
                                                 </p>
@@ -336,7 +360,7 @@ function Home() {
                                                     With funding from the UK Government, Kenya is one of the scaling
                                                     countries for Peskas as part of the AABS project. With partners WC
                                                     and KMFRI, Peskas is being deployed and tested in Kenya to explore
-                                                    behaviour change in response to fisheries information.   
+                                                    behaviour change in response to fisheries information.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -458,7 +482,7 @@ function Home() {
                                                     Malawi
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Malawi is a landlocked country in southern Africa, but is still highly 
+                                                    Malawi is a landlocked country in southern Africa, but is still highly
                                                     reliant upon productive freshwater lake fisheries. WorldFish, with funding
                                                     from SADC, are working to leverage Peskas approaches to provide evidence
                                                     for management decision-making.
