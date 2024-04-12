@@ -276,11 +276,9 @@ function Home() {
                                                     fishing trends over time and space.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a className="btn btn-default btn-white icon-arrow-right">
-                                                            Learn more
-                                                        </a>
-                                                    </Link>
+                                                    <a href="https://timor.peskas.org/" target="_blank" rel="noopener noreferrer" className="btn btn-default btn-white icon-arrow-right">
+                                                        Learn more
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -358,7 +356,7 @@ function Home() {
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
                                                     With funding from the UK Government, Kenya is one of the scaling
-                                                    countries for Peskas as part of the AABS project. With partners WC
+                                                    countries for Peskas as part of the AABS project. With partners Wildlife Conservation Society (WCS)
                                                     and KMFRI, Peskas is being deployed and tested in Kenya to explore
                                                     behaviour change in response to fisheries information.
                                                 </p>
@@ -442,7 +440,7 @@ function Home() {
                                                     Mozambique
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Mozambique is under development.
+                                                    Mozambique is a focal country of the AABS project and WorldFish are currently exploring a partnership with the Ministry of Seas, Inland Waters and Fisheries (MIMAIP) and other NGOs to support national development objectives related to the fisheries sector and digital transformation.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -530,7 +528,7 @@ function Home() {
                     <div className="container mt-40">
                         <div className="row">
                             <div className="col-lg-4 col-sm-12 card-homepage card-link">
-                                <Link href="under-costruction" legacyBehavior>
+                                <Link href="how-works" legacyBehavior>
                                     <div className="card-grid-1 bg-1 bg-business hover-up">
                                         <div className="grid-1-img">
                                             <img
