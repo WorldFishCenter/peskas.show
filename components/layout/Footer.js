@@ -103,20 +103,6 @@ const Footer = () => {
                                 </Link>
                             </div>
                             <div className="col-md-6 text-center text-lg-end text-md-end">
-                                <div className="footer-social">
-                                    <Link href="https://facebook.com" legacyBehavior>
-                                        <a className="icon-socials icon-facebook"></a>
-                                    </Link>
-                                    <Link href="https://twitter.com" legacyBehavior>
-                                        <a className="icon-socials icon-twitter"></a>
-                                    </Link>
-                                    <Link href="https://www.instagram.com" legacyBehavior>
-                                        <a className="icon-socials icon-instagram"></a>
-                                    </Link>
-                                    <Link href="https://www.linkedin.com" legacyBehavior>
-                                        <a className="icon-socials icon-linkedin"></a>
-                                    </Link>
-                                </div>
                             </div>
                         </div>
                     </div>

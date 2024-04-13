@@ -276,11 +276,9 @@ function Home() {
                                                     fishing trends over time and space.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a className="btn btn-default btn-white icon-arrow-right">
-                                                            Learn more
-                                                        </a>
-                                                    </Link>
+                                                    <a href="https://timor.peskas.org/" target="_blank" rel="noopener noreferrer" className="btn btn-default btn-white icon-arrow-right">
+                                                        Learn more
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -358,7 +356,7 @@ function Home() {
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
                                                     With funding from the UK Government, Kenya is one of the scaling
-                                                    countries for Peskas as part of the AABS project. With partners WC
+                                                    countries for Peskas as part of the AABS project. With partners Wildlife Conservation Society (WCS)
                                                     and KMFRI, Peskas is being deployed and tested in Kenya to explore
                                                     behaviour change in response to fisheries information.
                                                 </p>
@@ -442,7 +440,7 @@ function Home() {
                                                     Mozambique
                                                 </h3>
                                                 <p className="text-body-excerpt mt-30">
-                                                    Peskas in Mozambique is under development.
+                                                    Mozambique is a focal country of the AABS project and WorldFish are currently exploring a partnership with the Ministry of Seas, Inland Waters and Fisheries (MIMAIP) and other NGOs to support national development objectives related to the fisheries sector and digital transformation.
                                                 </p>
                                                 <div className="mt-40">
                                                     <Link href="/under-costruction" legacyBehavior>
@@ -523,31 +521,36 @@ function Home() {
                                     Interactively enhance fisheries management approaches through
                                     forward-thinking and innovative strategies. Peskas consists of six main modules:
                                 </p>
+                                <div className="mt-40">
+                                    <Link href="under-costruction" legacyBehavior>
+                                        <a className="btn btn-black icon-arrow-right-white">
+                                            Learn More
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                             <div className="col-lg-2 col-sm-1 col-12" />
                         </div>
                     </div>
                     <div className="container mt-40">
                         <div className="row">
-                            <div className="col-lg-4 col-sm-12 card-homepage card-link">
-                                <Link href="under-costruction" legacyBehavior>
-                                    <div className="card-grid-1 bg-1 bg-business hover-up">
-                                        <div className="grid-1-img">
-                                            <img
-                                                src="/assets/imgs/page/homepage1/discover.svg"
-                                                alt="Agon"
-                                            />
-                                        </div>
-                                        <h5 className="text-heading-5 mt-20">
-                                            1. Discovering Fisheries
-                                        </h5>
-                                        <p className="text-body-excerpt mt-20">
-                                            Collect key fishing data using intuitive tools for a
-                                            comprehensive view of fisheries. This ensures accurate
-                                            capture of efforts and aligns with stakeholders&apos; objectives.
-                                        </p>
+                            <div className="col-lg-4 col-sm-12 card-homepage">
+                                <div className="card-grid-1 bg-1 bg-business hover-up">
+                                    <div className="grid-1-img">
+                                        <img
+                                            src="/assets/imgs/page/homepage1/discover.svg"
+                                            alt="Agon"
+                                        />
                                     </div>
-                                </Link>
+                                    <h5 className="text-heading-5 mt-20">
+                                        1. Discovering Fisheries
+                                    </h5>
+                                    <p className="text-body-excerpt mt-20">
+                                        Collect key fishing data using intuitive tools for a
+                                        comprehensive view of fisheries. This ensures accurate
+                                        capture of efforts and aligns with stakeholders&apos; objectives.
+                                    </p>
+                                </div>
                             </div>
                             <div className="col-lg-4 col-sm-12 card-homepage">
                                 <div className="card-grid-1 bg-1 bg-local hover-up">
@@ -632,6 +635,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                {/*
                 <section className="section-box">
                     <div className="container mt-100">
                         <div className="row">
@@ -689,6 +693,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                */}
                 <section className="section-box">
                     <div className="container">
                         <div className="row">
