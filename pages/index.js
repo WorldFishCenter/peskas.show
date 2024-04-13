@@ -522,7 +522,7 @@ function Home() {
                                     forward-thinking and innovative strategies. Peskas consists of six main modules:
                                 </p>
                                 <div className="mt-40">
-                                    <Link href="how-works" legacyBehavior>
+                                    <Link href="under-costruction" legacyBehavior>
                                         <a className="btn btn-black icon-arrow-right-white">
                                             Learn More
                                         </a>
