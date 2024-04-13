@@ -25,8 +25,10 @@ function ShopFrid1() {
             <div className="container text-center">
               <div className="row">
                 <div className="col-lg-12">
-                  <h1 className="text-display-3 color-gray-900 mb-20">Explore PESKAS open data</h1>
-                  <p className="text-heading-6 color-gray-600 mb-20">From year to year we strive to invent the most innovative technology<br className="d-lg-block d-none" />that is used by both small enterprises and space enterprises.</p>
+                  <h1 className="text-display-3 color-gray-900 mb-20">Explore PESKAS resources</h1>
+                  <p className="text-heading-6 color-gray-600 mb-20">
+                    Access a growing repository of data and scientific publications, advancing fisheries research annually.
+                  </p>
                 </div>
               </div>
             </div>
@@ -34,10 +36,10 @@ function ShopFrid1() {
         </section>
         <div className="section-box mt-90">
           <div className="container">
-            <h2 className="text-heading-1 color-gray-900">Browse by category</h2>
+            <h2 className="text-heading-1 color-gray-900">Scientific publications</h2>
             <div className="row">
               <div className="col-lg-6">
-                <p className="text-body-lead-large color-gray-600 mt-20">All the smart devices, electronics or software you need are ready to be discovered. Let's go!</p>
+                <p className="text-body-lead-large color-gray-600 mt-20">A curated collection of research papers and articles detailing the advances made possible by PESKAS.</p>
               </div>
             </div>
           </div>
@@ -46,7 +48,15 @@ function ShopFrid1() {
               <iframe className="airtable-embed" src="https://airtable.com/embed/appr5nF2863yuTobW/shruU0GhlMox1whQt?backgroundColor=redDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style={{ background: 'transparent', border: '1px solid #ccc' }}></iframe>
             </div>
             <div className="container mt-40">
-              <iframe src="/assets/dataverse-widget.html" width="100%" height="533" style={{ border: 'none' }}></iframe>
+              <h2 className="text-heading-1 color-gray-900">Data</h2>
+              <div className="row">
+                <div className="col-lg-6">
+                  <p className="text-body-lead-large color-gray-600 mt-20">Explore the latest datasets and insights from PESKAS, conveniently accessible through our integrated Harvard Dataverse portal.</p>
+                </div>
+              </div>
+              <div className="container mt-40">
+                <iframe src="/assets/dataverse-widget.html" width="100%" height="533" style={{ border: 'none' }}></iframe>
+              </div>
             </div>
           </section>
         </div>

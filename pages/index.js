@@ -521,31 +521,36 @@ function Home() {
                                     Interactively enhance fisheries management approaches through
                                     forward-thinking and innovative strategies. Peskas consists of six main modules:
                                 </p>
+                                <div className="mt-40">
+                                    <Link href="how-works" legacyBehavior>
+                                        <a className="btn btn-black icon-arrow-right-white">
+                                            Learn More
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                             <div className="col-lg-2 col-sm-1 col-12" />
                         </div>
                     </div>
                     <div className="container mt-40">
                         <div className="row">
-                            <div className="col-lg-4 col-sm-12 card-homepage card-link">
-                                <Link href="how-works" legacyBehavior>
-                                    <div className="card-grid-1 bg-1 bg-business hover-up">
-                                        <div className="grid-1-img">
-                                            <img
-                                                src="/assets/imgs/page/homepage1/discover.svg"
-                                                alt="Agon"
-                                            />
-                                        </div>
-                                        <h5 className="text-heading-5 mt-20">
-                                            1. Discovering Fisheries
-                                        </h5>
-                                        <p className="text-body-excerpt mt-20">
-                                            Collect key fishing data using intuitive tools for a
-                                            comprehensive view of fisheries. This ensures accurate
-                                            capture of efforts and aligns with stakeholders&apos; objectives.
-                                        </p>
+                            <div className="col-lg-4 col-sm-12 card-homepage">
+                                <div className="card-grid-1 bg-1 bg-business hover-up">
+                                    <div className="grid-1-img">
+                                        <img
+                                            src="/assets/imgs/page/homepage1/discover.svg"
+                                            alt="Agon"
+                                        />
                                     </div>
-                                </Link>
+                                    <h5 className="text-heading-5 mt-20">
+                                        1. Discovering Fisheries
+                                    </h5>
+                                    <p className="text-body-excerpt mt-20">
+                                        Collect key fishing data using intuitive tools for a
+                                        comprehensive view of fisheries. This ensures accurate
+                                        capture of efforts and aligns with stakeholders&apos; objectives.
+                                    </p>
+                                </div>
                             </div>
                             <div className="col-lg-4 col-sm-12 card-homepage">
                                 <div className="card-grid-1 bg-1 bg-local hover-up">
@@ -630,6 +635,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                {/*
                 <section className="section-box">
                     <div className="container mt-100">
                         <div className="row">
@@ -687,6 +693,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                */}
                 <section className="section-box">
                     <div className="container">
                         <div className="row">

@@ -26,18 +26,15 @@ const Header = ({ handleOpen, headerStyle }) => {
                     <div className="main-header">
                         <div className="header-left">
                             <div className="header-logo d-flex align-items-center text-decoration-none">
-                                {/* Link for the PESKAS™ text leading to homepage */}
                                 <Link href="/" legacyBehavior>
                                     <a className="header-text" style={{ fontSize: '2.75rem', marginRight: '10px' }}>PESKAS™</a>
                                 </Link>
-                                {/* Separate anchor for the logo leading to the external site */}
                                 <a href="https://worldfishcenter.org/" target="_blank" rel="noopener noreferrer">
                                     {headerStyle
                                         ? <img alt="Logo" src="/assets/imgs/template/logo-white.svg" style={{ width: '27%', height: 'auto', verticalAlign: 'middle' }} />
                                         : <img alt="Logo" src="/assets/imgs/template/worldfish-vector-logo.svg" style={{ width: '27%', height: 'auto', verticalAlign: 'middle' }} />}
                                 </a>
                             </div>
-
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block text-end">
                                     <ul className="main-menu">
@@ -112,7 +109,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     <Link href="/data-resource" legacyBehavior>
                                                         <a>
                                                             <img src="/assets/imgs/page/homepage1/data.svg" alt="Our Story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            Data
+                                                            Publications and data
                                                         </a>
                                                     </Link>
                                                 </li>
