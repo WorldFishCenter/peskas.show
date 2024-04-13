@@ -25,12 +25,12 @@ function BlogSingle() {
                                     <div className="single-detail mt-50">
                                         <p />
                                         <h3>1. Discovering fisheries</h3>
-                                        <p>At the heart of effective fishery management lies a deep understanding of its starting point. "Discovering Fisheries" is where we initiate our dialogue with the sea. This critical first step in the Peskas approach involves casting our nets wide—not for fish, but for data.</p>
+                                        <p>At the heart of effective fishery management lies a deep understanding of its starting point. &quotDiscovering Fisheries&quot is where we initiate our dialogue with the sea. This critical first step in the Peskas approach involves casting our nets wide—not for fish, but for data.</p>
                                         <h4>Comprehend to Conserve</h4>
                                         <p><strong>Intuitive Data Collection:</strong> Leveraging user-friendly digital tools, we meticulously chart the vital signs of marine life. Our tools are designed for precision and ease, enabling fishers and researchers to record data that reflects the true state of our fisheries.</p>
                                         <p><strong>Strategic Engagement:</strong> By aligning with the goals and needs of local stakeholders, we ensure the data serves a dual purpose: to empower local economies and to pave the way for conservation.</p>
-                                        <p><strong>Drafting the Blueprint:</strong> This phase is not just about data collection; it's about crafting a narrative that guides the Peskas platform's development to accommodate the unique dynamics of each fishery.</p>
-                                        <p>In "Discovering Fisheries," we not only aim to understand the fishery but also to start drafting Peskas around the wealth of knowledge that the seas offer us. It's about shaping a tool that resonates with the rhythm of the waves and the tales of those who navigate them.</p>                                        <p />
+                                        <p><strong>Drafting the Blueprint:</strong> This phase is not just about data collection; it&aposs about crafting a narrative that guides the Peskas platform&aposs development to accommodate the unique dynamics of each fishery.</p>
+                                        <p>In &quotDiscovering Fisheries,&quot we not only aim to understand the fishery but also to start drafting Peskas around the wealth of knowledge that the seas offer us. It&aposs about shaping a tool that resonates with the rhythm of the waves and the tales of those who navigate them.</p>                                        <p />
                                         <div className="box-quote">
                                             <div className="text-quote">Blandit consequat feugiat sed dapibus lorem diam nibh venenatis sodales pulvinar augue adipiscing turpis nulla sit tincidunt non lacus sit amet et white dreamy dramatically place.</div>
                                             <div className="box-user">
@@ -39,7 +39,7 @@ function BlogSingle() {
                                         </div>
                                         <p />
                                         <h3>2. Simplifying Data</h3>
-                                        <p> In the 'Simplifying Data' phase of Peskas, we tackle the intricate challenge of making complex fisheries data accessible and usable. This step is crucial for transforming collected data into a powerhouse of insights:</p>
+                                        <p> In the &aposSimplifying Data&apos phase of Peskas, we tackle the intricate challenge of making complex fisheries data accessible and usable. This step is crucial for transforming collected data into a powerhouse of insights:</p>
                                         <p><strong>Standardization:</strong> We convert diverse data into a common format, aligning with global data standards for seamless integration.</p>
                                         <p><strong>Intuitiveness:</strong> By reorganizing data into more approachable layouts, we enhance user experience, enabling stakeholders to navigate and understand information with ease.</p>
                                         <p><strong>Ontological Alignment:</strong> Our processes ensure that data structures are in sync with established ontologies, which is essential for the interoperability and reliability of data.</p>
