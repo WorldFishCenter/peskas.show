@@ -44,7 +44,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://timor.peskas.org/" target="_blank" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Timor-Leste
