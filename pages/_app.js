@@ -4,7 +4,7 @@ import "../public/assets/css/swiper-custom.css";
 import React, { useEffect, useState } from "react";
 import Preloader from '../components/elements/Preloader';
 import ReactGA from 'react-ga4';
-ReactGA.initialize('G-H9SV6BZGNC');
+ReactGA.initialize('G-NQ0FZ0QHVH');
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
