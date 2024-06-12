@@ -48,11 +48,9 @@ function Home() {
                                         Peskas paves the way for thriving small-scale fisheries and healthier aquatic ecosystems.
                                     </p>
                                     <div className="mt-40">
-                                        <Link href="under-costruction" legacyBehavior>
-                                            <a className="btn btn-black icon-arrow-right-white">
-                                                Learn More
+                                            <a className="btn btn-black icon-arrow-right-white" onClick={openModal}>
+                                            Watch the video
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div
@@ -96,6 +94,7 @@ function Home() {
                                 </div> */}
                             </div>
                         </div>
+                        
                     </div>
                     <div className="section-box overflow-visible mt-20">
                         <div className="container">
@@ -793,7 +792,7 @@ function Home() {
                                         loading="lazy"
                                         width="800"
                                         height="500"
-                                        src="https://www.youtube.com/embed/oRI37cOPBQQ"
+                                        src="https://www.youtube.com/embed/lEuDiRRheak"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
