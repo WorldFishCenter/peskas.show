@@ -61,12 +61,6 @@ function Home() {
                                     className="col-lg-5 d-none d-lg-block"
                                     style={{ position: 'relative' }}
                                 >
-                                    <div className="block-video">
-                                        <a
-                                            className="popup-youtube btn-play-video"
-                                            onClick={openModal}
-                                        ></a>
-                                    </div>
                                     <video
                                         autoPlay
                                         muted
