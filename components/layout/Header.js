@@ -13,12 +13,13 @@ const Header = ({ handleOpen, headerStyle }) => {
             }
         });
     });
+
     return (
         <>
             <header
                 className={
                     scroll
-                        ? `${headerStyle} header sticky-bar stick `
+                        ? `${headerStyle} header sticky-bar stick`
                         : `${headerStyle} header sticky-bar`
                 }
             >
@@ -27,12 +28,39 @@ const Header = ({ handleOpen, headerStyle }) => {
                         <div className="header-left">
                             <div className="header-logo d-flex align-items-center text-decoration-none">
                                 <Link href="/" legacyBehavior>
-                                    <a className="header-text" style={{ fontSize: '2.75rem', marginRight: '10px' }}>PESKAS™</a>
+                                    <a
+                                        className="header-text"
+                                        style={{ fontSize: '2.75rem', marginRight: '10px' }}
+                                    >
+                                        PESKAS™
+                                    </a>
                                 </Link>
-                                <a href="https://worldfishcenter.org/" target="_blank" rel="noopener noreferrer">
-                                    {headerStyle
-                                        ? <img alt="Logo" src="/assets/imgs/template/logo-white.svg" style={{ width: '27%', height: 'auto', verticalAlign: 'middle' }} />
-                                        : <img alt="Logo" src="/assets/imgs/template/worldfish-vector-logo.svg" style={{ width: '27%', height: 'auto', verticalAlign: 'middle' }} />}
+                                <a
+                                    href="https://worldfishcenter.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {headerStyle ? (
+                                        <img
+                                            alt="Logo"
+                                            src="/assets/imgs/template/logo-white.svg"
+                                            style={{
+                                                width: '27%',
+                                                height: 'auto',
+                                                verticalAlign: 'middle',
+                                            }}
+                                        />
+                                    ) : (
+                                        <img
+                                            alt="Logo"
+                                            src="/assets/imgs/template/worldfish-vector-logo.svg"
+                                            style={{
+                                                width: '27%',
+                                                height: 'auto',
+                                                verticalAlign: 'middle',
+                                            }}
+                                        />
+                                    )}
                                 </a>
                             </div>
                             <div className="header-nav">
@@ -44,9 +72,22 @@ const Header = ({ handleOpen, headerStyle }) => {
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="https://timor.peskas.org/" target="_blank" legacyBehavior>
+                                                    <Link
+                                                        href="https://timor.peskas.org/"
+                                                        target="_blank"
+                                                        legacyBehavior
+                                                    >
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"
+                                                                alt="Timor Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Timor-Leste
                                                         </a>
                                                     </Link>
@@ -54,23 +95,54 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                                                alt="Malaysia Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Malaysia
                                                         </a>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link
+                                                        href="https://malawi.peskas.org/"
+                                                        target="_blank"
+                                                        legacyBehavior
+                                                    >
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            Kenya
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"
+                                                                alt="Malawi Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
+                                                            Malawi
                                                         </a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg"
+                                                                alt="Zanzibar Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Zanzibar
                                                         </a>
                                                     </Link>
@@ -78,7 +150,16 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"
+                                                                alt="Mozambique Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Mozambique
                                                         </a>
                                                     </Link>
@@ -86,8 +167,17 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg" alt="Malawi Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            Malawi
+                                                            <img
+                                                                src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"
+                                                                alt="Kenyan Flag"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
+                                                            Kenya
                                                         </a>
                                                     </Link>
                                                 </li>
@@ -95,9 +185,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                         </li>
                                         <li>
                                             <Link href="https://blog.peskas.org/" legacyBehavior>
-                                                <a target="_blank" >
-                                                    Blog
-                                                </a>
+                                                <a target="_blank">Blog</a>
                                             </Link>
                                         </li>
                                         <li className="has-children">
@@ -108,7 +196,16 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/data-resource" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/data.svg" alt="Our Story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="/assets/imgs/page/homepage1/data.svg"
+                                                                alt="Our Story"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Publications and data
                                                         </a>
                                                     </Link>
@@ -123,7 +220,16 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/story.svg" alt="Our Story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="/assets/imgs/page/homepage1/story.svg"
+                                                                alt="Our Story"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             Our Story
                                                         </a>
                                                     </Link>
@@ -131,7 +237,16 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                 <li>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="How it works" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img
+                                                                src="/assets/imgs/page/homepage1/how-works.svg"
+                                                                alt="How it works"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
                                                             How it works
                                                         </a>
                                                     </Link>

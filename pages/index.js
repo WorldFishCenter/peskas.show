@@ -274,7 +274,7 @@ function Home() {
                                                     : 'btn btn-default btn-bd-green-hover btn-select'
                                             }
                                         >
-                                            Kenya
+                                            Malawi
                                         </a>
                                     </Link>
                                 </li>
@@ -313,7 +313,7 @@ function Home() {
                                                     : 'btn btn-default btn-bd-green-hover btn-select'
                                             }
                                         >
-                                            Malawi
+                                            Kenya
                                         </a>
                                     </Link>
                                 </li>
@@ -416,7 +416,7 @@ function Home() {
                             </div>
                             <div
                                 className={
-                                    activeIndex === 3
+                                    activeIndex === 6
                                         ? 'tab-pane fade  active show'
                                         : 'tab-pane fade '
                                 }
@@ -546,7 +546,7 @@ function Home() {
                             </div>
                             <div
                                 className={
-                                    activeIndex === 6
+                                    activeIndex === 3
                                         ? 'tab-pane fade  active show'
                                         : 'tab-pane fade '
                                 }
@@ -565,19 +565,25 @@ function Home() {
                                                     management decision-making.
                                                 </p>
                                                 <div className="mt-40">
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a className="btn btn-default btn-white icon-arrow-right">
-                                                            Learn more
-                                                        </a>
-                                                    </Link>
+                                                    <a
+                                                        href="https://malawi.peskas.org/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="btn btn-default btn-white icon-arrow-right"
+                                                    >
+                                                        Learn more
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-sm-12">
                                             <div className="card-image">
-                                                <a href="/#" target="_blank">
+                                                <a
+                                                    href="https://malawi.peskas.org/"
+                                                    target="_blank"
+                                                >
                                                     <img
-                                                        src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"
+                                                        src="assets/imgs/page/homepage1/malawi.png"
                                                         alt="Malawi"
                                                         className="bd-placeholder-img card-img-top card-image"
                                                     />
