@@ -35,32 +35,6 @@ const Sidebar = ({ openClass }) => {
                                     <ul className="mobile-menu font-heading">
                                         <li
                                             className={
-                                                isActive.key == 1
-                                                    ? 'has-children active'
-                                                    : 'has-children'
-                                            }
-                                        >
-                                            <span
-                                                onClick={() => handleToggle(1)}
-                                                className="menu-expand"
-                                            >
-                                            </span>
-                                        </li>
-                                        <li
-                                            className={
-                                                isActive.key == 2
-                                                    ? 'has-children active'
-                                                    : 'has-children'
-                                            }
-                                        >
-                                            <span
-                                                onClick={() => handleToggle(2)}
-                                                className="menu-expand"
-                                            >
-                                            </span>
-                                        </li>
-                                        <li
-                                            className={
                                                 isActive.key == 3
                                                     ? 'has-children active'
                                                     : 'has-children'
@@ -83,7 +57,7 @@ const Sidebar = ({ openClass }) => {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://timor.peskas.org/" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Timor-Leste
@@ -102,7 +76,7 @@ const Sidebar = ({ openClass }) => {
                                                     <li className="hr">
                                                         <span />
                                                     </li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://digitalfisheries.kenya.peskas.org/en" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Kenya
@@ -110,7 +84,7 @@ const Sidebar = ({ openClass }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://zanzibar.peskas.org" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Zanzibar
@@ -118,15 +92,15 @@ const Sidebar = ({ openClass }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://mozambique-portal.vercel.app/" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Mozambique Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Mozambique
                                                         </a>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://malawi.peskas.org/" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg" alt="Malawi Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Malawi
@@ -149,39 +123,16 @@ const Sidebar = ({ openClass }) => {
                                                     Blog
                                                 </a>
                                             </Link>
-                                            <ul
-                                                className={
-                                                    isActive.key == 4
-                                                        ? 'sub-menu d-block'
-                                                        : 'sub-menu d-none'
-                                                }
-                                            >
-                                                <li>
-                                                    <Link href="/page-contact" legacyBehavior>
-                                                        <a>Contact</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/page-signup" legacyBehavior>
-                                                        <a>Sign Up</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/page-login" legacyBehavior>
-                                                        <a>Log In</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/page-reset" legacyBehavior>
-                                                        <a>Reset Password</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/404" legacyBehavior>
-                                                        <a>Error 404</a>
-                                                    </Link>
-                                                </li>
-                                            </ul>
+                                        </li>
+                                        <li>
+                                            <Link href="/how-it-works" legacyBehavior>
+                                                <a>How it works</a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/data-resources" legacyBehavior>
+                                                <a>Resources</a>
+                                            </Link>
                                         </li>
                                         <li
                                             className={
@@ -196,9 +147,9 @@ const Sidebar = ({ openClass }) => {
                                             >
                                                 <i className="fi-rr-angle-small-down"></i>
                                             </span>
-                                            <Link href="#" legacyBehavior>
+                                            {/* <Link href="#" legacyBehavior>
                                                 <a>About</a>
-                                            </Link>
+                                            </Link> */}
                                             <ul
                                                 className={
                                                     isActive.key == 6
@@ -211,14 +162,6 @@ const Sidebar = ({ openClass }) => {
                                                         <a>
                                                             <img src="/assets/imgs/page/homepage1/story.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Our Story
-                                                        </a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a>
-                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            How it works
                                                         </a>
                                                     </Link>
                                                 </li>

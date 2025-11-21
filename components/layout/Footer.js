@@ -21,7 +21,23 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-3 width-20 mb-30">
                             <h4 className="text-heading-5">Contact</h4>
-                            <div className="text-body-text color-gray-600">peskas.platform@gmail.com</div>
+                            <ul className="list-unstyled mt-20 mb-0">
+                                <li className="text-body-text color-gray-600">
+                                    <a href="mailto:peskas.platform@gmail.com" className="color-gray-600 text-decoration-none">
+                                        peskas.platform@gmail.com
+                                    </a>
+                                </li>
+                                <li className="text-body-text color-gray-600">
+                                    <a href="mailto:a.tilley@cgiar.org" className="color-gray-600 text-decoration-none">
+                                        a.tilley@cgiar.org
+                                    </a>
+                                </li>
+                                <li className="text-body-text color-gray-600">
+                                    <a href="mailto:l.longobardi@cgiar.org" className="color-gray-600 text-decoration-none">
+                                        l.longobardi@cgiar.org
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                         <div className="col-lg-3 width-20 mb-30">
                             <h4 className="text-heading-5">About Us</h4>
@@ -65,7 +81,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-3 width-20 mb-30">
+                        {/* <div className="col-lg-3 width-20 mb-30">
                             <h4 className="text-heading-5">Support</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
@@ -74,7 +90,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="col-lg-3 width-16">
                             <h4 className="text-heading-5">Useful links</h4>
                             <ul className="menu-footer mt-20">
@@ -94,15 +110,15 @@ const Footer = () => {
                     <div className="footer-bottom mt-20">
                         <div className="row">
                             <div className="col-md-6">
-                                <span className="color-gray-400 text-body-lead">PESKAS™ 2024</span>
-                                <Link href="/under-costruction" legacyBehavior>
+                                <span className="color-gray-400 text-body-lead">PESKAS™ 2025</span>
+                                {/* <Link href="/under-costruction" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Privacy policy</a>
                                 </Link>
                                 <Link href="/under-costruction" legacyBehavior>
                                     <a className="text-body-text color-gray-400 ml-50">Terms of service</a>
-                                </Link>
+                                </Link> */}
                             </div>
-                            <div className="col-md-6 text-center text-lg-end text-md-end">
+                            {/* <div className="col-md-6 text-center text-lg-end text-md-end">
                                 <div className="footer-social">
                                     <Link href="https://facebook.com" legacyBehavior>
                                         <a className="icon-socials icon-facebook"></a>
@@ -117,7 +133,7 @@ const Footer = () => {
                                         <a className="icon-socials icon-linkedin"></a>
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

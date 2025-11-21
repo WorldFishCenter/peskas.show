@@ -33,13 +33,19 @@ const Header = ({ handleOpen, headerStyle }) => {
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block text-end">
                                     <ul className="main-menu">
+                                        <li>
+                                            <Link href="/how-it-works" legacyBehavior>
+                                                <a>How it works</a>
+                                            </Link>
+                                        </li>
+
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior>
                                                 <a>Countries</a>
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://timor.peskas.org/" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg" alt="Timor Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Timor-Leste
@@ -47,9 +53,9 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <li className="hr">
+                                                    <div className="hr">
                                                         <span />
-                                                    </li>
+                                                    </div>
                                                     <Link href="/under-costruction" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
@@ -58,10 +64,10 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <li className="hr">
+                                                    <div className="hr">
                                                         <span />
-                                                    </li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    </div>
+                                                    <Link href="https://digitalfisheries.kenya.peskas.org/en" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Kenya
@@ -69,7 +75,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://zanzibar.peskas.org" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Zanzibar
@@ -77,15 +83,15 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://mozambique-portal.vercel.app/" legacyBehavior>
                                                         <a>
-                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Zanzibar Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Mozambique Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Mozambique
                                                         </a>
                                                     </Link>
                                                 </li>
                                                  <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="https://malawi.peskas.org/" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg" alt="Malawi Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
                                                             Malawi
@@ -103,6 +109,30 @@ const Header = ({ handleOpen, headerStyle }) => {
                                         </li>
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior>
+                                                <a> Resources </a>
+                                            </Link>
+                                            <ul className="sub-menu">
+                                                <li>
+                                                    <Link href="/data-resources" legacyBehavior>
+                                                        <a>
+                                                            <img
+                                                                src="/assets/imgs/page/homepage1/data.svg"
+                                                                alt="data"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
+                                                            Publications and data
+                                                        </a>
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        {/* <li className="has-children">
+                                            <Link href="#" legacyBehavior>
                                                 <a>About</a>
                                             </Link>
                                             <ul className="sub-menu">
@@ -114,16 +144,8 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                         </a>
                                                     </Link>
                                                 </li>
-                                                <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
-                                                        <a>
-                                                            <img src="/assets/imgs/page/homepage1/how-works.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            How it works
-                                                        </a>
-                                                    </Link>
-                                                </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </nav>
                                 <div
