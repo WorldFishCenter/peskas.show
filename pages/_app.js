@@ -3,6 +3,8 @@ import '../public/assets/css/modal.css'
 import "../public/assets/css/swiper-custom.css";
 import React, { useEffect, useState } from "react";
 import Preloader from '../components/elements/Preloader';
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-NQ0FZ0QHVH');
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
