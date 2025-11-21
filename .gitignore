@@ -35,3 +35,7 @@ yarn-error.log*
 
 #vscode settings
 .vscode
+
+# other
+CLAUDE.md
+.pdf
