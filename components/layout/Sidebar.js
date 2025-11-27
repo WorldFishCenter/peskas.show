@@ -33,6 +33,14 @@ const Sidebar = ({ openClass }) => {
                             <div className="mobile-menu-wrap mobile-header-border">
                                 <nav>
                                     <ul className="mobile-menu font-heading">
+                                        <li>
+                                            <Link href="/how-it-works" legacyBehavior>
+                                                <a>
+                                                    <i className="fi-rr-settings-sliders" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    How it works
+                                                </a>
+                                            </Link>
+                                        </li>
                                         <li
                                             className={
                                                 isActive.key == 3
@@ -47,7 +55,10 @@ const Sidebar = ({ openClass }) => {
                                                 <i className="fi-rr-angle-small-down"></i>
                                             </span>
                                             <Link href="#" legacyBehavior>
-                                                <a>Countries</a>
+                                                <a>
+                                                    <i className="fi-rr-globe" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    Countries
+                                                </a>
                                             </Link>
                                             <ul
                                                 className={
@@ -72,10 +83,10 @@ const Sidebar = ({ openClass }) => {
                                                         </a>
                                                     </Link>
                                                 </li>
+                                                <li className="hr">
+                                                    <span />
+                                                </li>
                                                 <li>
-                                                    <li className="hr">
-                                                        <span />
-                                                    </li>
                                                     <Link href="https://digitalfisheries.kenya.peskas.org/en" legacyBehavior>
                                                         <a>
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
@@ -107,9 +118,15 @@ const Sidebar = ({ openClass }) => {
                                                         </a>
                                                     </Link>
                                                 </li>
-                                                <li>
-                                                </li>
                                             </ul>
+                                        </li>
+                                        <li>
+                                            <Link href="https://blog.peskas.org/" legacyBehavior>
+                                                <a target="_blank" >
+                                                    <i className="fi-rr-book" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    Blog
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li
                                             className={
@@ -118,50 +135,39 @@ const Sidebar = ({ openClass }) => {
                                                     : 'has-children'
                                             }
                                         >
-                                            <Link href="https://blog.peskas.org/" legacyBehavior>
-                                                <a target="_blank" >
-                                                    Blog
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/how-it-works" legacyBehavior>
-                                                <a>How it works</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/data-resources" legacyBehavior>
-                                                <a>Resources</a>
-                                            </Link>
-                                        </li>
-                                        <li
-                                            className={
-                                                isActive.key == 6
-                                                    ? 'has-children active'
-                                                    : 'has-children'
-                                            }
-                                        >
                                             <span
-                                                onClick={() => handleToggle(6)}
+                                                onClick={() => handleToggle(4)}
                                                 className="menu-expand"
                                             >
                                                 <i className="fi-rr-angle-small-down"></i>
                                             </span>
-                                            {/* <Link href="#" legacyBehavior>
-                                                <a>About</a>
-                                            </Link> */}
+                                            <Link href="#" legacyBehavior>
+                                                <a>
+                                                    <i className="fi-rr-folder" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    Resources
+                                                </a>
+                                            </Link>
                                             <ul
                                                 className={
-                                                    isActive.key == 6
+                                                    isActive.key == 4
                                                         ? 'sub-menu d-block'
                                                         : 'sub-menu d-none'
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/under-costruction" legacyBehavior>
+                                                    <Link href="/data-resources" legacyBehavior>
                                                         <a>
-                                                            <img src="/assets/imgs/page/homepage1/story.svg" alt="story" style={{ width: '20px', height: 'auto', marginRight: '5px', verticalAlign: 'middle' }} />
-                                                            Our Story
+                                                            <img
+                                                                src="/assets/imgs/page/homepage1/data.svg"
+                                                                alt="data"
+                                                                style={{
+                                                                    width: '20px',
+                                                                    height: 'auto',
+                                                                    marginRight: '5px',
+                                                                    verticalAlign: 'middle',
+                                                                }}
+                                                            />
+                                                            Publications and data
                                                         </a>
                                                     </Link>
                                                 </li>

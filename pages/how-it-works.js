@@ -354,34 +354,37 @@ function HowItWorks() {
                     </div>
                 </section>
 
-                {/* <section className="section-box mt-70">
-                    <div className="container">
+                <section className="section-box mt-70 bg-gray-50">
+                    <div className="container pt-60 pb-60">
                         <div className="row">
                             <div className="col-lg-6 mb-30">
-                                <h3 className="text-heading-2 color-gray-900">Key features</h3>
-                                <ul className="list-checked mt-20">
-                                    {keyFeatures.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
-                                </ul>
+                                <div className="info-card">
+                                    <h3 className="text-heading-2 color-gray-900">Key features</h3>
+                                    <ul className="list-checked mt-20">
+                                        {keyFeatures.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                             <div className="col-lg-6 mb-30">
-                                <h3 className="text-heading-2 color-gray-900">Resources and links</h3>
-                                <ul className="resource-list mt-20">
-                                    {resourceLinks.map((link) => (
-                                        <li key={link.href}>
-                                            <a href={link.href} target="_blank" rel="noopener noreferrer">
-                                                {link.label}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
+                                <div className="info-card">
+                                    <h3 className="text-heading-2 color-gray-900">Resources and links</h3>
+                                    <ul className="resource-list mt-20">
+                                        {resourceLinks.map((link) => (
+                                            <li key={link.href}>
+                                                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                                                    {link.label}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section> */}
-
-                <section className="section-box mt-70 bg-gray-50">
+                </section>
+                <section className="section-box mt-10 bg-gray-50">
                     <div className="container pt-60 pb-60">
                         <div className="row">
                             <div className="col-lg-8">
@@ -586,6 +589,27 @@ function HowItWorks() {
                 }
                 .resource-list a:hover {
                     text-decoration: underline;
+                }
+                .info-card {
+                    background: #ffffff;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 16px;
+                    padding: 24px;
+                    height: 100%;
+                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+                }
+                .contact-card {
+                    margin-top: 10px;
+                    background: #ffffff;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 16px;
+                    padding: 20px;
+                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 16px;
+                    align-items: center;
+                    flex-wrap: wrap;
                 }
                 .airtable-embed-wrapper {
                     border: 1px solid #e5e7eb;

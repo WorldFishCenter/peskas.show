@@ -35,13 +35,19 @@ const Header = ({ handleOpen, headerStyle }) => {
                                     <ul className="main-menu">
                                         <li>
                                             <Link href="/how-it-works" legacyBehavior>
-                                                <a>How it works</a>
+                                                <a>
+                                                    <i className="fi-rr-settings-sliders" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    How it works
+                                                </a>
                                             </Link>
                                         </li>
 
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior>
-                                                <a>Countries</a>
+                                                <a>
+                                                    <i className="fi-rr-globe" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    Countries
+                                                </a>
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
@@ -103,13 +109,17 @@ const Header = ({ handleOpen, headerStyle }) => {
                                         <li>
                                             <Link href="https://blog.peskas.org/" legacyBehavior>
                                                 <a target="_blank" >
+                                                    <i className="fi-rr-book" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
                                                     Blog
                                                 </a>
                                             </Link>
                                         </li>
                                         <li className="has-children">
                                             <Link href="#" legacyBehavior>
-                                                <a> Resources </a>
+                                                <a>
+                                                    <i className="fi-rr-folder" style={{ marginRight: 6, opacity: 1, color: 'inherit' }}></i>
+                                                    Resources
+                                                </a>
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li>
