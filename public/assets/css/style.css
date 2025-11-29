@@ -41,6 +41,7 @@ TABLE CONTENT
     src: url('../fonts/uicons/uicons-regular-rounded.eot#iefix') format('embedded-opentype'),
         url('../fonts/uicons/uicons-regular-rounded.woff2') format('woff2'),
         url('../fonts/uicons/uicons-regular-rounded.woff') format('woff');
+    font-display: swap;
 }
 /*import vendors*/ /*RESET*/
 html,

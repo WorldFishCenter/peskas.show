@@ -1,33 +1,44 @@
 import { useEffect, useRef } from 'react';
-import Link from "next/link";
 import Layout from "../components/layout/Layout";
-import data from "../util/shopData";
 
 function ShopFrid1() {
   const dataverseRef = useRef(null);
 
   useEffect(() => {
-    // Ensure the script is only loaded once the component mounts
+    const currentRef = dataverseRef.current;
+    if (!currentRef) return;
+
+    // Check if script already exists to avoid duplicates
+    if (document.getElementById('dataverse-widget-js')) {
+      return;
+    }
+
+    // Clear container
+    currentRef.innerHTML = '';
+
+    // Create script element
     const script = document.createElement('script');
-    script.src = "https://dataverse.harvard.edu/resources/js/widgets.js?alias=peskas&dvUrl=https://dataverse.harvard.edu&widget=search&text=Search+my+dataverse";
+    script.id = 'dataverse-widget-js';
+    script.src = 'https://dataverse.harvard.edu/resources/js/widgets.js?alias=peskas&dvUrl=https://dataverse.harvard.edu&widgetScope=peskas&widget=iframe&heightPx=600';
     script.async = true;
-
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
+    
+    // Add error handling
+    script.onerror = () => {
+      console.error('Failed to load Dataverse widget');
+      if (currentRef) {
+        currentRef.innerHTML = '<p className="text-body-text color-gray-600">Unable to load Dataverse widget. Please try refreshing the page.</p>';
+      }
     };
-  }, []);
 
-  useEffect(() => {
-    if (!dataverseRef.current) return;
-    const script = document.createElement('script');
-    script.id = "dataverse-widget-js";
-    script.src = "https://dataverse.harvard.edu/resources/js/widgets.js?alias=peskas&dvUrl=https://dataverse.harvard.edu&widgetScope=peskas&widget=iframe&heightPx=600";
-    script.async = true;
-    dataverseRef.current.appendChild(script);
+    // Append script to container (widget will render where script is placed)
+    currentRef.appendChild(script);
+
     return () => {
-      dataverseRef.current.removeChild(script);
+      // Cleanup
+      const existingScript = document.getElementById('dataverse-widget-js');
+      if (existingScript && existingScript.parentNode === currentRef) {
+        currentRef.removeChild(existingScript);
+      }
     };
   }, []);
 
@@ -76,7 +87,14 @@ function ShopFrid1() {
                 </div>
               </div>
               <div className="container mt-40">
-                <div ref={dataverseRef}></div>
+                <div 
+                  ref={dataverseRef} 
+                  style={{ 
+                    minHeight: '600px', 
+                    width: '100%',
+                    position: 'relative'
+                  }}
+                ></div>
               </div>
             </div>
           </section>

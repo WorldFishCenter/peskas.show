@@ -10,10 +10,8 @@ const Footer = () => {
                     <div className="footer-top">
                         <div className="row">
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
-                                <Link href="/" legacyBehavior>
-                                    <a className="d-flex display-6">
-                                        PESKAS™
-                                    </a>
+                                <Link href="/" className="d-flex display-6">
+                                    PESKAS™
                                 </Link>
                             </div>
                         </div>
@@ -43,13 +41,13 @@ const Footer = () => {
                             <h4 className="text-heading-5">About Us</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>Mission and Vision</a>
+                                    <Link href="/under-costruction">
+                                        Mission and Vision
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>Our Team</a>
+                                    <Link href="/under-costruction">
+                                        Our Team
                                     </Link>
                                 </li>
                             </ul>
@@ -58,25 +56,23 @@ const Footer = () => {
                             <h4 className="text-heading-5">Discover</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="https://blog.peskas.org/" legacyBehavior>
-                                        <a target="_blank" >
-                                            Our Blog
-                                        </a>
+                                    <Link href="/blog">
+                                        Our Blog
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="under-costruction" legacyBehavior>
-                                        <a>Knowledge Base</a>
+                                    <Link href="under-costruction">
+                                        Knowledge Base
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="under-costruction" legacyBehavior>
-                                        <a>News and Events</a>
+                                    <Link href="under-costruction">
+                                        News and Events
                                     </Link>
                                 </li>
                                                                 <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>Media</a>
+                                    <Link href="/under-costruction">
+                                        Media
                                     </Link>
                                 </li>
                             </ul>
@@ -95,13 +91,13 @@ const Footer = () => {
                             <h4 className="text-heading-5">Useful links</h4>
                             <ul className="menu-footer mt-20">
                                 <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>How it works</a>
+                                    <Link href="/how-it-works">
+                                        How it works
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/under-costruction" legacyBehavior>
-                                        <a>Stories</a>
+                                    <Link href="/under-costruction">
+                                        Stories
                                     </Link>
                                 </li>
                             </ul>
