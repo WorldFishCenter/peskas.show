@@ -8,8 +8,8 @@ function AboutSection() {
                             className="bdrd-16 img-responsive"
                             src="assets/imgs/page/homepage1/fishing.png"
                             alt="Small-scale fisheries"
-                            width={600}
-                            height={400}
+                            width={764}
+                            height={885}
                             loading="lazy"
                         />
                     </div>
