@@ -1,13 +1,13 @@
+'use client'
 import Link from "next/link";
 import { useState } from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 
 const steps = [
     {
         id: "01",
         title: "Field data capture",
-        summary:
-            "Enumerators collect trip, catch, and price information at landing sites using a standard survey form.",
+        summary: "Enumerators collect trip, catch, and price information at landing sites using a standard survey form.",
         items: [
             "Species, weight, gear, crew, and effort recorded on mobile devices",
             "Landing location and trip timing georeferenced",
@@ -17,8 +17,7 @@ const steps = [
     {
         id: "02",
         title: "Vessel tracking",
-        summary:
-            "Solar GPS units log vessel positions to complement survey data with verified time at sea and fishing grounds.",
+        summary: "Solar GPS units log vessel positions to complement survey data with verified time at sea and fishing grounds.",
         items: [
             "Automatic polling creates continuous tracks",
             "Fishing activity inferred from speed and location",
@@ -28,8 +27,7 @@ const steps = [
     {
         id: "03",
         title: "Ingestion and standardization",
-        summary:
-            "All inputs are cleaned, harmonized, and matched to reference tables before analysis.",
+        summary: "All inputs are cleaned, harmonized, and matched to reference tables before analysis.",
         items: [
             "Species names reconciled to FishBase and FAO codes",
             "Weights estimated from lengths when needed",
@@ -39,8 +37,7 @@ const steps = [
     {
         id: "04",
         title: "Quality control",
-        summary:
-            "Automated rules and 21 quality flags check completeness, plausibility, and consistency.",
+        summary: "Automated rules and 21 quality flags check completeness, plausibility, and consistency.",
         items: [
             "Duplicates removed; outliers flagged for review",
             "Gear, location, and season cross-checks",
@@ -50,8 +47,7 @@ const steps = [
     {
         id: "05",
         title: "Analytics and indicators",
-        summary:
-            "Standard scripts calculate core metrics for fisheries management and nutrition.",
+        summary: "Standard scripts calculate core metrics for fisheries management and nutrition.",
         items: [
             "Catch-per-unit-effort and production estimates by fleet, gear, and area",
             "Trends in value, prices, and revenue",
@@ -61,28 +57,12 @@ const steps = [
     {
         id: "06",
         title: "Publication and feedback",
-        summary:
-            "Decision-ready outputs are shared with partners, with regular feedback into the field programme.",
+        summary: "Decision-ready outputs are shared with partners, with regular feedback into the field programme.",
         items: [
             "Public dashboards and downloadable datasets",
             "Briefings for government partners and communities",
             "Continuous refinement of forms, devices, and QA rules",
         ],
-    },
-];
-
-const deliverables = [
-    {
-        title: "Operational visibility",
-        body: "Near real-time view of landings, effort, and fishing grounds to support patrols and extension work.",
-    },
-    {
-        title: "Policy-grade evidence",
-        body: "Consistent indicators for national reporting, stock assessments, and investment planning.",
-    },
-    {
-        title: "Open data by design",
-        body: "Transparent pipelines, reproducible scripts, and public dashboards so results can be verified and reused.",
     },
 ];
 
@@ -169,15 +149,7 @@ const resourceLinks = [
 const faqs = [
     {
         q: "Is Peskas the solar powered tracking device gadget thing?",
-        a: (
-            <>
-                No. Peskas ingests any vessel location data. We have used solar trackers from{" "}
-                <a href="https://www.pelagicdata.com/" target="_blank" rel="noopener noreferrer">
-                    Pelagic Data Systems
-                </a>
-                , but any compatible GPS hardware can be integrated.
-            </>
-        ),
+        a: "No. Peskas ingests any vessel location data. We have used solar trackers from Pelagic Data Systems, but any compatible GPS hardware can be integrated.",
     },
     {
         q: "What does Peskas cost?",
@@ -201,7 +173,7 @@ const faqs = [
     },
 ];
 
-function HowItWorks() {
+export default function HowItWorks() {
     const [activeModule, setActiveModule] = useState(modules[0].title);
     const [activeFaq, setActiveFaq] = useState(faqs[0].q);
 
@@ -441,11 +413,6 @@ function HowItWorks() {
                                     We co-design deployments with partners, train local teams, and keep the pipeline open so evidence stays current.
                                 </p>
                             </div>
-                            {/* <div className="col-lg-4 text-lg-end mt-20 mt-lg-0">
-                                <Link href="/under-costruction" legacyBehavior>
-                                    <a className="btn btn-black icon-arrow-right-white">Book a walk-through</a>
-                                </Link>
-                            </div> */}
                         </div>
                         <div className="row mt-40">
                             <div className="col-12">
@@ -455,6 +422,7 @@ function HowItWorks() {
                                         className="airtable-embed"
                                         src="https://airtable.com/embed/appMMEJYlJdfSJEjm/pagDiqNCwLasUBKQi/form"
                                         frameBorder="0"
+                                        style={{ width: '100%', minHeight: '700px', border: 0 }}
                                     />
                                 </div>
                             </div>
@@ -537,13 +505,6 @@ function HowItWorks() {
                     border-radius: 50%;
                     background: #047857;
                 }
-                .deliverable-card {
-                    background: #ffffff;
-                    border: 1px solid #e5e7eb;
-                    border-radius: 16px;
-                    padding: 24px;
-                    height: 100%;
-                }
                 .module-accordion .accordion-item {
                     border: 1px solid #e5e7eb;
                     border-radius: 16px;
@@ -598,29 +559,11 @@ function HowItWorks() {
                     height: 100%;
                     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
                 }
-                .contact-card {
-                    margin-top: 10px;
-                    background: #ffffff;
-                    border: 1px solid #e5e7eb;
-                    border-radius: 16px;
-                    padding: 20px;
-                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 16px;
-                    align-items: center;
-                    flex-wrap: wrap;
-                }
                 .airtable-embed-wrapper {
                     border: 1px solid #e5e7eb;
                     border-radius: 16px;
                     overflow: hidden;
                     background: #f9fafb;
-                }
-                .airtable-embed {
-                    width: 100%;
-                    min-height: 700px;
-                    border: 0;
                 }
                 @media (max-width: 767px) {
                     .timeline-card {
@@ -635,5 +578,3 @@ function HowItWorks() {
         </>
     );
 }
-
-export default HowItWorks;

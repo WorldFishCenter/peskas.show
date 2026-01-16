@@ -1,28 +1,25 @@
+'use client'
 import { useEffect, useRef } from 'react';
-import Layout from "../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 
-function ShopFrid1() {
+export default function DataResources() {
   const dataverseRef = useRef(null);
 
   useEffect(() => {
     const currentRef = dataverseRef.current;
     if (!currentRef) return;
 
-    // Check if script already exists to avoid duplicates
     if (document.getElementById('dataverse-widget-js')) {
       return;
     }
 
-    // Clear container
     currentRef.innerHTML = '';
 
-    // Create script element
     const script = document.createElement('script');
     script.id = 'dataverse-widget-js';
     script.src = 'https://dataverse.harvard.edu/resources/js/widgets.js?alias=peskas&dvUrl=https://dataverse.harvard.edu&widgetScope=peskas&widget=iframe&heightPx=600';
     script.async = true;
     
-    // Add error handling
     script.onerror = () => {
       console.error('Failed to load Dataverse widget');
       if (currentRef) {
@@ -30,11 +27,9 @@ function ShopFrid1() {
       }
     };
 
-    // Append script to container (widget will render where script is placed)
     currentRef.appendChild(script);
 
     return () => {
-      // Cleanup
       const existingScript = document.getElementById('dataverse-widget-js');
       if (existingScript && existingScript.parentNode === currentRef) {
         currentRef.removeChild(existingScript);
@@ -103,5 +98,3 @@ function ShopFrid1() {
     </>
   )
 }
-
-export default ShopFrid1;
