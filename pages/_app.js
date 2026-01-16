@@ -2,7 +2,6 @@ import '../public/assets/css/style.css'
 import '../public/assets/css/modal.css'
 import "../public/assets/css/swiper-custom.css";
 import React, { useEffect, useState } from "react";
-import Script from "next/script";
 import Preloader from '../components/elements/Preloader';
 
 function MyApp({ Component, pageProps }) {
@@ -44,19 +43,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-H9SV6BGNC"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-H9SV6BGNC');
-        `}
-      </Script>
       {loading ? (
         <Preloader />
       ) : (
