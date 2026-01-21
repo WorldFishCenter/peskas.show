@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Layout from "@/components/layout/Layout";
 import { getAllPosts } from "@/lib/posts";
+import { BLOG_CONFIG } from "@/lib/constants";
 
 export const metadata = {
-    title: 'Peskas Blog - Technical and not so technical musings about the Peskas platform',
-    description: 'Technical and not so technical musings about the Peskas platform',
+    title: `${BLOG_CONFIG.title} - ${BLOG_CONFIG.description}`,
+    description: BLOG_CONFIG.description,
 };
 
 export default async function Blog() {
@@ -17,9 +18,9 @@ export default async function Blog() {
                     <div className="container text-center">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h1 className="text-display-3 color-gray-900 mb-20">Peskas Blog</h1>
+                                <h1 className="text-display-3 color-gray-900 mb-20">{BLOG_CONFIG.title}</h1>
                                 <p className="text-heading-6 color-gray-600 mb-20">
-                                    Technical and not so technical musings about the Peskas platform
+                                    {BLOG_CONFIG.description}
                                 </p>
                             </div>
                         </div>
