@@ -4,6 +4,8 @@ import "../public/assets/css/swiper-custom.css";
 import { Chivo, Noto_Sans } from 'next/font/google'
 import Script from 'next/script'
 import WowInit from '@/components/elements/WowInit'
+import ErrorBoundaryWrapper from '@/components/layout/ErrorBoundaryWrapper'
+import { DEFAULT_METADATA, GA_ID } from '@/lib/constants'
 
 const chivo = Chivo({
     weight: ['300', '400', '500', '600', '700'],
@@ -19,8 +21,7 @@ const noto = Noto_Sans({
 })
 
 export const metadata = {
-    title: 'Peskas™ - Open-source digital platform for small-scale fisheries',
-    description: 'Peskas is an open-source, modular platform that turns fisheries data into decision-ready insights. Built with co-design principles, it scales from landing-site monitoring to national dashboards across Asia and Africa.',
+    ...DEFAULT_METADATA,
 }
 
 export default function RootLayout({ children }) {
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
             <head>
                 {/* Google Tag (gtag.js) */}
                 <Script 
-                    src="https://www.googletagmanager.com/gtag/js?id=G-K31B8LMLQZ" 
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} 
                     strategy="afterInteractive" 
                 />
                 <Script id="google-analytics" strategy="afterInteractive">
@@ -37,7 +38,7 @@ export default function RootLayout({ children }) {
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'G-K31B8LMLQZ');
+                        gtag('config', '${GA_ID}');
                     `}
                 </Script>
                 
@@ -60,7 +61,9 @@ export default function RootLayout({ children }) {
             </head>
             <body className={`${chivo.variable} ${noto.variable}`}>
                 <WowInit />
-                {children}
+                <ErrorBoundaryWrapper>
+                    {children}
+                </ErrorBoundaryWrapper>
             </body>
         </html>
     )
