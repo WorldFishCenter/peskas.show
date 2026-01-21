@@ -41,8 +41,10 @@ pnpm-debug.log*
 
 # Documentation
 docs/
+# Exclude markdown files except blog posts and README
 *.md
 !README.md
+!posts/*.md
 
 # Git
 .git
