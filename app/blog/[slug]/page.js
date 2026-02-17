@@ -11,6 +11,14 @@ export async function generateMetadata({ params }) {
         title: `${post.title} - Peskas Blog`,
         description: post.description || post.content?.substring(0, 160),
         authors: post.author ? [{ name: post.author }] : [],
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+            },
+        },
     };
 }
 

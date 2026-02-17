@@ -27,7 +27,7 @@ function StatsSection() {
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6 col-6 mb-30">
                                     <span className="text-display-3 color-green-900">
-                                        +<CounterUp count={59} time={3} />k
+                                        +<CounterUp count={140} time={3} />k
                                     </span>
                                     <p className="text-body-text color-gray-500 pl-40">
                                         Fishing trips tracked

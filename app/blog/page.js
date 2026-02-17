@@ -6,6 +6,14 @@ import { BLOG_CONFIG } from "@/lib/constants";
 export const metadata = {
     title: `${BLOG_CONFIG.title} - ${BLOG_CONFIG.description}`,
     description: BLOG_CONFIG.description,
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+        },
+    },
 };
 
 export default async function Blog() {
