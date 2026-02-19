@@ -1,4 +1,6 @@
-function TracksHeroSection() {
+function TracksHeroSection({ data }) {
+    const { title, subtitle, col1Title, col1Items, col2Title, col2Items, ctaLabel, ctaHref } = data;
+
     return (
         <section className="section-box mt-70">
             <div className="container">
@@ -6,39 +8,36 @@ function TracksHeroSection() {
                     <div className="tracks-hero__bg" aria-hidden="true" />
                     <div className="tracks-hero__content">
                         <div className="tracks-hero__text">
-                            <h3 className="text-heading-2 color-white">
-                                Peskas Tracks: a digital window into small-scale fishing trips
-                            </h3>
+                            <h3 className="text-heading-2 color-white">{title}</h3>
                             <p className="text-body-lead color-white mt-15 tracks-hero__lede">
-                                Built by WorldFish through the Asia-Africa BlueTech Superhighway, Peskas Tracks is a mobile and web app that fishers install to pair vessel tracking with their own catch reports, making movements, productivity, and safety visible in near real time.
+                                {subtitle}
                             </p>
                             <div className="tracks-grid mt-20">
                                 <div>
-                                    <h4 className="text-heading-5 color-white">What fishers and managers see</h4>
+                                    <h4 className="text-heading-5 color-white">{col1Title}</h4>
                                     <ul className="list-checked mt-12 tracks-list">
-                                        <li>Live and offline trip logging: position, route, speed, time at sea</li>
-                                        <li>Trip heatmaps by day, week, or month with effort summaries</li>
-                                        <li>Catch entries linked to trips for a full record of effort and catch</li>
-                                        <li>Password-protected data per vessel; English, Portuguese, Swahili interfaces</li>
+                                        {col1Items.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="text-heading-5 color-white">Pilots and impact</h4>
+                                    <h4 className="text-heading-5 color-white">{col2Title}</h4>
                                     <ul className="list-checked mt-12 tracks-list">
-                                        <li>100+ fishers across Kenya, Tanzania, and Mozambique</li>
-                                        <li>Heatmaps and stats help plan routes and fuel use</li>
-                                        <li>When a vessel stalled, Tracks helped locate it quickly, boosting safety</li>
+                                        {col2Items.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
                             <div className="d-flex flex-wrap gap-3 mt-25">
                                 <a
-                                    href="https://tracks.peskas.org/"
+                                    href={ctaHref}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-black icon-arrow-right-white"
                                 >
-                                    See the demo
+                                    {ctaLabel}
                                 </a>
                             </div>
                         </div>
@@ -124,4 +123,3 @@ function TracksHeroSection() {
 }
 
 export default TracksHeroSection;
-

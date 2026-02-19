@@ -11,37 +11,30 @@ import BlogSection from '../sections/BlogSection';
 import VideoModal from '../sections/VideoModal';
 import Layout from '../layout/Layout';
 
-export default function HomePageClient({ latestPosts }) {
+export default function HomePageClient({ latestPosts, homepage, regions }) {
     const [modal, setModal] = useState(false);
     const [videoLoading, setVideoLoading] = useState(true);
-    
-    const openModal = () => {
-        setModal(!modal);
-    };
-    
-    const closeModal = () => {
-        setModal(false);
-    };
-    
-    const onVideoLoad = () => {
-        setVideoLoading(false);
-    };
+
+    const openModal = () => setModal(true);
+    const closeModal = () => setModal(false);
+    const onVideoLoad = () => setVideoLoading(false);
 
     return (
         <Layout>
-            <HeroSection onWatchVideo={openModal} />
-            <StatsSection />
-            <RegionsSection />
-            <CTASection />
-            <FeaturesSection />
-            <TracksHeroSection />
-            <AboutSection />
-            <BlogSection latestPosts={latestPosts} />
-            <VideoModal 
-                isOpen={modal} 
-                onClose={closeModal} 
+            <HeroSection data={homepage.hero} onWatchVideo={openModal} />
+            <StatsSection stats={homepage.stats} />
+            <RegionsSection regions={regions} section={homepage.regionsSection} />
+            <CTASection data={homepage.cta} />
+            <FeaturesSection features={homepage.features} />
+            <TracksHeroSection data={homepage.tracks} />
+            <AboutSection data={homepage.about} />
+            <BlogSection latestPosts={latestPosts} data={homepage.blogSection} />
+            <VideoModal
+                isOpen={modal}
+                onClose={closeModal}
                 videoLoading={videoLoading}
                 onVideoLoad={onVideoLoad}
+                youtubeId={homepage.videoYoutubeId}
             />
         </Layout>
     );

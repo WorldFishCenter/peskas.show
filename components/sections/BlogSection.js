@@ -1,19 +1,19 @@
 import Link from 'next/link';
 
-function BlogSection({ latestPosts }) {
+function BlogSection({ latestPosts, data }) {
+    const { title, subtitle, ctaLabel } = data;
+
     return (
         <section className="section-box">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
-                        <h3 className="text-heading-1 mb-10">Latest News</h3>
-                        <p className="text-body-lead-large color-gray-600">
-                            From Our Peskas™ blog
-                        </p>
+                        <h3 className="text-heading-1 mb-10">{title}</h3>
+                        <p className="text-body-lead-large color-gray-600">{subtitle}</p>
                     </div>
                     <div className="col-lg-4 text-lg-end text-start pt-30">
                         <Link href="/blog" className="btn btn-black icon-arrow-right-white">
-                            View More
+                            {ctaLabel}
                         </Link>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ function BlogSection({ latestPosts }) {
                                             {new Date(post.date).toLocaleDateString('en-US', {
                                                 year: 'numeric',
                                                 month: 'long',
-                                                day: 'numeric'
+                                                day: 'numeric',
                                             })}
                                         </span>
                                     )}
@@ -66,4 +66,3 @@ function BlogSection({ latestPosts }) {
 }
 
 export default BlogSection;
-
