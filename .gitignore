@@ -36,8 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-# TinaCMS — admin is generated at build time, do not commit
+# TinaCMS — generated at build time, do not commit
 /public/admin
+/tina/__generated__
 
 #vscode settings
 .vscode
