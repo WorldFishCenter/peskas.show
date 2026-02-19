@@ -1,0 +1,193 @@
+fragment PostParts on Post {
+  __typename
+  title
+  date
+  author
+  description
+  tags
+  draft
+  coverImage
+  body
+}
+
+fragment RegionsParts on Regions {
+  __typename
+  regions {
+    __typename
+    title
+    desc
+    ctaLabel
+    ctaHref
+    image
+  }
+}
+
+fragment SettingsParts on Settings {
+  __typename
+  footer {
+    __typename
+    copyright
+    contactEmails
+  }
+}
+
+fragment HomepageParts on Homepage {
+  __typename
+  hero {
+    __typename
+    headline
+    headlineHighlight
+    subtitle
+    ctaLabel
+  }
+  stats {
+    __typename
+    count
+    suffix
+    label
+  }
+  regionsSection {
+    __typename
+    title
+    subtitle
+    wioPrompt
+    wioHref
+    wioCta
+  }
+  features {
+    __typename
+    title
+    description
+    bgClass
+  }
+  about {
+    __typename
+    title
+    subtitle
+    image
+    features {
+      __typename
+      title
+      description
+    }
+  }
+  cta {
+    __typename
+    title
+    subtitle
+    ctaLabel
+    ctaHref
+  }
+  tracks {
+    __typename
+    title
+    subtitle
+    col1Title
+    col1Items
+    col2Title
+    col2Items
+    ctaLabel
+    ctaHref
+  }
+  videoYoutubeId
+  blogSection {
+    __typename
+    title
+    subtitle
+    ctaLabel
+  }
+}
+
+fragment HowItWorksParts on HowItWorks {
+  __typename
+  hero {
+    __typename
+    title
+    subtitle
+  }
+  pipeline {
+    __typename
+    title
+    subtitle
+    stages {
+      __typename
+      kicker
+      title
+      description
+    }
+  }
+  workflow {
+    __typename
+    title
+    subtitle
+    steps {
+      __typename
+      id
+      title
+      summary
+      items
+    }
+  }
+  modules {
+    __typename
+    title
+    subtitle
+    items {
+      __typename
+      title
+      icon
+      body
+      items
+    }
+  }
+  keyFeatures {
+    __typename
+    title
+    items
+  }
+  resourceLinks {
+    __typename
+    title
+    items {
+      __typename
+      label
+      href
+    }
+  }
+  faq {
+    __typename
+    title
+    subtitle
+    items {
+      __typename
+      q
+      a
+    }
+  }
+  cta {
+    __typename
+    title
+    subtitle
+    airtableUrl
+  }
+}
+
+fragment DataResourcesParts on DataResources {
+  __typename
+  hero {
+    __typename
+    title
+    subtitle
+  }
+  publications {
+    __typename
+    title
+    description
+    airtableUrl
+  }
+  data {
+    __typename
+    title
+    description
+  }
+}

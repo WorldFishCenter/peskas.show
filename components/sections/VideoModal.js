@@ -1,4 +1,4 @@
-function VideoModal({ isOpen, onClose, videoLoading, onVideoLoad }) {
+function VideoModal({ isOpen, onClose, videoLoading, onVideoLoad, youtubeId }) {
     if (!isOpen) return null;
 
     return (
@@ -17,7 +17,7 @@ function VideoModal({ isOpen, onClose, videoLoading, onVideoLoad }) {
                             loading="lazy"
                             width="800"
                             height="500"
-                            src="https://www.youtube.com/embed/962qilVnTZ0"
+                            src={`https://www.youtube.com/embed/${youtubeId}`}
                             title="Peskas Platform Demonstration Video"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,4 +32,3 @@ function VideoModal({ isOpen, onClose, videoLoading, onVideoLoad }) {
 }
 
 export default VideoModal;
-

@@ -1,4 +1,6 @@
-function HeroSection({ onWatchVideo }) {
+function HeroSection({ data, onWatchVideo }) {
+    const { headline, headlineHighlight, subtitle, ctaLabel } = data;
+
     return (
         <section className="section-box">
             <div className="banner-hero banner-1">
@@ -6,16 +8,14 @@ function HeroSection({ onWatchVideo }) {
                     <div className="row" style={{ paddingBottom: 40 }}>
                         <div className="col-lg-7">
                             <h1 className="text-display-3">
-                                Open-source digital platform for
+                                {headline}
                                 <span className="color-green-900">
                                     {' '}
-                                    small-scale fisheries
+                                    {headlineHighlight}
                                 </span>
                             </h1>
                             <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                Peskas is an open-source, modular platform that turns fisheries data into
-                                decision-ready insights. Built with co-design principles, it scales from
-                                landing-site monitoring to national dashboards across Asia and Africa.
+                                {subtitle}
                             </p>
                             <div className="mt-40 d-flex flex-wrap gap-3">
                                 <button
@@ -24,7 +24,7 @@ function HeroSection({ onWatchVideo }) {
                                     onClick={onWatchVideo}
                                     aria-label="Open video modal to watch Peskas platform demonstration"
                                 >
-                                    Watch the video
+                                    {ctaLabel}
                                 </button>
                             </div>
                         </div>
@@ -61,4 +61,3 @@ function HeroSection({ onWatchVideo }) {
 }
 
 export default HeroSection;
-
