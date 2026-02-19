@@ -6,10 +6,26 @@
     "ctaLabel": "Watch the video"
   },
   "stats": [
-    { "count": 8, "suffix": "", "label": "Years of operation" },
-    { "count": 6, "suffix": "", "label": "Countries active" },
-    { "count": 140, "suffix": "k", "label": "Fishing trips tracked" },
-    { "count": 298, "suffix": "", "label": "Tonnes of catch recorded" }
+    {
+      "count": 8,
+      "suffix": "",
+      "label": "Years of operation"
+    },
+    {
+      "count": 6,
+      "suffix": "",
+      "label": "Countries active"
+    },
+    {
+      "count": 140,
+      "suffix": "k",
+      "label": "Fishing trips tracked"
+    },
+    {
+      "count": 300,
+      "suffix": "",
+      "label": "Tonnes of catch recorded"
+    }
   ],
   "regionsSection": {
     "title": "Transforming fisheries management across Asia and Africa",
@@ -43,7 +59,7 @@
   "about": {
     "title": "Transforming small-scale fisheries through digital innovation.",
     "subtitle": "Peskas bridges the data gap in small-scale fisheries, empowering communities and governments with evidence-based insights for sustainable resource management, improved livelihoods, and food security.",
-    "image": "assets/imgs/page/homepage1/fishing.png",
+    "image": "/uploadsassets/imgs/page/homepage1/fishing.png",
     "features": [
       {
         "title": "Evidence-Based Management",
