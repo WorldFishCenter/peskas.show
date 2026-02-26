@@ -36,7 +36,21 @@ function Terms() {
 											{data.sections.map((section) => (
 												<div key={section.id}>
 													<h6 className="mt-35 mb-25" id={section.id}>{section.title}</h6>
-													<p>{section.body}</p>
+													{section.body
+														.split('\n\n')
+														.map((paragraph, pIndex) => {
+															const lines = paragraph.split('\n');
+															return (
+																<p key={`${section.id}-p-${pIndex}`}>
+																	{lines.map((line, lIndex) => (
+																		<span key={`${section.id}-p-${pIndex}-l-${lIndex}`}>
+																			{line}
+																			{lIndex < lines.length - 1 && <br />}
+																		</span>
+																	))}
+																</p>
+															);
+														})}
 												</div>
 											))}
 											{data.footerNote && (
