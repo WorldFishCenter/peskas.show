@@ -163,6 +163,145 @@ export default defineConfig({
                 fields: [
                     {
                         type: 'object',
+                        name: 'header',
+                        label: 'Header & Navigation',
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'siteTitle',
+                                label: 'Site Title / Logo Text',
+                            },
+                            {
+                                type: 'object',
+                                name: 'primaryLinks',
+                                label: 'Primary Links',
+                                list: true,
+                                ui: {
+                                    itemProps: (item) => ({ label: item?.label || 'Link' }),
+                                },
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'href',
+                                        label: 'URL',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                ],
+                            },
+                            {
+                                type: 'object',
+                                name: 'countriesMenu',
+                                label: 'Countries Menu',
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Menu Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'items',
+                                        label: 'Country Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Country' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                            {
+                                                type: 'boolean',
+                                                name: 'external',
+                                                label: 'Open in new tab',
+                                            },
+                                            {
+                                                type: 'image',
+                                                name: 'flagSrc',
+                                                label: 'Flag Image',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'flagAlt',
+                                                label: 'Flag Alt Text',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                            {
+                                type: 'object',
+                                name: 'resourcesMenu',
+                                label: 'Resources Menu',
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Menu Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'items',
+                                        label: 'Resource Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Resource' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                            {
+                                                type: 'image',
+                                                name: 'iconSrc',
+                                                label: 'Icon Image (optional)',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'iconAlt',
+                                                label: 'Icon Alt Text',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
                         name: 'footer',
                         label: 'Footer',
                         fields: [
@@ -176,6 +315,71 @@ export default defineConfig({
                                 name: 'contactEmails',
                                 label: 'Contact Emails',
                                 list: true,
+                            },
+                            {
+                                type: 'object',
+                                name: 'columns',
+                                label: 'Footer Columns',
+                                list: true,
+                                ui: {
+                                    itemProps: (item) => ({ label: item?.title || 'Column' }),
+                                },
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'title',
+                                        label: 'Column Title',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'links',
+                                        label: 'Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Link' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'blog',
+                        label: 'Blog Settings',
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'title',
+                                label: 'Blog Title',
+                            },
+                            {
+                                type: 'string',
+                                name: 'description',
+                                label: 'Blog Description',
+                                ui: { component: 'textarea' },
+                            },
+                            {
+                                type: 'number',
+                                name: 'latestPostsCount',
+                                label: 'Latest Posts on Homepage',
+                            },
+                            {
+                                type: 'number',
+                                name: 'postsPerPage',
+                                label: 'Posts Per Page (future use)',
                             },
                         ],
                     },
@@ -624,6 +828,81 @@ export default defineConfig({
                                 ui: { component: 'textarea' },
                             },
                         ],
+                    },
+                ],
+            },
+
+            // ─── Terms & Policies ────────────────────────────────────────
+            {
+                name: 'terms',
+                label: 'Terms & Policies Page',
+                path: 'content/pages',
+                format: 'json',
+                match: { include: 'terms' },
+                ui: {
+                    allowedActions: { create: false, delete: false },
+                },
+                fields: [
+                    {
+                        type: 'object',
+                        name: 'hero',
+                        label: 'Hero',
+                        fields: [
+                            { type: 'string', name: 'title', label: 'Title' },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'tableOfContents',
+                        label: 'Table of Contents',
+                        list: true,
+                        ui: {
+                            itemProps: (item) => ({ label: item?.label || item?.id || 'Section' }),
+                        },
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'id',
+                                label: 'Anchor ID (e.g. section-1)',
+                            },
+                            {
+                                type: 'string',
+                                name: 'label',
+                                label: 'Label',
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'sections',
+                        label: 'Sections',
+                        list: true,
+                        ui: {
+                            itemProps: (item) => ({ label: item?.title || item?.id || 'Section' }),
+                        },
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'id',
+                                label: 'Anchor ID (must match a TOC item)',
+                            },
+                            {
+                                type: 'string',
+                                name: 'title',
+                                label: 'Title',
+                            },
+                            {
+                                type: 'string',
+                                name: 'body',
+                                label: 'Body',
+                                ui: { component: 'textarea' },
+                            },
+                        ],
+                    },
+                    {
+                        type: 'string',
+                        name: 'footerNote',
+                        label: 'Footer Note',
                     },
                 ],
             },
