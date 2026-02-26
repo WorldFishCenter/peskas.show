@@ -2,7 +2,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import { TinaMarkdown } from "tinacms/dist/rich-text"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+import rehypeRaw from "rehype-raw"
 import data from "@/content/pages/terms.json"
 
 
@@ -37,25 +39,12 @@ function Terms() {
 											{data.sections.map((section) => (
 												<div key={section.id}>
 													<h6 className="mt-35 mb-25" id={section.id}>{section.title}</h6>
-													{typeof section.body === "string" ? (
-														section.body
-															.split('\n\n')
-															.map((paragraph, pIndex) => {
-																const lines = paragraph.split('\n');
-																return (
-																	<p key={`${section.id}-p-${pIndex}`}>
-																		{lines.map((line, lIndex) => (
-																			<span key={`${section.id}-p-${pIndex}-l-${lIndex}`}>
-																				{line}
-																				{lIndex < lines.length - 1 && <br />}
-																			</span>
-																		))}
-																	</p>
-																);
-															})
-													) : (
-														<TinaMarkdown content={section.body} />
-													)}
+													<ReactMarkdown
+														remarkPlugins={[remarkGfm]}
+														rehypePlugins={[rehypeRaw]}
+													>
+														{section.body}
+													</ReactMarkdown>
 												</div>
 											))}
 											{data.footerNote && (
