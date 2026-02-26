@@ -892,10 +892,9 @@ export default defineConfig({
                                 label: 'Title',
                             },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'body',
                                 label: 'Body',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
