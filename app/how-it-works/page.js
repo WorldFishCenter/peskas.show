@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
+import RichText from "@/components/content/RichText";
 import data from "@/content/pages/how-it-works.json";
 
 export default function HowItWorks() {
@@ -16,9 +17,10 @@ export default function HowItWorks() {
                             <div className="row">
                                 <div className="col-lg-8">
                                     <h1 className="text-display-2 mt-30">{data.hero.title}</h1>
-                                    <p className="text-body-lead-large color-gray-500 mt-30" style={{ maxWidth: "720px" }}>
-                                        {data.hero.subtitle}
-                                    </p>
+                                    <RichText
+                                        content={data.hero.subtitle}
+                                        className="text-body-lead-large color-gray-500 mt-30"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -30,9 +32,10 @@ export default function HowItWorks() {
                         <div className="row text-center mb-50">
                             <div className="col-lg-10 mx-auto">
                                 <h2 className="text-heading-1 color-gray-900">{data.pipeline.title}</h2>
-                                <p className="text-body-lead-large color-gray-600 mt-20">
-                                    {data.pipeline.subtitle}
-                                </p>
+                                <RichText
+                                    content={data.pipeline.subtitle}
+                                    className="text-body-lead-large color-gray-600 mt-20"
+                                />
                             </div>
                         </div>
                         <div className="row">
@@ -41,9 +44,10 @@ export default function HowItWorks() {
                                     <div className="stage-card">
                                         <div className="stage-kicker">{stage.kicker}</div>
                                         <h3 className="text-heading-4 mt-10">{stage.title}</h3>
-                                        <p className="text-body-text color-gray-600 mt-15">
-                                            {stage.description}
-                                        </p>
+                                        <RichText
+                                            content={stage.description}
+                                            className="text-body-text color-gray-600 mt-15"
+                                        />
                                     </div>
                                 </div>
                             ))}
@@ -56,9 +60,10 @@ export default function HowItWorks() {
                         <div className="row">
                             <div className="col-lg-10 mx-auto text-center mb-40">
                                 <h3 className="text-heading-2 color-gray-900">{data.workflow.title}</h3>
-                                <p className="text-body-lead color-gray-600 mt-15">
-                                    {data.workflow.subtitle}
-                                </p>
+                                <RichText
+                                    content={data.workflow.subtitle}
+                                    className="text-body-lead color-gray-600 mt-15"
+                                />
                             </div>
                         </div>
                         <div className="timeline-grid">
@@ -67,7 +72,10 @@ export default function HowItWorks() {
                                     <div className="timeline-index">{step.id}</div>
                                     <div className="timeline-body">
                                         <h4 className="text-heading-4 color-gray-900">{step.title}</h4>
-                                        <p className="text-body-text color-gray-600 mt-10">{step.summary}</p>
+                                        <RichText
+                                            content={step.summary}
+                                            className="text-body-text color-gray-600 mt-10"
+                                        />
                                         <ul className="list-checked mt-15">
                                             {step.items.map((item) => (
                                                 <li key={item}>{item}</li>
@@ -85,9 +93,10 @@ export default function HowItWorks() {
                         <div className="row">
                             <div className="col-lg-10 mx-auto text-center mb-40">
                                 <h3 className="text-heading-2 color-gray-900">{data.modules.title}</h3>
-                                <p className="text-body-lead color-gray-600 mt-15">
-                                    {data.modules.subtitle}
-                                </p>
+                                <RichText
+                                    content={data.modules.subtitle}
+                                    className="text-body-lead color-gray-600 mt-15"
+                                />
                             </div>
                         </div>
                         <div className="row">
@@ -121,7 +130,10 @@ export default function HowItWorks() {
                                                     }
                                                 >
                                                     <div className="accordion-body text-body-text color-gray-600">
-                                                        <p className="mb-15">{item.body}</p>
+                                                        <RichText
+                                                            content={item.body}
+                                                            className="mb-15"
+                                                        />
                                                         <ul className="list-checked mt-10">
                                                             {item.items.map((point) => (
                                                                 <li key={point}>{point}</li>
@@ -174,7 +186,10 @@ export default function HowItWorks() {
                         <div className="row">
                             <div className="col-lg-8">
                                 <h3 className="text-heading-2 color-gray-900">{data.faq.title}</h3>
-                                <p className="text-body-lead color-gray-600 mt-15">{data.faq.subtitle}</p>
+                                <RichText
+                                    content={data.faq.subtitle}
+                                    className="text-body-lead color-gray-600 mt-15"
+                                />
                             </div>
                         </div>
                         <div className="row mt-30">
@@ -204,9 +219,10 @@ export default function HowItWorks() {
                                                             : "accordion-collapse collapse"
                                                     }
                                                 >
-                                                    <div className="accordion-body text-body-text color-gray-600">
-                                                        {item.a}
-                                                    </div>
+                                                    <RichText
+                                                        content={item.a}
+                                                        className="accordion-body text-body-text color-gray-600"
+                                                    />
                                                 </div>
                                             </div>
                                         );
@@ -222,9 +238,10 @@ export default function HowItWorks() {
                         <div className="row align-items-center">
                             <div className="col-lg-8">
                                 <h3 className="text-heading-2 color-gray-900">{data.cta.title}</h3>
-                                <p className="text-body-lead color-gray-600 mt-15" style={{ maxWidth: "680px" }}>
-                                    {data.cta.subtitle}
-                                </p>
+                                <RichText
+                                    content={data.cta.subtitle}
+                                    className="text-body-lead color-gray-600 mt-15"
+                                />
                             </div>
                         </div>
                         <div className="row mt-40">

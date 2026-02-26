@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import RichText from '../content/RichText';
 
 function RegionsSection({ regions, section }) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -12,7 +13,10 @@ function RegionsSection({ regions, section }) {
                     <div className="col-lg-2 col-sm-1 col-12" />
                     <div className="col-lg-8 col-sm-10 col-12 text-center mt-50">
                         <h2 className="text-heading-1 color-gray-900">{section.title}</h2>
-                        <p className="text-body-lead-large color-gray-600 mt-20">{section.subtitle}</p>
+                        <RichText
+                            content={section.subtitle}
+                            className="text-body-lead-large color-gray-600 mt-20"
+                        />
                     </div>
                 </div>
             </div>
@@ -56,7 +60,10 @@ function RegionsSection({ regions, section }) {
                     <div className="region-hero__content">
                         <div className="region-hero__text">
                             <h3 className="text-heading-2 color-white">{activeRegion.title}</h3>
-                            <p className="text-body-lead color-white mt-12">{activeRegion.desc}</p>
+                            <RichText
+                                content={activeRegion.desc}
+                                className="text-body-lead color-white mt-12"
+                            />
                             {activeRegion.ctaLabel && activeRegion.ctaHref ? (
                                 <a
                                     href={activeRegion.ctaHref}

@@ -2,9 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import ReactMarkdown from "react-markdown"
-import remarkGfm from "remark-gfm"
-import rehypeRaw from "rehype-raw"
+import RichText from "@/components/content/RichText"
 import data from "@/content/pages/terms.json"
 
 
@@ -39,12 +37,7 @@ function Terms() {
 											{data.sections.map((section) => (
 												<div key={section.id}>
 													<h6 className="mt-35 mb-25" id={section.id}>{section.title}</h6>
-													<ReactMarkdown
-														remarkPlugins={[remarkGfm]}
-														rehypePlugins={[rehypeRaw]}
-													>
-														{section.body}
-													</ReactMarkdown>
+													<RichText content={section.body} />
 												</div>
 											))}
 											{data.footerNote && (

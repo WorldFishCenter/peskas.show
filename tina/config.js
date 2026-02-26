@@ -124,10 +124,9 @@ export default defineConfig({
                                 required: true,
                             },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'desc',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                                 required: true,
                             },
                             {
@@ -366,10 +365,9 @@ export default defineConfig({
                                 label: 'Blog Title',
                             },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Blog Description',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'number',
@@ -406,10 +404,9 @@ export default defineConfig({
                             { type: 'string', name: 'headline', label: 'Headline' },
                             { type: 'string', name: 'headlineHighlight', label: 'Headline Highlighted Text (green)' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'ctaLabel', label: 'Button Label' },
                         ],
@@ -437,10 +434,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'wioPrompt', label: 'WIO Link Prompt Text' },
                             { type: 'string', name: 'wioHref', label: 'WIO Link URL' },
@@ -459,10 +455,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'bgClass', label: 'CSS Background Class' },
                         ],
@@ -475,10 +470,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'image', name: 'image', label: 'Image' },
                             {
@@ -492,10 +486,9 @@ export default defineConfig({
                                 fields: [
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'description',
                                         label: 'Description',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -509,10 +502,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'ctaLabel', label: 'Button Label' },
                             { type: 'string', name: 'ctaHref', label: 'Button URL' },
@@ -526,10 +518,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'col1Title', label: 'Column 1 Title' },
                             {
@@ -587,10 +578,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
@@ -601,10 +591,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -618,10 +607,9 @@ export default defineConfig({
                                     { type: 'string', name: 'kicker', label: 'Badge Label' },
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'description',
                                         label: 'Description',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -634,10 +622,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -651,10 +638,9 @@ export default defineConfig({
                                     { type: 'string', name: 'id', label: 'Number (e.g. 01)' },
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'summary',
                                         label: 'Summary',
-                                        ui: { component: 'textarea' },
                                     },
                                     { type: 'string', name: 'items', label: 'Bullet Points', list: true },
                                 ],
@@ -668,10 +654,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -685,10 +670,9 @@ export default defineConfig({
                                     { type: 'string', name: 'title', label: 'Title' },
                                     { type: 'image', name: 'icon', label: 'Icon' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'body',
                                         label: 'Body',
-                                        ui: { component: 'textarea' },
                                     },
                                     { type: 'string', name: 'items', label: 'Bullet Points', list: true },
                                 ],
@@ -732,10 +716,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -748,10 +731,9 @@ export default defineConfig({
                                 fields: [
                                     { type: 'string', name: 'q', label: 'Question' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'a',
                                         label: 'Answer',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -764,10 +746,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'airtableUrl', label: 'Airtable Form URL' },
                         ],
@@ -793,10 +774,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
@@ -807,10 +787,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'airtableUrl', label: 'Airtable Embed URL' },
                         ],
@@ -822,10 +801,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
@@ -892,10 +870,9 @@ export default defineConfig({
                                 label: 'Title',
                             },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'body',
-                                label: 'Body (Markdown supported)',
-                                ui: { component: 'textarea' },
+                                label: 'Body',
                             },
                         ],
                     },

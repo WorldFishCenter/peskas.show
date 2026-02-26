@@ -1,3 +1,5 @@
+import RichText from '../content/RichText';
+
 function HeroSection({ data, onWatchVideo }) {
     const { headline, headlineHighlight, subtitle, ctaLabel } = data;
 
@@ -14,9 +16,10 @@ function HeroSection({ data, onWatchVideo }) {
                                     {headlineHighlight}
                                 </span>
                             </h1>
-                            <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                                {subtitle}
-                            </p>
+                            <RichText
+                                content={subtitle}
+                                className="text-body-lead-large color-gray-500 mt-40 pr-40"
+                            />
                             <div className="mt-40 d-flex flex-wrap gap-3">
                                 <button
                                     type="button"

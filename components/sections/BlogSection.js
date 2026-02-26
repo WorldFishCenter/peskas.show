@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import RichText from '../content/RichText';
 
 function BlogSection({ latestPosts, data }) {
     const { title, subtitle, ctaLabel } = data;
@@ -9,7 +10,10 @@ function BlogSection({ latestPosts, data }) {
                 <div className="row">
                     <div className="col-lg-8">
                         <h3 className="text-heading-1 mb-10">{title}</h3>
-                        <p className="text-body-lead-large color-gray-600">{subtitle}</p>
+                        <RichText
+                            content={subtitle}
+                            className="text-body-lead-large color-gray-600"
+                        />
                     </div>
                     <div className="col-lg-4 text-lg-end text-start pt-30">
                         <Link href="/blog" className="btn btn-black icon-arrow-right-white">
