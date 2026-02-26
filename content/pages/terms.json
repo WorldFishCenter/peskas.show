@@ -6,54 +6,6 @@
     {
       "id": "section-1",
       "label": "Taseguru App Privacy Policy"
-    },
-    {
-      "id": "section-2",
-      "label": "Licensing Policy"
-    },
-    {
-      "id": "section-3",
-      "label": "Product Compatibility"
-    },
-    {
-      "id": "section-4",
-      "label": "Delivery"
-    },
-    {
-      "id": "section-5",
-      "label": "Ownership"
-    },
-    {
-      "id": "section-6",
-      "label": "Browser Compatibility"
-    },
-    {
-      "id": "section-7",
-      "label": "Updates"
-    },
-    {
-      "id": "section-8",
-      "label": "Template Support"
-    },
-    {
-      "id": "section-9",
-      "label": "Price Changes"
-    },
-    {
-      "id": "section-10",
-      "label": "Refund Policy"
-    },
-    {
-      "id": "section-11",
-      "label": "Email and Newsletter"
-    },
-    {
-      "id": "section-12",
-      "label": "License Agreement"
-    },
-    {
-      "id": "section-13",
-      "label": "Severability"
     }
   ],
   "sections": [
@@ -61,67 +13,7 @@
       "id": "section-1",
       "title": "Taseguru App Privacy Policy",
       "body": "Effective Date: 28 February 2026\nLast Updated: 28 February 2026\n\nTaseguru (“the App”) is developed and operated by WorldFish (“we,” “us,” or “our”).\nThis Privacy Policy explains how information is collected, used, and protected when you use the Taseguru mobile application.\nTaseguru is designed to be used anonymously. We do not collect personal information such as names, phone numbers, national ID numbers, or email addresses.\n\n1. Information We Collect\na) Municipality-Level Location Data\nTo provide relevant marine weather forecasts and alerts, the App collects location data at the scale of municipality only.\nWe do not collect precise GPS coordinates by default. \nWe do not track your real-time movements. \nLocation is used solely to deliver locally relevant weather information and fisheries updates. \nLocation permissions can be managed in your device settings.\nb) Registration Support Information\nDuring initial setup or registration, we may collect limited information about whether you received assistance installing or learning to use the App (for example, from a fisheries officer, NGO staff member, or community facilitator).\nThis information:\nIs not linked to your identity \nIs used only to understand how the App is being introduced and supported \nHelps improve outreach and training efforts \nc) Anonymous Usage Data (Telemetry)\nWe collect anonymous usage information through telemetry tools to understand how the App is being used.\nThis may include:\n\nPages or features viewed \nButtons clicked \nVideos played \nFrequency and duration of App use \nApp performance data (e.g., crashes) \nTelemetry data:\n\nDoes not include personal identifiers \nIs aggregated for analysis \nIs used solely to improve App functionality, usability, and safety impact \n\n2. How We Use Information\nInformation collected through the App is used to:\nDeliver municipality-specific weather forecasts and fisheries alerts \nImprove App functionality and user experience \nUnderstand how safety resources and features are being used \nImprove training and support strategies \nMonitor and enhance system performance \nWe do not use data for advertising purposes.\nWe do not sell user data.\n\n3. How Information Is Shared\nBecause Taseguru is anonymous:\nWe do not share personal data with third parties. \nAggregated, anonymized usage statistics may be shared with government partners, donors, or research institutions to evaluate App performance and safety impact. \nData may be stored securely using trusted cloud service providers under strict data protection standards. \nNo personally identifiable information is shared.\n\n4. Data Storage and Security\nWe apply appropriate technical and organizational safeguards to protect collected data.\nData is stored securely on protected servers. \nOnly authorized personnel may access system-level analytics. \nTelemetry data is stored in aggregated, non-identifiable form. \nData is retained only as long as necessary for operational and analytical purposes.\n\n5. Your Choices\nYou may:\nControl location permissions in your device settings. \nStop using the App at any time. \nRequest further information by contacting us (see below). \nBecause the App does not collect personal identity information, we are generally unable to identify or retrieve individual user records.\n\n6. Children’s Privacy\nTaseguru is intended for adult users involved in fishing or marine activities. We do not knowingly collect or use personal data from children.\n\n7. Updates to This Policy\nWe may update this Privacy Policy periodically. Updates will be posted publicly with a revised “Last Updated” date.\nContinued use of the App indicates acceptance of the updated policy.\n\n8. Contact Information\nFor questions about this Privacy Policy, please contact:\nWorldFish (ICLARM)\nJalan Batu Maung, Pulau Pinang, Malaysia\nADH@cgiar.org\n"
-    },
-    {
-      "id": "section-2",
-      "title": "Licensing Policy",
-      "body": "AliThemes WordPress plugins and template are released under the GNU General Public License v2 or later. Please refer to licensing policy page for licensing details."
-    },
-    {
-      "id": "section-3",
-      "title": "Product Compatibility",
-      "body": "The products are developed to be compatible with the latest version of WordPress because we always strive to stay up-to-date with the latest version of WordPress. You might experience certain performance or functionality glitches with the products if you use any version prior to that."
-    },
-    {
-      "id": "section-4",
-      "title": "Delivery",
-      "body": "Your purchased product(s) information will be emailed to the email address (that you will provide) once we receive your payment. Even though this usually takes a few minutes, it may also take up to 24 hours. You can contact us through our contact page if you do not receive your email after waiting for this time period. You will also have access to your purchased products from your account in AliThemes after logging in."
-    },
-    {
-      "id": "section-5",
-      "title": "Ownership",
-      "body": "All the products are the property of AliThemes. So you may not claim ownership (intellectual or exclusive) over any of our products, modified or unmodified. Our products come ‘as is’, without any kind of warranty, either expressed or implied. Under no circumstances can our juridical person be accountable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses originating from the employment of or incapacity to use our products."
-    },
-    {
-      "id": "section-6",
-      "title": "Browser Compatibility",
-      "body": "We consider it our duty to offer a great experience across most major browsers, which is why our products support the latest modern web browsers including (but not limited to) Firefox, Safari, Chrome and Internet Explorer 9+. However, the performance may vary between different browsers, versions, and operating systems."
-    },
-    {
-      "id": "section-7",
-      "title": "Updates",
-      "body": "Our templates are constantly updated to be compatible with the latest stable version of WordPress. Please ensure that you always use the most current version of our templates."
-    },
-    {
-      "id": "section-8",
-      "title": "Template Support",
-      "body": "Please refer to Help and Support Policy page for details."
-    },
-    {
-      "id": "section-9",
-      "title": "Price Changes",
-      "body": "AliThemes reserves the right to modify or suspend (temporarily or permanently) a subscription at any point of time and from time to time with or without any notice."
-    },
-    {
-      "id": "section-10",
-      "title": "Refund Policy",
-      "body": "Please refer to Refund Policy page for details."
-    },
-    {
-      "id": "section-11",
-      "title": "Email and Newsletter",
-      "body": "AliThemes may occasionally send you emails related to the purchase of product(s) from our company. We may also send you occasional email newsletters relating to AliThemes updates and promotions. We will never sell or release your email to any third party vendors. You may opt out of these emails at any time without penalty."
-    },
-    {
-      "id": "section-12",
-      "title": "License Agreement",
-      "body": "By purchasing our product(s), you indicate and consent that you have read and agree to the Terms and Conditions listed and detailed on this page. We reserve the right to change or modify the current Terms and Conditions without prior notice or consent."
-    },
-    {
-      "id": "section-13",
-      "title": "Severability",
-      "body": "If any part of this agreement is declared unenforceable or invalid, all remaining clauses in this agreement shall remain binding on the customer."
     }
   ],
-  "footerNote": "- AliThemes Team -"
+  "footerNote": "- PESKAS Team -"
 }
