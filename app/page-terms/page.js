@@ -1,4 +1,5 @@
 
+'use client'
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
