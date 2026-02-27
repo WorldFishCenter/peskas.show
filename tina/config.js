@@ -124,10 +124,9 @@ export default defineConfig({
                                 required: true,
                             },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'desc',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                                 required: true,
                             },
                             {
@@ -163,6 +162,145 @@ export default defineConfig({
                 fields: [
                     {
                         type: 'object',
+                        name: 'header',
+                        label: 'Header & Navigation',
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'siteTitle',
+                                label: 'Site Title / Logo Text',
+                            },
+                            {
+                                type: 'object',
+                                name: 'primaryLinks',
+                                label: 'Primary Links',
+                                list: true,
+                                ui: {
+                                    itemProps: (item) => ({ label: item?.label || 'Link' }),
+                                },
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'href',
+                                        label: 'URL',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                ],
+                            },
+                            {
+                                type: 'object',
+                                name: 'countriesMenu',
+                                label: 'Countries Menu',
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Menu Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'items',
+                                        label: 'Country Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Country' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                            {
+                                                type: 'boolean',
+                                                name: 'external',
+                                                label: 'Open in new tab',
+                                            },
+                                            {
+                                                type: 'image',
+                                                name: 'flagSrc',
+                                                label: 'Flag Image',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'flagAlt',
+                                                label: 'Flag Alt Text',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                            {
+                                type: 'object',
+                                name: 'resourcesMenu',
+                                label: 'Resources Menu',
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'label',
+                                        label: 'Menu Label',
+                                    },
+                                    {
+                                        type: 'string',
+                                        name: 'iconClass',
+                                        label: 'Icon CSS Class (optional)',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'items',
+                                        label: 'Resource Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Resource' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                            {
+                                                type: 'image',
+                                                name: 'iconSrc',
+                                                label: 'Icon Image (optional)',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'iconAlt',
+                                                label: 'Icon Alt Text',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
                         name: 'footer',
                         label: 'Footer',
                         fields: [
@@ -176,6 +314,70 @@ export default defineConfig({
                                 name: 'contactEmails',
                                 label: 'Contact Emails',
                                 list: true,
+                            },
+                            {
+                                type: 'object',
+                                name: 'columns',
+                                label: 'Footer Columns',
+                                list: true,
+                                ui: {
+                                    itemProps: (item) => ({ label: item?.title || 'Column' }),
+                                },
+                                fields: [
+                                    {
+                                        type: 'string',
+                                        name: 'title',
+                                        label: 'Column Title',
+                                    },
+                                    {
+                                        type: 'object',
+                                        name: 'links',
+                                        label: 'Links',
+                                        list: true,
+                                        ui: {
+                                            itemProps: (item) => ({ label: item?.label || 'Link' }),
+                                        },
+                                        fields: [
+                                            {
+                                                type: 'string',
+                                                name: 'label',
+                                                label: 'Label',
+                                            },
+                                            {
+                                                type: 'string',
+                                                name: 'href',
+                                                label: 'URL',
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'blog',
+                        label: 'Blog Settings',
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'title',
+                                label: 'Blog Title',
+                            },
+                            {
+                                type: 'rich-text',
+                                name: 'description',
+                                label: 'Blog Description',
+                            },
+                            {
+                                type: 'number',
+                                name: 'latestPostsCount',
+                                label: 'Latest Posts on Homepage',
+                            },
+                            {
+                                type: 'number',
+                                name: 'postsPerPage',
+                                label: 'Posts Per Page (future use)',
                             },
                         ],
                     },
@@ -202,10 +404,9 @@ export default defineConfig({
                             { type: 'string', name: 'headline', label: 'Headline' },
                             { type: 'string', name: 'headlineHighlight', label: 'Headline Highlighted Text (green)' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'ctaLabel', label: 'Button Label' },
                         ],
@@ -233,10 +434,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'wioPrompt', label: 'WIO Link Prompt Text' },
                             { type: 'string', name: 'wioHref', label: 'WIO Link URL' },
@@ -255,10 +455,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'bgClass', label: 'CSS Background Class' },
                         ],
@@ -271,10 +470,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'image', name: 'image', label: 'Image' },
                             {
@@ -288,10 +486,9 @@ export default defineConfig({
                                 fields: [
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'description',
                                         label: 'Description',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -305,10 +502,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'ctaLabel', label: 'Button Label' },
                             { type: 'string', name: 'ctaHref', label: 'Button URL' },
@@ -322,10 +518,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'col1Title', label: 'Column 1 Title' },
                             {
@@ -383,10 +578,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
@@ -397,10 +591,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -414,10 +607,9 @@ export default defineConfig({
                                     { type: 'string', name: 'kicker', label: 'Badge Label' },
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'description',
                                         label: 'Description',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -430,10 +622,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -447,10 +638,9 @@ export default defineConfig({
                                     { type: 'string', name: 'id', label: 'Number (e.g. 01)' },
                                     { type: 'string', name: 'title', label: 'Title' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'summary',
                                         label: 'Summary',
-                                        ui: { component: 'textarea' },
                                     },
                                     { type: 'string', name: 'items', label: 'Bullet Points', list: true },
                                 ],
@@ -464,10 +654,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -481,10 +670,9 @@ export default defineConfig({
                                     { type: 'string', name: 'title', label: 'Title' },
                                     { type: 'image', name: 'icon', label: 'Icon' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'body',
                                         label: 'Body',
-                                        ui: { component: 'textarea' },
                                     },
                                     { type: 'string', name: 'items', label: 'Bullet Points', list: true },
                                 ],
@@ -528,10 +716,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             {
                                 type: 'object',
@@ -544,10 +731,9 @@ export default defineConfig({
                                 fields: [
                                     { type: 'string', name: 'q', label: 'Question' },
                                     {
-                                        type: 'string',
+                                        type: 'rich-text',
                                         name: 'a',
                                         label: 'Answer',
-                                        ui: { component: 'textarea' },
                                     },
                                 ],
                             },
@@ -560,10 +746,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'airtableUrl', label: 'Airtable Form URL' },
                         ],
@@ -589,10 +774,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'subtitle',
                                 label: 'Subtitle',
-                                ui: { component: 'textarea' },
                             },
                         ],
                     },
@@ -603,10 +787,9 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                             { type: 'string', name: 'airtableUrl', label: 'Airtable Embed URL' },
                         ],
@@ -618,12 +801,85 @@ export default defineConfig({
                         fields: [
                             { type: 'string', name: 'title', label: 'Title' },
                             {
-                                type: 'string',
+                                type: 'rich-text',
                                 name: 'description',
                                 label: 'Description',
-                                ui: { component: 'textarea' },
                             },
                         ],
+                    },
+                ],
+            },
+
+            // ─── Terms & Policies ────────────────────────────────────────
+            {
+                name: 'terms',
+                label: 'Terms & Policies Page',
+                path: 'content/pages',
+                format: 'json',
+                match: { include: 'terms' },
+                ui: {
+                    allowedActions: { create: false, delete: false },
+                },
+                fields: [
+                    {
+                        type: 'object',
+                        name: 'hero',
+                        label: 'Hero',
+                        fields: [
+                            { type: 'string', name: 'title', label: 'Title' },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'tableOfContents',
+                        label: 'Table of Contents',
+                        list: true,
+                        ui: {
+                            itemProps: (item) => ({ label: item?.label || item?.id || 'Section' }),
+                        },
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'id',
+                                label: 'Anchor ID (e.g. section-1)',
+                            },
+                            {
+                                type: 'string',
+                                name: 'label',
+                                label: 'Label',
+                            },
+                        ],
+                    },
+                    {
+                        type: 'object',
+                        name: 'sections',
+                        label: 'Sections',
+                        list: true,
+                        ui: {
+                            itemProps: (item) => ({ label: item?.title || item?.id || 'Section' }),
+                        },
+                        fields: [
+                            {
+                                type: 'string',
+                                name: 'id',
+                                label: 'Anchor ID (must match a TOC item)',
+                            },
+                            {
+                                type: 'string',
+                                name: 'title',
+                                label: 'Title',
+                            },
+                            {
+                                type: 'rich-text',
+                                name: 'body',
+                                label: 'Body',
+                            },
+                        ],
+                    },
+                    {
+                        type: 'string',
+                        name: 'footerNote',
+                        label: 'Footer Note',
                     },
                 ],
             },

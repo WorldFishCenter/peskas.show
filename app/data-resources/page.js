@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react';
 import Layout from "@/components/layout/Layout";
+import RichText from "@/components/content/RichText";
 import data from "@/content/pages/data-resources.json";
 
 export default function DataResources() {
@@ -47,7 +48,10 @@ export default function DataResources() {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <h1 className="text-display-3 color-gray-900 mb-20">{data.hero.title}</h1>
-                                    <p className="text-heading-6 color-gray-600 mb-20">{data.hero.subtitle}</p>
+                                    <RichText
+                                        content={data.hero.subtitle}
+                                        className="text-heading-6 color-gray-600 mb-20"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -58,7 +62,10 @@ export default function DataResources() {
                         <h2 className="text-heading-1 color-gray-900">{data.publications.title}</h2>
                         <div className="row">
                             <div className="col-lg-6">
-                                <p className="text-body-lead-large color-gray-600 mt-20">{data.publications.description}</p>
+                                <RichText
+                                    content={data.publications.description}
+                                    className="text-body-lead-large color-gray-600 mt-20"
+                                />
                             </div>
                         </div>
                     </div>
@@ -77,7 +84,10 @@ export default function DataResources() {
                             <h2 className="text-heading-1 color-gray-900">{data.data.title}</h2>
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <p className="text-body-lead-large color-gray-600 mt-20">{data.data.description}</p>
+                                    <RichText
+                                        content={data.data.description}
+                                        className="text-body-lead-large color-gray-600 mt-20"
+                                    />
                                 </div>
                             </div>
                             <div className="container mt-40">

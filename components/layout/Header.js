@@ -118,6 +118,21 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                         Publications and data
                                                     </Link>
                                                 </li>
+                                                <li>
+                                                    <Link href="/page-terms">
+                                                        <img
+                                                            src="/assets/imgs/page/homepage1/story.svg"
+                                                            alt="documentation"
+                                                            style={{
+                                                                width: '20px',
+                                                                height: 'auto',
+                                                                marginRight: '5px',
+                                                                verticalAlign: 'middle',
+                                                            }}
+                                                        />
+                                                        Licences and policies
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </li>
                                         {/* <li className="has-children">

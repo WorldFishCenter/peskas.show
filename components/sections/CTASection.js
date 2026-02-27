@@ -1,3 +1,5 @@
+import RichText from '../content/RichText';
+
 function CTASection({ data }) {
     const { title, subtitle, ctaLabel, ctaHref } = data;
 
@@ -7,9 +9,10 @@ function CTASection({ data }) {
                 <div className="row align-items-center">
                     <div className="col-lg-8">
                         <h3 className="text-heading-2 color-gray-900">{title}</h3>
-                        <p className="text-body-lead color-gray-600 mt-15" style={{ maxWidth: '680px' }}>
-                            {subtitle}
-                        </p>
+                        <RichText
+                            content={subtitle}
+                            className="text-body-lead color-gray-600 mt-15"
+                        />
                     </div>
                     <div className="col-lg-4 text-lg-end mt-20 mt-lg-0">
                         <a

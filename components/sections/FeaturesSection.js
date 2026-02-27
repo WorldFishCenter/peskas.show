@@ -1,3 +1,5 @@
+import RichText from '../content/RichText';
+
 function FeaturesSection({ features }) {
     return (
         <section className="section-box mt-70">
@@ -7,9 +9,10 @@ function FeaturesSection({ features }) {
                         <div key={index} className="col-lg-3 col-sm-12 mb-30">
                             <div className={`card-grid-1 bg-1 ${feature.bgClass} hover-up`}>
                                 <h4 className="text-heading-4 mt-10">{feature.title}</h4>
-                                <p className="text-body-text color-gray-600 mt-15">
-                                    {feature.description}
-                                </p>
+                                <RichText
+                                    content={feature.description}
+                                    className="text-body-text color-gray-600 mt-15"
+                                />
                             </div>
                         </div>
                     ))}
