@@ -6,76 +6,12 @@
     {
       "id": "Taseguru Privacy Policy",
       "label": "Taseguru App Privacy Policy"
-    },
-    {
-      "id": "section-2",
-      "label": "Licensing Policy"
     }
   ],
   "sections": [
     {
       "id": "section-1",
       "title": "Taseguru App Privacy Policy",
-      "body": ""
-    },
-    {
-      "id": "section-2",
-      "title": "Licensing Policy",
-      "body": ""
-    },
-    {
-      "id": "section-3",
-      "title": "Product Compatibility",
-      "body": ""
-    },
-    {
-      "id": "section-4",
-      "title": "Delivery",
-      "body": ""
-    },
-    {
-      "id": "section-5",
-      "title": "Ownership",
-      "body": ""
-    },
-    {
-      "id": "section-6",
-      "title": "Browser Compatibility",
-      "body": ""
-    },
-    {
-      "id": "section-7",
-      "title": "Updates",
-      "body": ""
-    },
-    {
-      "id": "section-8",
-      "title": "Template Support",
-      "body": ""
-    },
-    {
-      "id": "section-9",
-      "title": "Price Changes",
-      "body": ""
-    },
-    {
-      "id": "section-10",
-      "title": "Refund Policy",
-      "body": ""
-    },
-    {
-      "id": "section-11",
-      "title": "Email and Newsletter",
-      "body": ""
-    },
-    {
-      "id": "section-12",
-      "title": "License Agreement",
-      "body": ""
-    },
-    {
-      "id": "section-13",
-      "title": "Severability",
       "body": ""
     }
   ],
