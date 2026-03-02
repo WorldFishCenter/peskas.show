@@ -841,7 +841,7 @@ export default defineConfig({
                             {
                                 type: 'string',
                                 name: 'id',
-                                label: 'Anchor ID (e.g. section-1)',
+                                label: 'Anchor ID (e.g. taseguru)',
                             },
                             {
                                 type: 'string',
