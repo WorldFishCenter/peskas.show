@@ -31,7 +31,7 @@ export const regions = [
         id: 5,
         title: "Mozambique",
         desc: "Mozambique's extensive coastline and significant small-scale fisheries sector make it a key location for Peskas expansion. The implementation focuses on supporting artisanal fishing communities while building local capacity for sustainable fisheries management and marine resource conservation.",
-        cta: { label: "Open dashboard", href: "https://mozambique-portal.vercel.app/" },
+        cta: { label: "Open dashboard", href: "https://peskas-dashboard-mozambique.vercel.app" },
         image: "assets/imgs/page/homepage1/mozambique-dash.png",
     },
     {

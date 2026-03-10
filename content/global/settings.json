@@ -47,7 +47,7 @@
         },
         {
           "label": "Mozambique",
-          "href": "https://mozambique-portal.vercel.app/",
+          "href": "https://peskas-dashboard-mozambique.vercel.app",
           "external": true,
           "flagSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
           "flagAlt": "Mozambique Flag"
