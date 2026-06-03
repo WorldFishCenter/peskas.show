@@ -1,7 +1,7 @@
 ---
-title: "Towards Harmonised Data: Introducing the Peskas API"
+title: "API = All Possible Integrations: Introducing the Peskas API"
 date: 2026-05-29T09:00:00Z
-author: "Lorenzo Longobardi & Alexander Tilley"
+author: "Lorenzo Longobardi"
 draft: false
 description: "A new API gives national fisheries authorities, and the people they authorise, a consistent and well-documented way to reach validated fishing-trip data across Kenya, Mozambique and Zanzibar."
 tags: [ "API", "Data Harmonisation", "Interoperability", "Data-Driven Management" ]
@@ -12,11 +12,11 @@ mermaid: true
 
 *A new API gives national fisheries authorities, and the people they authorise, a consistent and well-documented way to reach validated fishing-trip data across Kenya, Mozambique and Zanzibar.*
 
-Peskas has always been about making small-scale fisheries visible: recording what fishers land and turning it into numbers that managers can trust. Across East Africa that means working with enumerators and partners in Kenya, Mozambique and Zanzibar to collect catch data and put it through the cleaning and validation steps that make it reliable.
+Peskas has always been about making small-scale fisheries visible: recording what fishers land and turning it into numbers that managers can trust to use for making decisions. Across East Africa that means working with enumerators and partners in Kenya, Mozambique and Zanzibar to collect catch data and put it through the cleaning and validation steps that make it reliable.
 
-But collecting and validating data is only useful if the data reaches the people who need it. Until now, each time a ministry, a fishery officer or a researcher wanted the validated numbers, someone on our side had to prepare an export by hand. That is slow, hard to repeat, and harder still to keep consistent from one country to the next.
+But collecting and validating data is only useful if the data reaches the people who need it. Until now, each time a ministerial advisor, a fishery officer or a researcher wanted to validate or backup the data locally, someone on our side had to prepare a data export by hand. That is slow, hard to repeat, and harder still to keep consistent from one country to the next.
 
-The Peskas API is our answer to that problem. It gives the owners of the data, and the people they choose to authorise, a single, consistent way to reach validated fishery data.
+The Peskas API is our answer to that problem. It gives the owners of the data, and the people they choose to authorise, a single, consistent source of validated fishery data.
 
 ## A reliable way to reach the data
 
@@ -38,7 +38,7 @@ flowchart LR
 
 ## What the API provides today
 
-At the moment, the API serves data at the level of individual fishing trips. For each recorded trip you can see where and when it landed, the gear and vessel used, how many fishers took part and how long they were at sea, and what they caught, broken down by species, weight and length. You can ask for a trip-level summary, or for the detail of each catch within a trip.
+At the moment, the API serves data at the level of individual fishing trips. For each recorded trip you can see where and when it landed, the gear and vessel used, how many fishers took part and how long they were at sea, and what they caught, broken down by species, weight and length. You can ask for a trip-level summary, or for the detail of each species group caught during a trip.
 
 You also ask only for what you need. Rather than downloading everything and sorting it out afterwards, you can request a single country, a particular area, a date range, or a specific species, and get back just that.
 
@@ -50,11 +50,11 @@ The first is that every field is clearly defined. The API can describe its own v
 
 The second is that the data arrives in a single, consistent shape. Kenya, Mozambique and Zanzibar each collect their data in their own way, from different raw sources. The API brings those sources together into one common structure and uses standard international codes for places and species, so the data lines up with other datasets instead of standing apart. It is an early but concrete step towards harmonised small-scale fisheries data across the region.
 
-The data is also validated by default. Unless you deliberately ask for the raw version, the numbers you receive are the ones that have already passed our checks, and the API always returns the most recent version. And because it returns data in formats that drop straight into tools like R and Python, or into a web application, people can work with it where they already work.
+The data is also validated by default. Unless you deliberately ask for the raw version, the numbers you receive are the ones that have already passed our checks, and the API always returns the most recent version. And because it returns data in formats that drop straight into tools like R and Python, or into a web application, people can work with it where they already work to directly develop new analyses or tools.
 
 ## Closer to the people who manage fisheries
 
-This matters most for the people closest to the fishery. For a local fishery officer, it is the difference between data that lives on paper, or on a single colleague's laptop, and data they can simply request when they need it. There are no filing cabinets of survey sheets to re-enter and no chasing after whoever holds the latest spreadsheet: an officer can pull the validated trips for their own area directly, in a form that is ready to read or analyse.
+This matters most for the people closest to the fishery. For a local fishery officer, it is the difference between data that lives on paper, or on a colleague's laptop, and data they can simply request when they need it. There are no filing cabinets of survey sheets to re-enter nor chasing after whoever holds the latest spreadsheet: an officer can pull the validated trips for their own area directly, in a form that is ready to read or analyse.
 
 The same is true for a ministry preparing a management plan, or a researcher comparing fisheries across several countries that, for the first time, share a common data structure.
 
