@@ -46,7 +46,7 @@ You also ask only for what you need. Rather than downloading everything and sort
 
 Two things make this data easier to work with, particularly in a multi-country setting.
 
-The first is that every field is clearly defined. The API can describe its own variables: what each one means, its units, and the values to expect. Anyone interpreting fisheries data knows how much time is usually lost working out exactly what a column represents, and how often the same word means different things in different places. A shared, documented vocabulary removes much of that friction.
+The first is that every field is clearly defined. The API data are documented: what each variable means, their units, and the values to expect. Anyone interpreting fisheries data knows how much time is usually lost working out exactly what a column represents, and how often the same word means different things in different places. A shared, documented vocabulary removes much of that friction.
 
 The second is that the data arrives in a single, consistent shape. Kenya, Mozambique and Zanzibar each collect their data in their own way, from different raw sources. The API brings those sources together into one common structure and uses standard international codes for places and species, so the data lines up with other datasets instead of standing apart. It is an early but concrete step towards harmonised small-scale fisheries data across the region.
 
