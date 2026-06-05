@@ -1,7 +1,7 @@
 ---
 title: "API = All Possible Integrations: Introducing the Peskas API"
 date: 2026-05-29T09:00:00Z
-author: "Lorenzo Longobardi"
+author: "Lorenzo Longobardi & Alexander Tilley"
 draft: false
 description: "A new API gives national fisheries authorities, and the people they authorise, a consistent and well-documented way to reach validated fishing-trip data across Kenya, Mozambique and Zanzibar."
 tags: [ "API", "Data Harmonisation", "Interoperability", "Data-Driven Management" ]
