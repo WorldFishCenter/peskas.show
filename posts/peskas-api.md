@@ -8,6 +8,7 @@ tags: [ "API", "Data Harmonisation", "Interoperability", "Data-Driven Management
 ShowToc: false
 TocOpen: false
 mermaid: true
+cover: /img/peskas_api.png
 ---
 
 *A new API gives national fisheries authorities, and the people they authorise, a consistent and well-documented way to reach validated fishing-trip data across Kenya, Mozambique and Zanzibar.*
