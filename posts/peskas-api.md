@@ -11,8 +11,6 @@ mermaid: true
 cover: /img/peskas_api.png
 ---
 
-*A new API gives national fisheries authorities, and the people they authorise, a consistent and well-documented way to reach validated fishing-trip data across Kenya, Mozambique and Zanzibar.*
-
 Peskas has always been about making small-scale fisheries visible: recording what fishers land and turning it into numbers that managers can trust to use for making decisions. Across East Africa that means working with enumerators and partners in Kenya, Mozambique and Zanzibar to collect catch data and put it through the cleaning and validation steps that make it reliable.
 
 But collecting and validating data is only useful if the data reaches the people who need it. Until now, each time a ministerial advisor, a fishery officer or a researcher wanted to validate or backup the data locally, someone on our side had to prepare a data export by hand. That is slow, hard to repeat, and harder still to keep consistent from one country to the next.

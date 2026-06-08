@@ -182,9 +182,9 @@ export default function BlogPostClient({ post }) {
                                 </div>
                             )}
                             {post.description && (
-                                <p className="text-body-lead-large color-gray-600 mb-40">{post.description}</p>
+                                <p className="blog-lead">{post.description}</p>
                             )}
-                            <div className="blog-content text-body-text color-gray-600">
+                            <div className="blog-content">
                                 <ReactMarkdown
                                     remarkPlugins={[remarkGfm]}
                                     rehypePlugins={[rehypeRaw]}

@@ -31,6 +31,196 @@
         font-size: 18px;
     }
 }
+
+.blog-lead
+{
+    font-family: $font-heading;
+    font-size: $font-xl;
+    line-height: 1.55;
+    color: $color-gray-600;
+    font-style: italic;
+    margin: 0 0 2.5rem;
+    max-width: 720px;
+}
+
+// Blog post body — overrides the global CSS reset and heading scale
+.blog-content
+{
+    font-family: $font-heading;
+    font-size: $font-lg;
+    line-height: 1.7;
+    color: $color-gray-500;
+    max-width: 720px;
+
+    > *:first-child
+    {
+        margin-top: 0;
+    }
+
+    p
+    {
+        margin: 0 0 1.35em;
+        font-size: $font-lg;
+        line-height: 1.7;
+        color: $color-gray-500;
+        font-weight: 400;
+    }
+
+    > p:first-of-type
+    {
+        margin-bottom: 1.75em;
+    }
+
+    > p:first-of-type em
+    {
+        font-size: $font-xl;
+        line-height: 1.55;
+        color: $color-gray-600;
+        font-style: italic;
+    }
+
+    h2, h3, h4, h5
+    {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-gray-900;
+        line-height: 1.35;
+    }
+
+    h2
+    {
+        font-size: $font-2xl;
+        margin: 2.75rem 0 0.85rem;
+    }
+
+    h3
+    {
+        font-size: $font-xl;
+        margin: 2.5rem 0 0.75rem;
+    }
+
+    h4
+    {
+        font-size: $font-lg;
+        margin: 2rem 0 0.65rem;
+    }
+
+    h5
+    {
+        font-size: $font-md;
+        margin: 1.75rem 0 0.5rem;
+    }
+
+    a
+    {
+        color: $color-green-900;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: rgba($color-green-900, 0.35);
+        transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+        &:hover
+        {
+            color: darken($color-green-900, 10%);
+            text-decoration-color: darken($color-green-900, 10%);
+        }
+    }
+
+    strong
+    {
+        font-weight: 600;
+        color: $color-gray-700;
+    }
+
+    em
+    {
+        font-style: italic;
+    }
+
+    ul, ol
+    {
+        margin: 0 0 1.35em;
+        padding-left: 1.5em;
+
+        li
+        {
+            margin-bottom: 0.55em;
+            line-height: 1.7;
+
+            &:last-child
+            {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    blockquote
+    {
+        margin: 1.75rem 0;
+        padding: 1.1rem 1.5rem;
+        border-left: 4px solid $color-green-500;
+        background-color: $color-gray-50;
+        border-radius: 0 8px 8px 0;
+
+        p
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    figcaption
+    {
+        display: block;
+        font-size: $font-sm;
+        line-height: 1.55;
+        color: $color-gray-500;
+        text-align: center;
+        margin: 0.65rem 0 2rem;
+        font-style: italic;
+    }
+
+    .mermaid-container
+    {
+        margin: 2rem 0 0.25rem;
+        text-align: center;
+    }
+
+    img
+    {
+        border-radius: 12px;
+        margin: 1.75rem 0;
+    }
+
+    code
+    {
+        font-size: 0.9em;
+        background-color: $color-gray-100;
+        padding: 0.15em 0.4em;
+        border-radius: 4px;
+    }
+
+    pre
+    {
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem;
+        background-color: $color-gray-100;
+        border-radius: 8px;
+        overflow-x: auto;
+
+        code
+        {
+            padding: 0;
+            background: none;
+        }
+    }
+
+    hr
+    {
+        margin: 2.5rem 0;
+        border: none;
+        border-top: 1px solid $color-gray-200;
+    }
+}
 .social-sticky {
     position: -webkit-sticky;
     position: sticky;
