@@ -33,7 +33,7 @@
         },
         {
           "label": "Kenya",
-          "href": "https://digitalfisheries.kenya.peskas.org/en",
+          "href": "https://peskas-dashboard-kenya.vercel.app/en",
           "external": true,
           "flagSrc": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
           "flagAlt": "Kenyan Flag"

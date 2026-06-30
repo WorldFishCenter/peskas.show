@@ -17,7 +17,7 @@ export const regions = [
         id: 3,
         title: "Kenya",
         desc: "Part of Peskas' East African expansion, the Kenya implementation focuses on coastal small-scale fisheries. Working with local communities and government partners, this initiative aims to improve fisheries data collection and management practices along Kenya's rich coastal waters, supporting both food security and sustainable livelihoods.",
-        cta: { label: "Open dashboard", href: "https://digitalfisheries.kenya.peskas.org/en" },
+        cta: { label: "Open dashboard", href: "https://peskas-dashboard-kenya.vercel.app/en" },
         image: "assets/imgs/page/homepage1/kenya-dash.png",
     },
     {

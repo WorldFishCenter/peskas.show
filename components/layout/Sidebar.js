@@ -80,7 +80,7 @@ const Sidebar = ({ openClass }) => {
                                                     <span />
                                                 </li>
                                                 <li>
-                                                    <a href="https://digitalfisheries.kenya.peskas.org/en" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://peskas-dashboard-kenya.vercel.app/en" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" width={20} height={13} style={{ marginRight: '5px', verticalAlign: 'middle' }} loading="lazy" />
                                                         Kenya
                                                     </a>
