@@ -183,6 +183,32 @@
     {
         margin: 2rem 0 0.25rem;
         text-align: center;
+        overflow-x: auto;
+        // Isolate from blog typography — Mermaid sizes nodes for 14px labels
+        font-size: 14px;
+        line-height: 1.5;
+
+        svg
+        {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p
+        {
+            margin: 0;
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+
+        .nodeLabel,
+        .label,
+        .edgeLabel
+        {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
     }
 
     img

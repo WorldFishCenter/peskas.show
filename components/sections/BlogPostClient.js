@@ -85,6 +85,34 @@ export default function BlogPostClient({ post }) {
     
     const [mermaidLoaded, setMermaidLoaded] = useState(false);
 
+    const adjustMermaidLabelBoxes = (container) => {
+        const svg = container.querySelector('svg');
+        if (!svg?.viewBox?.baseVal) return;
+
+        const renderedWidth = svg.getBoundingClientRect().width;
+        const viewBoxWidth = svg.viewBox.baseVal.width;
+        if (!renderedWidth || !viewBoxWidth) return;
+
+        const scale = renderedWidth / viewBoxWidth;
+
+        svg.querySelectorAll('foreignObject').forEach((foreignObject) => {
+            const label = foreignObject.querySelector('div');
+            if (!label) return;
+
+            const neededWidth = Math.ceil(label.scrollWidth / scale);
+            const neededHeight = Math.ceil(label.scrollHeight / scale);
+            const currentWidth = parseFloat(foreignObject.getAttribute('width') || '0');
+            const currentHeight = parseFloat(foreignObject.getAttribute('height') || '0');
+
+            if (neededWidth > currentWidth) {
+                foreignObject.setAttribute('width', String(neededWidth));
+            }
+            if (neededHeight > currentHeight) {
+                foreignObject.setAttribute('height', String(neededHeight));
+            }
+        });
+    };
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             import('mermaid').then((mermaidModule) => {
@@ -121,6 +149,7 @@ export default function BlogPostClient({ post }) {
                     const id = `mermaid-${Date.now()}-${index}`;
                     const { svg } = await mermaid.render(id, graphDefinition);
                     element.innerHTML = svg;
+                    adjustMermaidLabelBoxes(element);
                 } catch (error) {
                     console.error('Error rendering mermaid diagram:', error);
                     element.textContent = graphDefinition;

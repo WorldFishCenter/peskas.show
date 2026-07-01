@@ -7583,6 +7583,25 @@ label {
 .blog-content .mermaid-container {
   margin: 2rem 0 0.25rem;
   text-align: center;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.blog-content .mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+.blog-content .mermaid-container p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.blog-content .mermaid-container .nodeLabel,
+.blog-content .mermaid-container .label,
+.blog-content .mermaid-container .edgeLabel {
+  font-family: "Roboto Condensed", sans-serif;
 }
 .blog-content img {
   border-radius: 12px;
