@@ -50,7 +50,7 @@ The method runs inside the country data pipelines, with the same code for all th
 
 Every figure on the dashboards starts from the data that the [Peskas API](/blog/peskas-api) serves: validated fishing-trip records, organised in one shared structure whatever survey they come from. Shared pipeline code turns those records into monthly summaries by district, gear, species and size, adds the FishBase traits and the two catch estimates, and publishes them as a fixed set of tables with documented names and fields. The dashboards read only those tables.
 
-This is what makes the dashboards straightforward to extend. Zanzibar, Kenya and Mozambique run on a single codebase. Each country is a set of settings: its districts and regions, currency, languages, map view, and how its survey records the catch. Adding a country means adding those settings and the translations. Once a country's data reaches Peskas in the shared structure, the same summaries, indicators and explanations follow.
+That shared structure makes the dashboards straightforward to extend. Zanzibar, Kenya and Mozambique run on a single codebase. Each country is a set of settings: its districts and regions, currency, languages, map view, and how its survey records the catch. Adding a country means adding those settings and the translations. Once a country's data reaches Peskas in the shared structure, the same summaries, indicators and explanations follow.
 
 {{<mermaid>}}
 %%{init: {'theme': 'neutral', 'themeVariables': { 'fontFamily': 'Roboto Condensed', 'fontSize': '14px'}}}%%
@@ -63,13 +63,13 @@ flowchart LR
   FB([FishBase &<br>SeaLifeBase]) --> SUM
   SUM --> D[One dashboard,<br>set up per country]
 {{</mermaid>}}
-{{< rawhtml >}}<figcaption>Every figure on the dashboards starts from the validated trip records served by the Peskas API. Shared code summarises them in the same way for every country, so a new country needs its settings, not a new dashboard.</figcaption>{{< /rawhtml >}}
+{{< rawhtml >}}<figcaption>Every figure on the dashboards starts from the validated trip records served by the Peskas API. Shared code summarises them in the same way for every country, so a new country only needs its settings.</figcaption>{{< /rawhtml >}}
 
-## Where boats actually fish
+## Where boats fish
 
 The home page map shows where boats carrying GPS trackers from Pelagic Data Systems spend their time fishing. A model reads each track and keeps only the time spent fishing, leaving out the travel to and from the fishing grounds. The result is drawn on hexagonal cells of about 0.1 km², each fished on at least three trips. Columns show the hours of fishing per active day, and the fishing grounds that boats keep returning to are outlined, with their figures shown on hover. It is the same fishing activity shown for the whole region on [Peskas Coasts](https://coasts.peskas.org), here for one country at a time.
 
-Knowing where fishing takes place, and which areas fishers keep returning to, is the kind of evidence marine spatial planning needs when decisions on protected areas, aquaculture or other uses of the sea have to account for the grounds fishers already use. The map covers only boats that carry a tracker, and it says so.
+Marine spatial planning needs this kind of evidence, because decisions on protected areas, aquaculture or other uses of the sea have to account for the grounds fishers already use. The map notes that it covers only boats carrying a tracker.
 
 {{< figure src="/img/dashboard-map.jpg" >}}
 {{< rawhtml >}}<figcaption>Fishing effort off the west coast of Unguja, Zanzibar: hours of fishing per active day, with the fishing grounds outlined.</figcaption>{{< /rawhtml >}}
@@ -78,10 +78,10 @@ Knowing where fishing takes place, and which areas fishers keep returning to, is
 
 A number on a dashboard is only useful if the reader knows where it comes from. A new Data and methods page sets this out in one place. It covers who collects the data and what each landing records, how records are checked, and how both catch estimates are made, with diagrams. It explains what every measure shows, how it is calculated and what it cannot tell, and how species and sizes are matched to the catch. A glossary gives the terms in plain words, and a table shows how many landings were surveyed in each district and month, so it is clear where the data is thin.
 
-The same care runs through the pages. Every chart title is the question the chart answers. Each chart has an information button that explains what it shows, how it is calculated and what its limits are, and another to download its data. Every page states how many landings, districts and months its figures rest on, and when the data was last updated. Figures based on fewer than ten landings carry a warning sign, recorded and estimated figures are always labelled as such, and estimates are rounded so they do not suggest more precision than they have. Colours mean the same thing on every page and remain distinct for colour-blind readers. Pages print cleanly, and a link to a page keeps its time range and districts, so a view can be shared exactly as it was seen.
+The same care runs through the pages. Every chart title is the question the chart answers. Each chart has an information button that explains it in the same terms, and another to download its data. Every page states how many landings, districts and months its figures rest on, and when the data was last updated. Figures based on fewer than ten landings carry a warning sign, recorded and estimated figures are always labelled as such, and estimates are rounded so they do not suggest more precision than they have. Colours mean the same thing on every page and remain distinct for colour-blind readers. Pages print cleanly, and a link to a page keeps its time range and districts, so a view can be shared exactly as it was seen.
 
 {{< figure src="/img/dashboard-helper.jpg" >}}
-{{< rawhtml >}}<figcaption>Each chart explains what it shows, how it is calculated and its limits, a click away from the figures.</figcaption>{{< /rawhtml >}}
+{{< rawhtml >}}<figcaption>A chart's information button opens its explanation right beside the figures.</figcaption>{{< /rawhtml >}}
 
 ## What comes next
 
