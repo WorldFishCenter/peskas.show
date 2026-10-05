@@ -11,22 +11,22 @@ mermaid: true
 cover: /img/dashboard-overview.jpg
 ---
 
-The Peskas country dashboards show what small-scale fishers land in Zanzibar, Kenya and Mozambique: how much is caught, what it is worth, and how that changes from district to district and month to month. Each one is developed with a national partner whose teams collect the landing data: the Zanzibar Fisheries and Marine Resources Research Institute (ZAFIRI), the [Kenya Fisheries Service (KEFS)](https://kefs.go.ke/) and Mozambique's National Directorate of Fisheries and Aquaculture (DINAPA). They are open to anyone without an account, in English and Swahili, and also in Portuguese for Mozambique.
+The Peskas country dashboards show what small-scale fishers land in Zanzibar, Kenya and Mozambique: how much is caught, what it is worth, and how that changes from district to district and month to month. Each one is developed with a national partner whose teams collect the landing data: the Zanzibar Fisheries and Marine Resources Research Institute (ZAFIRI), the [Kenya Fisheries Service (KEFS)](https://kefs.go.ke/) and Mozambique's National Directorate of Fisheries and Aquaculture (DINAPA). They are public; open to anyone without an account, and currently available in English, Swahili, and Portuguese.
 
-Over the past months we have rebuilt them. The first version described the catch well, but a fisheries department deciding on a gear rule, a minimum size or a species of concern needs more than catch totals. The new dashboards are organised around those decisions, and they say plainly what each number can and cannot tell.
+Over the past months we have rebuilt them. The first versions described the catch well, but a fisheries department designing policies to protect a fishery or species of concern needs more than catch totals. The new dashboards are organised around those decisions, and they state plainly what each number can and cannot support.
 
 ## Built around management questions
 
 Each page now opens with the question it answers. *How is the fishery doing, and how do districts compare? Which gears are used, what do they catch, and do they land fish before those fish can reproduce? Are species that recover slowly from fishing a large or growing part of the catch?* The answers follow, starting with what was recorded at the landing sites and moving on to estimates for the whole fleet.
 
-The first new kind of information is the size of the fish. For each species measured on enough landings, the dashboard compares the length of the fish landed with the length at which that species first reproduces. It shows how much of the catch was taken before maturity, at the optimum length, or as large spawners, the three simple indicators proposed by Rainer Froese in 2004. Enumerators record fish in length classes, so these shares are given as ranges.
+The first new information presented is the _fish length and maturity_. For each species measured with sufficient catch data, the dashboard compares the length of the fish landed with the length of reproductive maturity (Lm). It shows what proportion of the catch are immature, the % at optimum length, and the % of large spawners: the three simple indicators proposed by Froese in 2004. Enumerators record fish in length classes, so these shares are given as ranges.
 
 {{< figure src="/img/dashboard-sizes.jpg" >}}
 {{< rawhtml >}}<figcaption>The size view compares the length of the fish landed with the length at which each species first reproduces. Zanzibar, all months of data.</figcaption>{{< /rawhtml >}}
 
-The second is fishing gear. A single table compares every gear: its share of the surveyed landings, how much it catches and earns per fisher per hour, how much of its catch is below the size at maturity, and the species it lands most.
+The second new information is _fishing gear_. A single table compares every gear: its share of the surveyed landings, how much it catches and earns per fisher per hour, how much of its catch is below the size at maturity, and the species it lands the most.
 
-The third is vulnerability. A new page shows how much of the catch comes from species that recover slowly from fishing, such as large, long-lived species that reproduce late. It also shows how much of the catch is sharks and rays, the IUCN Red List and CITES status of each species landed, and whether the catch is moving down the food web.
+The third new info is _vulnerability_. A new page shows how much of the catch comes from species that recover slowly from fishing, such as large, long-lived species that mature slowly. It also shows how much of the catch is sharks and rays, the IUCN Red List and CITES status of each species landed, and whether the catch is moving down the food web.
 
 Most of this rests on FishBase and SeaLifeBase, the global databases of fish and other aquatic species. The Peskas pipelines match every species group recorded at landing to its species in these databases, among those recorded in the Western and Eastern Indian Ocean, and bring in their vulnerability to fishing, trophic level, IUCN category, CITES listing, and lengths at maturity and at optimum. FishBase already supplies the [nutrient figures in Peskas Timor-Leste](/blog/nutrients). Here it gives the landing data the biological context needed to read it for management.
 
@@ -35,13 +35,13 @@ Most of this rests on FishBase and SeaLifeBase, the global databases of fish and
 
 These are early-warning indicators. A falling catch rate, many small fish or a growing share of vulnerable species show where a closer look is needed. None of them measures the state of a stock, and the dashboards say so.
 
-## Catch estimates by FAO's standard method
+## Total catch estimates using FAO's standard method
 
 Enumerators survey a sample of landings. To estimate what all the boats of a district catch, that sample has to be raised to the whole fleet. Until now Peskas did this with GPS trackers: how often tracked boats go fishing, multiplied by the number of boats in the district and by the catch of a surveyed trip. The method is only as good as the share of boats that carry a tracker, and in these three countries that share is small.
 
 We have now added FAO's standard method for this task, set out in its [OPEN ARTFISH toolkit](https://openknowledge.fao.org/handle/20.500.14283/i7680en). For each gear or boat type, it multiplies the number of boats in the census by the days a boat fishes in the month, as surveyed fishers report them, and by the catch or value of a surveyed trip. It needs no trackers, so it also covers districts and months where no boat is tracked. In Zanzibar, the survey has asked fishers about the days they fished since August 2025.
 
-The method runs inside the country data pipelines, with the same code for all three countries, so every monthly summary now carries both estimates. The dashboards show them side by side, each with its own name and colour. Their totals add up only the districts and months that both methods estimate, so the comparison is like with like, and the Data and methods page explains why they differ: one counts the trips that trackers record, the other the days fishers say they fished. Using FAO's method puts the estimates on an internationally recognised basis, which matters when they are used in official statistics and reporting.
+The method runs inside the country data pipelines, with the same code for all three countries, so every monthly summary now carries both estimates (ARTFISH and VMS based). The dashboards show them side by side, each with its own name and colour. Their totals add up only the districts and months that both methods estimate, so the comparison is like with like, and the Data and methods page explains why they differ: one counts the trips that trackers record, the other the days fishers say they fished. Using FAO's method puts the estimates on an internationally recognised basis, which matters when they are used in official statistics and reporting.
 
 {{< figure src="/img/dashboard-methods.jpg" >}}
 {{< rawhtml >}}<figcaption>The two ways of estimating the catch of the whole fleet, as the Data and methods page sets them out.</figcaption>{{< /rawhtml >}}
