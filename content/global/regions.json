@@ -16,23 +16,23 @@
     },
     {
       "title": "Kenya",
-      "desc": "Part of Peskas' East African expansion, the Kenya implementation focuses on coastal small-scale fisheries. Working with local communities and government partners, this initiative aims to improve fisheries data collection and management practices along Kenya's rich coastal waters, supporting both food security and sustainable livelihoods.",
+      "desc": "Developed with the Kenya Fisheries Service (KEFS) and built on its catch assessment survey along the coast. The dashboard shows what is caught and what it is worth in each district, the species and sizes landed, how fishing gears compare, and the share of vulnerable species. Fleet-wide catch is estimated both with GPS trackers and with FAO's ARTFISH method. Open to everyone, in English and Swahili.\n\n[What is new in the dashboards](/blog/dashboard-upgrade)",
       "ctaLabel": "Open dashboard",
-      "ctaHref": "https://peskas-dashboard-kenya.vercel.app/en",
+      "ctaHref": "https://kenya.peskas.org/en",
       "image": "assets/imgs/page/homepage1/kenya-dash.png"
     },
     {
       "title": "Zanzibar",
-      "desc": "Leveraging Zanzibar's strategic importance in Indian Ocean fisheries, Peskas is being adapted to support the island's vibrant fishing communities. The implementation emphasizes community-based resource management and the integration of traditional fishing knowledge with modern data collection techniques.",
+      "desc": "Developed with the Zanzibar Fisheries and Marine Resources Research Institute (ZAFIRI), whose enumerators record landings at sites across Unguja and Pemba. The dashboard shows what is caught and what it is worth in each district, the species and sizes landed, how fishing gears compare, and the share of vulnerable species. Fleet-wide catch is estimated both with GPS trackers and with FAO's ARTFISH method. Open to everyone, in English and Swahili.\n\n[What is new in the dashboards](/blog/dashboard-upgrade)",
       "ctaLabel": "Open dashboard",
-      "ctaHref": "https://zanzibar.peskas.org",
+      "ctaHref": "https://zanzibar.peskas.org/en",
       "image": "assets/imgs/page/homepage1/zanzibar-dash.png"
     },
     {
       "title": "Mozambique",
-      "desc": "Mozambique's extensive coastline and significant small-scale fisheries sector make it a key location for Peskas expansion. The implementation focuses on supporting artisanal fishing communities while building local capacity for sustainable fisheries management and marine resource conservation.",
+      "desc": "Developed with DINAPA, Mozambique's National Directorate of Fisheries and Aquaculture, and built on its landing survey in districts along the coast, from Cabo Delgado to Maputo. The dashboard shows what is caught and what it is worth in each district, the species and sizes landed, how fishing gears compare, and the share of vulnerable species. Fleet-wide catch is estimated both with GPS trackers and with FAO's ARTFISH method. Open to everyone, in Portuguese, English and Swahili.\n\n[What is new in the dashboards](/blog/dashboard-upgrade)",
       "ctaLabel": "Open dashboard",
-      "ctaHref": "https://peskas-dashboard-mozambique.vercel.app",
+      "ctaHref": "https://mozambique.peskas.org/en",
       "image": "assets/imgs/page/homepage1/mozambique-dash.png"
     },
     {

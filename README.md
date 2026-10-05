@@ -129,6 +129,8 @@ See `.env.example` for all available environment variables.
 - **Constants**: Centralized configuration in `lib/constants.js`
 - **Type Safety**: JSDoc comments for better IDE support (TypeScript migration optional)
 
+**AI-assisted work:** see [`CLAUDE.md`](CLAUDE.md).
+
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)

@@ -74,8 +74,9 @@
         "summary": "Standard scripts calculate core metrics for fisheries management and nutrition.",
         "items": [
           "Catch-per-unit-effort and production estimates by fleet, gear, and area",
+          "Fleet-wide estimates by two methods in Zanzibar, Kenya and Mozambique: GPS trackers and FAO's ARTFISH",
           "Trends in value, prices, and revenue",
-          "Nutritional contribution and species composition"
+          "Species composition, fish sizes against size at maturity, vulnerable species, and nutritional contribution"
         ]
       },
       {
@@ -139,6 +140,7 @@
         "icon": "/assets/imgs/page/homepage1/report.svg",
         "body": "Multilingual dashboards and briefs make data usable for managers, communities, and partners.",
         "items": [
+          "Country dashboards organised around management questions, with every figure explained",
           "Interactive maps and time series, including regional views (e.g., Western Indian Ocean)",
           "Customizable visuals and automated briefings for meetings and reports",
           "Access controls by role so sensitive data stay protected"
@@ -169,11 +171,14 @@
   "resourceLinks": {
     "title": "Resources and links",
     "items": [
-      { "label": "Main platform", "href": "https://www.peskas.org" },
+      { "label": "Main platform", "href": "https://peskas.org" },
       { "label": "Timor-Leste dashboard", "href": "https://timor.peskas.org" },
+      { "label": "Zanzibar dashboard", "href": "https://zanzibar.peskas.org/en" },
+      { "label": "Kenya dashboard", "href": "https://kenya.peskas.org/en" },
+      { "label": "Mozambique dashboard", "href": "https://mozambique.peskas.org/en" },
       { "label": "Western Indian Ocean dashboard", "href": "https://coasts.peskas.org" },
       { "label": "Tracks app demo", "href": "https://tracks.peskas.org" },
-      { "label": "Data resources and publications", "href": "https://peskas.org/data-resource" },
+      { "label": "Data resources and publications", "href": "https://peskas.org/data-resources" },
       { "label": "Source code (GitHub)", "href": "https://github.com/orgs/WorldFishCenter/repositories?q=peskas" }
     ]
   },
