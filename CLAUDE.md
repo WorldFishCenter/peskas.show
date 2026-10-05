@@ -32,5 +32,5 @@ One Markdown file per story in `posts/`. `lib/posts.js` reads the front matter; 
 - `draft: true` only hides a post from the blog list: its page is still built and reachable at `/blog/<slug>`. Keep unfinished stories off the deployed branch.
 - TinaCMS commits edits made in `/admin` straight to its branch (`NEXT_PUBLIC_TINA_BRANCH`, else the Vercel branch, else `main`). Pull before editing the same files locally.
 - `npm run sass` watches `main.scss`, which does not exist. When you change `style.scss`, update `style.css` in the same change: the CSS is what ships.
-- When a Peskas portal changes address, update its links in `content/global/regions.json` and `content/pages/how-it-works.json`.
+- When a Peskas portal changes address, update its links in `content/global/regions.json`, `content/global/settings.json`, `content/pages/how-it-works.json`, the menus hard-coded in `components/layout/Header.js` and `Sidebar.js`, and the stories in `posts/`. Its screenshot on the home page is `public/assets/imgs/page/homepage1/<country>-dash.png`.
 - `/public/admin` and `/tina/__generated__` are TinaCMS build output and stay out of git.

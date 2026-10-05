@@ -91,8 +91,8 @@ The second is a way to talk with the data. Many of the people who need these fig
 
 ## Explore the dashboards
 
-- [Peskas Zanzibar](https://zanzibar.peskas.org), with ZAFIRI
-- [Peskas Kenya](https://peskas-dashboard-kenya.vercel.app/en), with KEFS
-- [Peskas Mozambique](https://peskas-dashboard-mozambique.vercel.app), with DINAPA
+- [Peskas Zanzibar](https://zanzibar.peskas.org/en), with ZAFIRI
+- [Peskas Kenya](https://kenya.peskas.org/en), with KEFS
+- [Peskas Mozambique](https://mozambique.peskas.org/en), with DINAPA
 
 The dashboards are developed by WorldFish in collaboration with ZAFIRI, KEFS and DINAPA, whose enumerators and survey teams collect the data behind every figure. Species information comes from FishBase and SeaLifeBase, and vessel tracking from Pelagic Data Systems. The shared pipeline code that produces the summaries and both catch estimates is open in the [peskas.coasts repository](https://github.com/WorldFishCenter/peskas.coasts). Get in touch at peskas.platform@gmail.com if you would like to know more, or to talk about a Peskas dashboard for your fishery.
