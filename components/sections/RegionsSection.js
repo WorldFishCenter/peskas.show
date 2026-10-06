@@ -51,62 +51,49 @@ function RegionsSection({ regions, section }) {
                         ))}
                     </ul>
                 </div>
-                <div
-                    className="region-hero mt-40"
-                    style={{
-                        backgroundImage: `linear-gradient(120deg, rgba(4, 7, 15, 0.7) 0%, rgba(4, 7, 15, 0.35) 50%, rgba(4, 7, 15, 0.15) 80%), url('${activeRegion.image}')`,
-                    }}
-                >
-                    <div className="region-hero__content">
-                        <div className="region-hero__text">
-                            <h3 className="text-heading-2 color-white">{activeRegion.title}</h3>
-                            <RichText
-                                content={activeRegion.desc}
-                                className="text-body-lead color-white mt-12"
-                            />
-                            {activeRegion.ctaLabel && activeRegion.ctaHref ? (
-                                <a
-                                    href={activeRegion.ctaHref}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-black icon-arrow-right-white mt-15"
-                                >
-                                    {activeRegion.ctaLabel}
-                                </a>
-                            ) : null}
-                        </div>
+                <div className="region-card mt-40">
+                    <div>
+                        <h3 className="text-heading-2 color-gray-900">{activeRegion.title}</h3>
+                        <RichText
+                            content={activeRegion.desc}
+                            className="text-body-text color-gray-600 mt-12"
+                        />
+                        {activeRegion.ctaLabel && activeRegion.ctaHref ? (
+                            <a
+                                href={activeRegion.ctaHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-black icon-arrow-right-white mt-15"
+                            >
+                                {activeRegion.ctaLabel}
+                            </a>
+                        ) : null}
                     </div>
+                    <img className="region-card__image" src={activeRegion.image} alt={activeRegion.title} />
                 </div>
             </div>
             <style jsx>{`
-                .region-hero {
-                    position: relative;
-                    border-radius: 18px;
-                    overflow: hidden;
-                    min-height: 460px;
-                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-                .region-hero__content {
-                    position: relative;
-                    z-index: 1;
-                    display: flex;
+                .region-card {
+                    display: grid;
+                    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+                    gap: 40px;
                     align-items: center;
-                    min-height: 460px;
-                    padding: 36px;
+                    padding: 40px;
+                    border-radius: 18px;
+                    background: #f2f4f7;
                 }
-                .region-hero__text {
-                    max-width: 680px;
-                    background: linear-gradient(135deg, rgba(8, 11, 18, 0.68), rgba(8, 11, 18, 0.4));
-                    padding: 24px;
-                    border-radius: 14px;
-                    line-height: 1.6;
+                .region-card__image {
+                    width: 100%;
+                    aspect-ratio: 16 / 10;
+                    object-fit: cover;
+                    object-position: left top;
+                    border-radius: 12px;
+                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
                 }
                 @media (max-width: 991px) {
-                    .region-hero__content {
-                        min-height: 0;
+                    .region-card {
+                        grid-template-columns: 1fr;
+                        gap: 24px;
                         padding: 20px;
                     }
                 }

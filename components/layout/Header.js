@@ -66,19 +66,19 @@ const Header = ({ handleOpen, headerStyle }) => {
                                                     <div className="hr">
                                                         <span />
                                                     </div>
-                                                    <a href="https://digitalfisheries.kenya.peskas.org/en" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://kenya.peskas.org/en" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" width={20} height={13} style={{ marginRight: '5px', verticalAlign: 'middle' }} loading="lazy" />
                                                         Kenya
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://zanzibar.peskas.org" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://zanzibar.peskas.org/en" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg" alt="Zanzibar Flag" width={20} height={13} style={{ marginRight: '5px', verticalAlign: 'middle' }} loading="lazy" />
                                                         Zanzibar
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://peskas-dashboard-mozambique.vercel.app" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://mozambique.peskas.org/en" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Mozambique Flag" width={20} height={13} style={{ marginRight: '5px', verticalAlign: 'middle' }} loading="lazy" />
                                                         Mozambique
                                                     </a>

@@ -33,21 +33,21 @@
         },
         {
           "label": "Kenya",
-          "href": "https://digitalfisheries.kenya.peskas.org/en",
+          "href": "https://kenya.peskas.org/en",
           "external": true,
           "flagSrc": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
           "flagAlt": "Kenyan Flag"
         },
         {
           "label": "Zanzibar",
-          "href": "https://zanzibar.peskas.org",
+          "href": "https://zanzibar.peskas.org/en",
           "external": true,
           "flagSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Zanzibar.svg",
           "flagAlt": "Zanzibar Flag"
         },
         {
           "label": "Mozambique",
-          "href": "https://peskas-dashboard-mozambique.vercel.app",
+          "href": "https://mozambique.peskas.org/en",
           "external": true,
           "flagSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
           "flagAlt": "Mozambique Flag"
