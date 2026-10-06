@@ -72,10 +72,24 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-bottom mt-20">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <span className="color-gray-400 text-body-lead">{footer.copyright}</span>
-                            </div>
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                gap: 20,
+                            }}
+                        >
+                            <span className="color-gray-400 text-body-lead">{footer.copyright}</span>
+                            <img
+                                src="/assets/imgs/logos/worldfish-cgiar.png"
+                                alt="WorldFish and CGIAR"
+                                width={1200}
+                                height={281}
+                                loading="lazy"
+                                style={{ width: 200, maxWidth: '100%', height: 'auto', display: 'block' }}
+                            />
                         </div>
                     </div>
                 </div>

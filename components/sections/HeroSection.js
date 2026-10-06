@@ -9,6 +9,14 @@ function HeroSection({ data, onWatchVideo }) {
                 <div className="container">
                     <div className="row" style={{ paddingBottom: 40 }}>
                         <div className="col-lg-7">
+                            <img
+                                src="/assets/imgs/logos/worldfish-cgiar.png"
+                                alt="WorldFish and CGIAR"
+                                width={1200}
+                                height={281}
+                                className="mb-30"
+                                style={{ width: '100%', maxWidth: 360, height: 'auto' }}
+                            />
                             <h1 className="text-display-3">
                                 {headline}
                                 <span className="color-green-900">
