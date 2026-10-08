@@ -2,7 +2,7 @@
 title: "The Peskas Management Platform: full control for those who own the data"
 date: 2026-10-03T09:00:00Z
 author: "Lorenzo Longobardi & Alexander Tilley"
-draft: false
+draft: true
 description: "On the Peskas Management Platform, the institutions that collect fisheries data decide what counts as valid, monitor their enumerators' work, download the data with its definitions and learn to analyse it."
 tags: [ "Management Platform", "Data Quality", "Data Sovereignty", "Capacity Building" ]
 ShowToc: false
