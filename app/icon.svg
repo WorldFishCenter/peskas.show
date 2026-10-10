@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -4.5 73 73">
-  <!-- The Peskas mark (components/elements/PeskasMark.js) with a darker tail, which stays visible at
+  <!-- The Peskas mark with a darker tail, which stays visible at
        16px; the browser's own colour scheme picks the palette, as the tab sits in its chrome. -->
   <style>
     .c1 { fill: #5aa8af }

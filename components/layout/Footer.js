@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import settingsData from '@/content/global/settings.json';
-import PeskasMark from '@/components/elements/PeskasMark';
+import PeskasLogo from '@/components/elements/PeskasLogo';
 
 const Footer = () => {
     const { footer } = settingsData;
@@ -13,9 +13,8 @@ const Footer = () => {
                     <div className="footer-top">
                         <div className="row">
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
-                                <Link href="/" className="d-flex align-items-center display-6">
-                                    <PeskasMark style={{ height: '0.9em', width: 'auto', marginRight: '0.35em' }} />
-                                    PESKAS™
+                                <Link href="/" className="d-inline-flex">
+                                    <PeskasLogo style={{ height: '2rem', width: 'auto' }} />
                                 </Link>
                             </div>
                         </div>
