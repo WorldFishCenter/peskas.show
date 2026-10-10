@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import PeskasLogo from '@/components/elements/PeskasLogo';
 
 const Header = ({ handleOpen, headerStyle }) => {
     const [scroll, setScroll] = useState(0);
@@ -27,8 +28,8 @@ const Header = ({ handleOpen, headerStyle }) => {
                     <div className="main-header">
                         <div className="header-left">
                             <div className="header-logo">
-                                <Link href="/" className="d-flex display-6">
-                                    PESKAS™
+                                <Link href="/" className="d-flex align-items-center">
+                                    <PeskasLogo style={{ height: 'clamp(1.75rem, 1.25rem + 1.25vw, 2.25rem)', width: 'auto' }} />
                                 </Link>
                             </div>
                             <div className="header-nav">

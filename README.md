@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/images/peskas-logo-dark.svg">
+  <img src=".github/images/peskas-logo.svg" alt="Peskas" height="48">
+</picture>
+
 # Peskas.show
 
 Official website for Peskas™ - An open-source digital platform for small-scale fisheries.
@@ -25,18 +30,12 @@ Official website for Peskas™ - An open-source digital platform for small-scale
    npm install
    ```
 
-3. Copy environment variables:
-   ```bash
-   cp .env.example .env.local
-   ```
-   Edit `.env.local` with your configuration if needed.
-
-4. Run the development server:
+3. Run the development server:
    ```bash
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
@@ -101,9 +100,7 @@ This project is configured for deployment on Vercel. See `docs/VERCEL_SETUP.md` 
 Configure the following in your deployment platform:
 
 - `NODE_ENV` - Set to `production` for production builds
-- `NEXT_PUBLIC_SITE_URL` - Full URL of your site (e.g., `https://peskas.show`)
-
-See `.env.example` for all available environment variables.
+- `NEXT_PUBLIC_SITE_URL` - Full URL of the site; defaults to `https://peskas.org`, which the sitemap, robots file and link previews use
 
 ## Features
 

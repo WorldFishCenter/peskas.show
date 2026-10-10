@@ -30,15 +30,9 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
-# Keep .env.example for reference
-!.env.example
 
 # vercel
 .vercel
-
-# TinaCMS — generated at build time, do not commit
-/public/admin
-/tina/__generated__
 
 #vscode settings
 .vscode
