@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import settingsData from '@/content/global/settings.json';
+import PeskasMark from '@/components/elements/PeskasMark';
 
 const Footer = () => {
     const { footer } = settingsData;
@@ -12,7 +13,8 @@ const Footer = () => {
                     <div className="footer-top">
                         <div className="row">
                             <div className="col-md-4 col-sm-6 text-center text-md-start">
-                                <Link href="/" className="d-flex display-6">
+                                <Link href="/" className="d-flex align-items-center display-6">
+                                    <PeskasMark style={{ height: '0.9em', width: 'auto', marginRight: '0.35em' }} />
                                     PESKAS™
                                 </Link>
                             </div>
