@@ -16,3 +16,6 @@ packages
 /imports/api/note-event-detection/audio/**/*.json
 /public/soundfont-splendid-grand-piano*
 /public/tflite*
+# synced from peskas-context/brand (brand/sync.py); the kit owns their format
+components/elements/PeskasLogo.js
+components/elements/peskas-logo.css

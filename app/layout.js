@@ -1,6 +1,8 @@
 import '../public/assets/css/style.css'
 import '../public/assets/css/modal.css'
 import "../public/assets/css/swiper-custom.css";
+// The Peskas logo's colours (synced from peskas-context/brand).
+import "../components/elements/peskas-logo.css";
 import { Chivo, Noto_Sans } from 'next/font/google'
 import Script from 'next/script'
 import WowInit from '@/components/elements/WowInit'
